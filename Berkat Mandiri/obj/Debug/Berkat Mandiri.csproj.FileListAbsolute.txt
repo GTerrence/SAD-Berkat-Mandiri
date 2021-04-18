@@ -1,0 +1,9 @@
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe.config
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csprojAssemblyReference.cache
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form1.resources
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Properties.Resources.resources
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.GenerateResource.cache
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
+D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
