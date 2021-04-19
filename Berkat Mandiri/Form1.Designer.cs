@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnCoba = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,22 +188,12 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Aldi MEngcarry Kita";
             // 
-            // btnCoba
-            // 
-            this.btnCoba.Location = new System.Drawing.Point(410, 633);
-            this.btnCoba.Name = "btnCoba";
-            this.btnCoba.Size = new System.Drawing.Size(75, 23);
-            this.btnCoba.TabIndex = 7;
-            this.btnCoba.Text = "button1";
-            this.btnCoba.UseVisualStyleBackColor = true;
-            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.btnCoba);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -235,7 +224,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnCoba;
     }
 }
 
