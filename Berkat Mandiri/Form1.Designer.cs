@@ -47,7 +47,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
+=======
+            this.label6 = new System.Windows.Forms.Label();
+>>>>>>> master
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -281,6 +285,7 @@
             this.panel7.Size = new System.Drawing.Size(756, 50);
             this.panel7.TabIndex = 5;
             // 
+<<<<<<< HEAD
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(454, 498);
@@ -289,6 +294,17 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+=======
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(398, 540);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(633, 72);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Aldi Akan MEngcarry Kita";
+>>>>>>> master
             // 
             // FormBase
             // 
@@ -296,7 +312,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+<<<<<<< HEAD
             this.Controls.Add(this.button1);
+=======
+            this.Controls.Add(this.label6);
+>>>>>>> master
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
@@ -343,7 +363,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
+=======
+        private System.Windows.Forms.Label label6;
+>>>>>>> master
     }
 }
 
