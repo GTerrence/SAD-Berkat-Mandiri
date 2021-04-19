@@ -125,6 +125,7 @@
             this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnReceivable
             // 
@@ -177,7 +178,6 @@
             this.label3.Text = "BERKAT MANDIRI";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -212,5 +212,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+    }
 }
 
