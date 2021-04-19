@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Berkat_Mandiri
 {
-    public partial class Form1 : Form
+    public partial class FormBase : Form
     {
-        public Form1()
+        public FormBase()
         {
             InitializeComponent();
         }

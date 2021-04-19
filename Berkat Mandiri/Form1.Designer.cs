@@ -1,6 +1,6 @@
 ﻿namespace Berkat_Mandiri
 {
-    partial class Form1
+    partial class FormBase
     {
         /// <summary>
         /// Required designer variable.
@@ -287,11 +287,11 @@
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(398, 540);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(633, 72);
+            this.label6.Size = new System.Drawing.Size(498, 72);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Aldi Akan MEngcarry Kita";
+            this.label6.Text = "Aldi MEngcarry Kita";
             // 
-            // Form1
+            // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +311,7 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
+            this.Name = "FormBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
