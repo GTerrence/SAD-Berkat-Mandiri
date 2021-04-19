@@ -40,5 +40,10 @@ namespace Berkat_Mandiri
         {
 
         }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
