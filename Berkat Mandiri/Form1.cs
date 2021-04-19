@@ -28,7 +28,8 @@ namespace Berkat_Mandiri
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            var myForm = new FormDashboard();
+            myForm.Show();
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)

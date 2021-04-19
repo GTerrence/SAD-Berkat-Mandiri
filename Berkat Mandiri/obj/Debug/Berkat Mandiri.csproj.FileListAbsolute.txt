@@ -17,3 +17,14 @@ C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project 
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CoreCompileInputs.cache
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csprojAssemblyReference.cache
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormDashboard.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Properties.Resources.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.GenerateResource.cache
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe.config
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
