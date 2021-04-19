@@ -7,3 +7,13 @@ D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Properties.
 D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.GenerateResource.cache
 D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
 D:\Program\C#\Berkat Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe.config
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csprojAssemblyReference.cache
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form1.resources
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Properties.Resources.resources
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.GenerateResource.cache
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CoreCompileInputs.cache
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
