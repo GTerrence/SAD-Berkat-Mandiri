@@ -92,10 +92,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.TC_Transaksi.SuspendLayout();
@@ -168,9 +168,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 45);
+            this.label2.Size = new System.Drawing.Size(179, 45);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Daftar Piutang :";
+            this.label2.Text = "Input Data";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TC_Transaksi
@@ -747,12 +747,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.88372F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.02325F));
+            this.tableLayoutPanel4.Controls.Add(this.comboBox2, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.textBox3, 1, 3);
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label12, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.checkBox1, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.comboBox1, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.numericUpDown1, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.button3, 2, 3);
@@ -764,6 +764,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(860, 180);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
@@ -805,7 +806,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(184, 45);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Nama";
+            this.label13.Text = "Supplier";
             // 
             // checkBox1
             // 
@@ -817,16 +818,6 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Harga Khusus";
             this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(190, 0);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(299, 39);
-            this.textBox4.TabIndex = 3;
             // 
             // comboBox1
             // 
@@ -870,6 +861,22 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Beras 10 Kg",
+            "Aqua 100 mL",
+            "Minyak Goreng 600 mL",
+            "Teh Gelas"});
+            this.comboBox2.Location = new System.Drawing.Point(190, 0);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(299, 45);
+            this.comboBox2.TabIndex = 9;
             // 
             // FormTransaksi
             // 
@@ -974,9 +981,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
