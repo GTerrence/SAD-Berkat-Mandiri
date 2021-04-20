@@ -33,7 +33,8 @@ namespace Berkat_Mandiri
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-
+            FormTransaksi FormTransaksi = new FormTransaksi();
+            FormTransaksi.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
