@@ -364,3 +364,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+.vs/Berkat Mandiri/v16/.suo
+*.cache
+.vs/Berkat Mandiri/v16/.suo
