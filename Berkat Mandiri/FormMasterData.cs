@@ -16,5 +16,10 @@ namespace Berkat_Mandiri
         {
             InitializeComponent();
         }
+
+        private void btnMaster_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
