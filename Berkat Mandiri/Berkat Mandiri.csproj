@@ -58,6 +58,11 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormLaporanTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanTransaksi.Designer.cs">
+      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPiutangcs.cs">
       <SubType>Form</SubType>
@@ -82,6 +87,11 @@
     </Compile>
     <Compile Include="FormStockView.Designer.cs">
       <DependentUpon>FormStockView.cs</DependentUpon>
+    <Compile Include="FormTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksi.Designer.cs">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +100,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormLaporanTransaksi.resx">
+      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPiutangcs.resx">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
@@ -102,6 +114,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStockView.resx">
       <DependentUpon>FormStockView.cs</DependentUpon>
+    <EmbeddedResource Include="FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,6 +169,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cashier.png" />
+    <None Include="Resources\Panah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panah1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
