@@ -1,10 +1,4 @@
 
-<<<<<<< HEAD
-.vs/Berkat Mandiri/v16/.suo
-.vs/Berkat Mandiri/v16/Server/sqlite3/storage.ide
-.vs/Berkat Mandiri/v16/Server/sqlite3/storage.ide-shm
-.vs/Berkat Mandiri/v16/Server/sqlite3/storage.ide-wal
-=======
 .vs/slnx.sqlite~Stashed changes
 
 .vs/slnx.sqlite
@@ -370,4 +364,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
->>>>>>> master
+.vs/Berkat Mandiri/v16/.suo
+*.cache
+.vs/Berkat Mandiri/v16/.suo
