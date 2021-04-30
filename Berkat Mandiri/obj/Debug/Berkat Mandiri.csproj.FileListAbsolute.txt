@@ -42,3 +42,16 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\MySql.Data.dll
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Google.Protobuf.dll
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\BouncyCastle.Crypto.dll
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Ubiety.Dns.Core.dll
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Renci.SshNet.dll
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\MySql.Data.xml
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLaporanTransaksi.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockGanti.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockKonversi.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockView.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormMasterData.resources
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CopyComplete

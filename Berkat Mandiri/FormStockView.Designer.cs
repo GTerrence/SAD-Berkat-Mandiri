@@ -39,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bg = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -47,10 +47,11 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btnKonversi = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -211,14 +212,14 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Nama Produk";
             // 
-            // textBox1
+            // tbSearch
             // 
-            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.textBox1.Location = new System.Drawing.Point(623, 220);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbSearch.Location = new System.Drawing.Point(623, 220);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(195, 20);
+            this.tbSearch.TabIndex = 10;
+            this.tbSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -283,6 +284,16 @@
             this.panel2.Size = new System.Drawing.Size(861, 50);
             this.panel2.TabIndex = 14;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(743, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 30);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Kuantitas";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -313,15 +324,15 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Ukuran";
             // 
-            // label9
+            // btnKonversi
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(743, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 30);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Kuantitas";
+            this.btnKonversi.Location = new System.Drawing.Point(1048, 126);
+            this.btnKonversi.Name = "btnKonversi";
+            this.btnKonversi.Size = new System.Drawing.Size(75, 23);
+            this.btnKonversi.TabIndex = 20;
+            this.btnKonversi.Text = "Konversi";
+            this.btnKonversi.UseVisualStyleBackColor = true;
+            this.btnKonversi.Click += new System.EventHandler(this.btnKonversi_Click);
             // 
             // FormStockView
             // 
@@ -329,13 +340,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnKonversi);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bg);
             this.Controls.Add(this.panel1);
@@ -366,7 +378,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bg;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
@@ -378,5 +390,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnKonversi;
     }
 }

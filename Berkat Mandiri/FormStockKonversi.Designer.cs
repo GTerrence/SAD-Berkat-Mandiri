@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnConvert = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbStID = new System.Windows.Forms.TextBox();
             this.btnStock = new System.Windows.Forms.Button();
             this.btnReceivable = new System.Windows.Forms.Button();
             this.btnMaster = new System.Windows.Forms.Button();
@@ -45,36 +45,40 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbBarang = new System.Windows.Forms.ComboBox();
+            this.cbSatuan = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numQty = new System.Windows.Forms.NumericUpDown();
+            this.lbBarang1 = new System.Windows.Forms.Label();
+            this.lbQty1 = new System.Windows.Forms.Label();
+            this.lbBarang2 = new System.Windows.Forms.Label();
+            this.lbQty2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQty)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConvert
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("News706 BT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1130, 616);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 35);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "CONVERT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnConvert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnConvert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConvert.Font = new System.Drawing.Font("News706 BT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvert.Location = new System.Drawing.Point(1130, 616);
+            this.btnConvert.Margin = new System.Windows.Forms.Padding(1);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(106, 35);
+            this.btnConvert.TabIndex = 55;
+            this.btnConvert.Text = "CONVERT";
+            this.btnConvert.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -109,14 +113,14 @@
             this.label10.TabIndex = 51;
             this.label10.Text = "Stock ID";
             // 
-            // textBox1
+            // tbStID
             // 
-            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(589, 222);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 45;
+            this.tbStID.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbStID.Enabled = false;
+            this.tbStID.Location = new System.Drawing.Point(589, 222);
+            this.tbStID.Name = "tbStID";
+            this.tbStID.Size = new System.Drawing.Size(219, 20);
+            this.tbStID.TabIndex = 45;
             // 
             // btnStock
             // 
@@ -284,41 +288,34 @@
             this.label9.TabIndex = 56;
             this.label9.Text = "Quantity Barang";
             // 
-            // comboBox2
+            // cbBarang
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(589, 262);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(219, 21);
-            this.comboBox2.TabIndex = 57;
+            this.cbBarang.FormattingEnabled = true;
+            this.cbBarang.Location = new System.Drawing.Point(589, 262);
+            this.cbBarang.Name = "cbBarang";
+            this.cbBarang.Size = new System.Drawing.Size(219, 21);
+            this.cbBarang.TabIndex = 57;
+            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.cbBarang_SelectedIndexChanged);
             // 
-            // comboBox3
+            // cbSatuan
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(589, 305);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(219, 21);
-            this.comboBox3.TabIndex = 58;
+            this.cbSatuan.FormattingEnabled = true;
+            this.cbSatuan.Location = new System.Drawing.Point(589, 305);
+            this.cbSatuan.Name = "cbSatuan";
+            this.cbSatuan.Size = new System.Drawing.Size(219, 21);
+            this.cbSatuan.TabIndex = 58;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.lbQty1);
+            this.panel5.Controls.Add(this.lbBarang1);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(428, 449);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(318, 135);
             this.panel5.TabIndex = 47;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 24);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 30);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Nama Barang : ";
             // 
             // label6
             // 
@@ -330,9 +327,21 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Kuantitas : ";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(157, 30);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Nama Barang : ";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lbQty2);
+            this.panel2.Controls.Add(this.lbBarang2);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(901, 449);
@@ -384,12 +393,52 @@
             this.label15.TabIndex = 6;
             this.label15.Text = "_____";
             // 
-            // numericUpDown1
+            // numQty
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(589, 376);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(219, 20);
-            this.numericUpDown1.TabIndex = 59;
+            this.numQty.Location = new System.Drawing.Point(589, 376);
+            this.numQty.Name = "numQty";
+            this.numQty.Size = new System.Drawing.Size(219, 20);
+            this.numQty.TabIndex = 59;
+            // 
+            // lbBarang1
+            // 
+            this.lbBarang1.AutoSize = true;
+            this.lbBarang1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBarang1.Location = new System.Drawing.Point(161, 24);
+            this.lbBarang1.Name = "lbBarang1";
+            this.lbBarang1.Size = new System.Drawing.Size(81, 30);
+            this.lbBarang1.TabIndex = 3;
+            this.lbBarang1.Text = "Nama  ";
+            // 
+            // lbQty1
+            // 
+            this.lbQty1.AutoSize = true;
+            this.lbQty1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQty1.Location = new System.Drawing.Point(161, 85);
+            this.lbQty1.Name = "lbQty1";
+            this.lbQty1.Size = new System.Drawing.Size(46, 30);
+            this.lbQty1.TabIndex = 4;
+            this.lbQty1.Text = "Qty";
+            // 
+            // lbBarang2
+            // 
+            this.lbBarang2.AutoSize = true;
+            this.lbBarang2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBarang2.Location = new System.Drawing.Point(178, 24);
+            this.lbBarang2.Name = "lbBarang2";
+            this.lbBarang2.Size = new System.Drawing.Size(69, 30);
+            this.lbBarang2.TabIndex = 5;
+            this.lbBarang2.Text = "Nama";
+            // 
+            // lbQty2
+            // 
+            this.lbQty2.AutoSize = true;
+            this.lbQty2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQty2.Location = new System.Drawing.Point(178, 85);
+            this.lbQty2.Name = "lbQty2";
+            this.lbQty2.Size = new System.Drawing.Size(46, 30);
+            this.lbQty2.TabIndex = 6;
+            this.lbQty2.Text = "Qty";
             // 
             // FormStockKonversi
             // 
@@ -397,19 +446,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numQty);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbSatuan);
+            this.Controls.Add(this.cbBarang);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbStID);
             this.Controls.Add(this.bg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -418,12 +467,13 @@
             this.Controls.Add(this.label1);
             this.Name = "FormStockKonversi";
             this.Text = "FormStockKonversi";
+            this.Load += new System.EventHandler(this.FormStockKonversi_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,11 +481,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbStID;
         private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button btnReceivable;
         private System.Windows.Forms.Button btnMaster;
@@ -448,8 +498,8 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbBarang;
+        private System.Windows.Forms.ComboBox cbSatuan;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -458,6 +508,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numQty;
+        private System.Windows.Forms.Label lbQty1;
+        private System.Windows.Forms.Label lbBarang1;
+        private System.Windows.Forms.Label lbQty2;
+        private System.Windows.Forms.Label lbBarang2;
     }
 }

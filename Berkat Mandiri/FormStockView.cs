@@ -55,6 +55,12 @@ namespace Berkat_Mandiri
         {
 
         }
+
+        private void btnKonversi_Click(object sender, EventArgs e)
+        {
+            Form f1 = new FormStockKonversi();
+            f1.Show();
+        }
     }
 
     public static class DbConnect
