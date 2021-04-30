@@ -16,15 +16,6 @@ C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project 
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CoreCompileInputs.cache
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
-=======
-=======
->>>>>>> master
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe.config
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
@@ -37,9 +28,6 @@ E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\ob
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CoreCompileInputs.cache
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
 E:\University\Semester 4\SAD\Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
-<<<<<<< HEAD
->>>>>>> master
-=======
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csprojAssemblyReference.cache
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormDashboard.resources
@@ -54,9 +42,3 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
->>>>>>> master
-=======
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
->>>>>>> parent of f82b684 (Update From Master)
