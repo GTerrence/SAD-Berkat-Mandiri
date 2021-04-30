@@ -64,11 +64,31 @@
     <Compile Include="FormPiutangcs.Designer.cs">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FormTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTransaksi.Designer.cs">
       <DependentUpon>FormTransaksi.cs</DependentUpon>
+=======
+    <Compile Include="FormStockGanti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockGanti.Designer.cs">
+      <DependentUpon>FormStockGanti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStockKonversi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockKonversi.Designer.cs">
+      <DependentUpon>FormStockKonversi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockView.Designer.cs">
+      <DependentUpon>FormStockView.cs</DependentUpon>
+>>>>>>> master
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,8 +101,19 @@
     <EmbeddedResource Include="FormPiutangcs.resx">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FormTransaksi.resx">
       <DependentUpon>FormTransaksi.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormStockGanti.resx">
+      <DependentUpon>FormStockGanti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStockKonversi.resx">
+      <DependentUpon>FormStockKonversi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStockView.resx">
+      <DependentUpon>FormStockView.cs</DependentUpon>
+>>>>>>> master
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

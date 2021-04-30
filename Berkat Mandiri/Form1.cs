@@ -41,5 +41,11 @@ namespace Berkat_Mandiri
         {
 
         }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            FormStockView form2 = new FormStockView();
+            form2.ShowDialog();
+        }
     }
 }
