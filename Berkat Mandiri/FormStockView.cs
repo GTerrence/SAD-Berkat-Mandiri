@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
 
 namespace Berkat_Mandiri
 {
@@ -53,6 +54,31 @@ namespace Berkat_Mandiri
         private void FormStockView_Load(object sender, EventArgs e)
         {
 
+        }
+    }
+
+    public static class DbConnect
+    {
+        public static string connString = "server=localhost;port=3306;user id=root; password=; database=berkat_mandiri; SslMode=none";
+        public static MySqlConnection connection = new MySqlConnection(connString);
+        public static MySqlCommand sqlcommand = new MySqlCommand();
+        public static MySqlDataAdapter sqladapter = new MySqlDataAdapter();
+
+        public static void exQuery(string query, ref DataTable dt)
+        {
+            dt = new DataTable();
+            sqlcommand = new MySqlCommand(query, connection);
+            sqladapter = new MySqlDataAdapter(sqlcommand);
+            sqladapter.Fill(dt);
+        }
+        public static void exnonQuery(string queryString)
+        {
+            string query = queryString;
+            MySqlCommand sqlCommand = new MySqlCommand(query, connection);
+            MySqlDataReader sqlReader;
+            connection.Open();
+            sqlCommand.ExecuteNonQuery();
+            connection.Close();
         }
     }
 }
