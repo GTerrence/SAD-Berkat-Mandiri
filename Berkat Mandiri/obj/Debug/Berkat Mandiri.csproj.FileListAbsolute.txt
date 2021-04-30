@@ -18,6 +18,7 @@ C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project 
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
@@ -54,3 +55,8 @@ C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project 
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
 >>>>>>> master
+=======
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
+C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
+>>>>>>> parent of f82b684 (Update From Master)

@@ -74,11 +74,15 @@
     </Compile>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f82b684 (Update From Master)
     <Compile Include="FormTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTransaksi.Designer.cs">
       <DependentUpon>FormTransaksi.cs</DependentUpon>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> master
@@ -115,6 +119,8 @@
     <Compile Include="FormMasterData.Designer.cs">
       <DependentUpon>FormMasterData.cs</DependentUpon>
 >>>>>>> master
+=======
+>>>>>>> parent of f82b684 (Update From Master)
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +136,7 @@
     <EmbeddedResource Include="FormPiutangcs.resx">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <EmbeddedResource Include="FormTransaksi.resx">
@@ -155,6 +162,10 @@
     <EmbeddedResource Include="FormMasterData.resx">
       <DependentUpon>FormMasterData.cs</DependentUpon>
 >>>>>>> master
+=======
+    <EmbeddedResource Include="FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
+>>>>>>> parent of f82b684 (Update From Master)
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

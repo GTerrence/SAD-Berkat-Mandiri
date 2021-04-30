@@ -36,6 +36,8 @@
             this.btnReceivable = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnCoba = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,7 +126,6 @@
             this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStock.UseVisualStyleBackColor = true;
-            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnReceivable
             // 
@@ -166,12 +167,33 @@
             this.label3.Text = "BERKAT MANDIRI";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(398, 540);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(498, 72);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Aldi MEngcarry Kita";
+            // 
+            // btnCoba
+            // 
+            this.btnCoba.Location = new System.Drawing.Point(410, 633);
+            this.btnCoba.Name = "btnCoba";
+            this.btnCoba.Size = new System.Drawing.Size(75, 23);
+            this.btnCoba.TabIndex = 7;
+            this.btnCoba.Text = "button1";
+            this.btnCoba.UseVisualStyleBackColor = true;
+            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnCoba);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.panel1);
@@ -198,6 +220,8 @@
         private System.Windows.Forms.Button btnReceivable;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCoba;
     }
 }
 
