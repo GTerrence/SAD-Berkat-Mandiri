@@ -48,18 +48,18 @@
             this.cbBarang = new System.Windows.Forms.ComboBox();
             this.cbSatuan = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lbQty1 = new System.Windows.Forms.Label();
+            this.lbBarang1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbQty2 = new System.Windows.Forms.Label();
+            this.lbBarang2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.numQty = new System.Windows.Forms.NumericUpDown();
-            this.lbBarang1 = new System.Windows.Forms.Label();
-            this.lbQty1 = new System.Windows.Forms.Label();
-            this.lbBarang2 = new System.Windows.Forms.Label();
-            this.lbQty2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -304,6 +304,7 @@
             this.cbSatuan.Name = "cbSatuan";
             this.cbSatuan.Size = new System.Drawing.Size(219, 21);
             this.cbSatuan.TabIndex = 58;
+            this.cbSatuan.SelectedIndexChanged += new System.EventHandler(this.cbSatuan_SelectedIndexChanged);
             // 
             // panel5
             // 
@@ -316,6 +317,26 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(318, 135);
             this.panel5.TabIndex = 47;
+            // 
+            // lbQty1
+            // 
+            this.lbQty1.AutoSize = true;
+            this.lbQty1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQty1.Location = new System.Drawing.Point(161, 85);
+            this.lbQty1.Name = "lbQty1";
+            this.lbQty1.Size = new System.Drawing.Size(46, 30);
+            this.lbQty1.TabIndex = 4;
+            this.lbQty1.Text = "Qty";
+            // 
+            // lbBarang1
+            // 
+            this.lbBarang1.AutoSize = true;
+            this.lbBarang1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBarang1.Location = new System.Drawing.Point(161, 24);
+            this.lbBarang1.Name = "lbBarang1";
+            this.lbBarang1.Size = new System.Drawing.Size(81, 30);
+            this.lbBarang1.TabIndex = 3;
+            this.lbBarang1.Text = "Nama  ";
             // 
             // label6
             // 
@@ -348,6 +369,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(318, 135);
             this.panel2.TabIndex = 48;
+            // 
+            // lbQty2
+            // 
+            this.lbQty2.AutoSize = true;
+            this.lbQty2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQty2.Location = new System.Drawing.Point(178, 85);
+            this.lbQty2.Name = "lbQty2";
+            this.lbQty2.Size = new System.Drawing.Size(46, 30);
+            this.lbQty2.TabIndex = 6;
+            this.lbQty2.Text = "Qty";
+            // 
+            // lbBarang2
+            // 
+            this.lbBarang2.AutoSize = true;
+            this.lbBarang2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBarang2.Location = new System.Drawing.Point(178, 24);
+            this.lbBarang2.Name = "lbBarang2";
+            this.lbBarang2.Size = new System.Drawing.Size(69, 30);
+            this.lbBarang2.TabIndex = 5;
+            this.lbBarang2.Text = "Nama";
             // 
             // label7
             // 
@@ -396,49 +437,14 @@
             // numQty
             // 
             this.numQty.Location = new System.Drawing.Point(589, 376);
+            this.numQty.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numQty.Name = "numQty";
             this.numQty.Size = new System.Drawing.Size(219, 20);
             this.numQty.TabIndex = 59;
-            // 
-            // lbBarang1
-            // 
-            this.lbBarang1.AutoSize = true;
-            this.lbBarang1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBarang1.Location = new System.Drawing.Point(161, 24);
-            this.lbBarang1.Name = "lbBarang1";
-            this.lbBarang1.Size = new System.Drawing.Size(81, 30);
-            this.lbBarang1.TabIndex = 3;
-            this.lbBarang1.Text = "Nama  ";
-            // 
-            // lbQty1
-            // 
-            this.lbQty1.AutoSize = true;
-            this.lbQty1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQty1.Location = new System.Drawing.Point(161, 85);
-            this.lbQty1.Name = "lbQty1";
-            this.lbQty1.Size = new System.Drawing.Size(46, 30);
-            this.lbQty1.TabIndex = 4;
-            this.lbQty1.Text = "Qty";
-            // 
-            // lbBarang2
-            // 
-            this.lbBarang2.AutoSize = true;
-            this.lbBarang2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBarang2.Location = new System.Drawing.Point(178, 24);
-            this.lbBarang2.Name = "lbBarang2";
-            this.lbBarang2.Size = new System.Drawing.Size(69, 30);
-            this.lbBarang2.TabIndex = 5;
-            this.lbBarang2.Text = "Nama";
-            // 
-            // lbQty2
-            // 
-            this.lbQty2.AutoSize = true;
-            this.lbQty2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQty2.Location = new System.Drawing.Point(178, 85);
-            this.lbQty2.Name = "lbQty2";
-            this.lbQty2.Size = new System.Drawing.Size(46, 30);
-            this.lbQty2.TabIndex = 6;
-            this.lbQty2.Text = "Qty";
             // 
             // FormStockKonversi
             // 

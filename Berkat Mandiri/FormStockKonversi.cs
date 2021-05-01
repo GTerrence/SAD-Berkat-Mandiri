@@ -32,6 +32,12 @@ namespace Berkat_Mandiri
             barang = 1;
         }
 
+        private void cbSatuan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //lbBarang2.Text = cbSatuan.GetItemText(cbSatuan.SelectedItem);
+            lbBarang2.Text = dtCbSat.Rows[cbSatuan.SelectedIndex][3].ToString();
+        }
+
         private void cbBarang_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (barang == 1)

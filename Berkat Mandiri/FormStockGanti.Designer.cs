@@ -36,7 +36,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbBefore = new System.Windows.Forms.TextBox();
             this.bg = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,11 +48,11 @@
             this.btnReceivable = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbBarang = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbAfter = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -134,14 +134,14 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Barang";
             // 
-            // textBox1
+            // tbBefore
             // 
-            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(586, 292);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 20);
-            this.textBox1.TabIndex = 26;
+            this.tbBefore.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbBefore.Enabled = false;
+            this.tbBefore.Location = new System.Drawing.Point(586, 292);
+            this.tbBefore.Name = "tbBefore";
+            this.tbBefore.Size = new System.Drawing.Size(219, 20);
+            this.tbBefore.TabIndex = 26;
             // 
             // bg
             // 
@@ -152,6 +152,7 @@
             this.bg.Size = new System.Drawing.Size(885, 490);
             this.bg.TabIndex = 24;
             this.bg.UseVisualStyleBackColor = true;
+            this.bg.Click += new System.EventHandler(this.bg_Click);
             // 
             // label3
             // 
@@ -298,13 +299,14 @@
             this.panel1.Size = new System.Drawing.Size(341, 681);
             this.panel1.TabIndex = 20;
             // 
-            // comboBox1
+            // cbBarang
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(586, 222);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 21);
-            this.comboBox1.TabIndex = 33;
+            this.cbBarang.FormattingEnabled = true;
+            this.cbBarang.Location = new System.Drawing.Point(586, 222);
+            this.cbBarang.Name = "cbBarang";
+            this.cbBarang.Size = new System.Drawing.Size(219, 21);
+            this.cbBarang.TabIndex = 33;
+            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.cbBarang_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -339,13 +341,13 @@
             this.label12.TabIndex = 36;
             this.label12.Text = "Harga Sesudah";
             // 
-            // textBox2
+            // tbAfter
             // 
-            this.textBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.textBox2.Location = new System.Drawing.Point(586, 333);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 20);
-            this.textBox2.TabIndex = 37;
+            this.tbAfter.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbAfter.Location = new System.Drawing.Point(586, 333);
+            this.tbAfter.Name = "tbAfter";
+            this.tbAfter.Size = new System.Drawing.Size(219, 20);
+            this.tbAfter.TabIndex = 37;
             // 
             // button1
             // 
@@ -368,16 +370,16 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbAfter);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbBarang);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbBefore);
             this.Controls.Add(this.bg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -386,6 +388,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormStockGanti";
             this.Text = "FormStockGanti";
+            this.Load += new System.EventHandler(this.FormStockGanti_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -403,7 +406,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbBefore;
         private System.Windows.Forms.Button bg;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -415,11 +418,11 @@
         private System.Windows.Forms.Button btnReceivable;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbBarang;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbAfter;
         private System.Windows.Forms.Button button1;
     }
 }
