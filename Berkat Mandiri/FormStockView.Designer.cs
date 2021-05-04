@@ -40,20 +40,11 @@
             this.bg = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnKonversi = new System.Windows.Forms.Button();
+            this.dgvData = new System.Windows.Forms.DataGridView();
+            this.btnGanti = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -189,7 +180,6 @@
             this.label1.Size = new System.Drawing.Size(121, 45);
             this.label1.TabIndex = 5;
             this.label1.Text = "STOCK";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bg
             // 
@@ -199,7 +189,6 @@
             this.bg.Size = new System.Drawing.Size(885, 490);
             this.bg.TabIndex = 8;
             this.bg.UseVisualStyleBackColor = true;
-            this.bg.Click += new System.EventHandler(this.bg_Click);
             // 
             // label4
             // 
@@ -219,110 +208,7 @@
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(195, 20);
             this.tbSearch.TabIndex = 10;
-            this.tbSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 30);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Nama Item";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(373, 560);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(861, 50);
-            this.panel3.TabIndex = 15;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(373, 509);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(861, 50);
-            this.panel4.TabIndex = 16;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(373, 458);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(861, 50);
-            this.panel5.TabIndex = 17;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(373, 356);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(861, 50);
-            this.panel6.TabIndex = 18;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(373, 407);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(861, 50);
-            this.panel7.TabIndex = 19;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(373, 305);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 50);
-            this.panel2.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(743, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 30);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Kuantitas";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(660, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 30);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Satuan";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(337, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 30);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Harga";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(494, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 30);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Ukuran";
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // btnKonversi
             // 
@@ -334,19 +220,33 @@
             this.btnKonversi.UseVisualStyleBackColor = true;
             this.btnKonversi.Click += new System.EventHandler(this.btnKonversi_Click);
             // 
+            // dgvData
+            // 
+            this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvData.Location = new System.Drawing.Point(399, 280);
+            this.dgvData.Name = "dgvData";
+            this.dgvData.Size = new System.Drawing.Size(817, 339);
+            this.dgvData.TabIndex = 21;
+            // 
+            // btnGanti
+            // 
+            this.btnGanti.Location = new System.Drawing.Point(1048, 97);
+            this.btnGanti.Name = "btnGanti";
+            this.btnGanti.Size = new System.Drawing.Size(75, 23);
+            this.btnGanti.TabIndex = 22;
+            this.btnGanti.Text = "Ganti";
+            this.btnGanti.UseVisualStyleBackColor = true;
+            this.btnGanti.Click += new System.EventHandler(this.btnGanti_Click);
+            // 
             // FormStockView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnGanti);
+            this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnKonversi);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bg);
@@ -358,8 +258,7 @@
             this.Text = "FormStockView";
             this.Load += new System.EventHandler(this.FormStockView_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,17 +278,8 @@
         private System.Windows.Forms.Button bg;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnKonversi;
+        private System.Windows.Forms.DataGridView dgvData;
+        private System.Windows.Forms.Button btnGanti;
     }
 }

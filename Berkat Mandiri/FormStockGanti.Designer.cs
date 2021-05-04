@@ -28,16 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbBefore = new System.Windows.Forms.TextBox();
-            this.bg = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,113 +36,18 @@
             this.btnMaster = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
             this.btnReceivable = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbBarang = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.panHarga = new System.Windows.Forms.Panel();
+            this.btnUbah = new System.Windows.Forms.Button();
             this.tbAfter = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbBarang = new System.Windows.Forms.ComboBox();
+            this.tbBefore = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panHarga.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(651, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 30);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Total";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(351, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 30);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Kuantitas";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(385, 579);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(861, 50);
-            this.panel5.TabIndex = 30;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(385, 477);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(861, 50);
-            this.panel6.TabIndex = 31;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(385, 528);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(861, 50);
-            this.panel7.TabIndex = 32;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(385, 426);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 50);
-            this.panel2.TabIndex = 27;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(506, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 30);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Harga";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 30);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Barang";
-            // 
-            // tbBefore
-            // 
-            this.tbBefore.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.tbBefore.Enabled = false;
-            this.tbBefore.Location = new System.Drawing.Point(586, 292);
-            this.tbBefore.Name = "tbBefore";
-            this.tbBefore.Size = new System.Drawing.Size(219, 20);
-            this.tbBefore.TabIndex = 26;
-            // 
-            // bg
-            // 
-            this.bg.Enabled = false;
-            this.bg.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bg.Location = new System.Drawing.Point(373, 179);
-            this.bg.Name = "bg";
-            this.bg.Size = new System.Drawing.Size(885, 490);
-            this.bg.TabIndex = 24;
-            this.bg.UseVisualStyleBackColor = true;
-            this.bg.Click += new System.EventHandler(this.bg_Click);
             // 
             // label3
             // 
@@ -273,17 +168,6 @@
             this.btnReceivable.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReceivable.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
-            this.label4.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(408, 220);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 23);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Nama Produk";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(32)))), ((int)(((byte)(51)))));
@@ -299,69 +183,95 @@
             this.panel1.Size = new System.Drawing.Size(341, 681);
             this.panel1.TabIndex = 20;
             // 
-            // cbBarang
+            // panHarga
             // 
-            this.cbBarang.FormattingEnabled = true;
-            this.cbBarang.Location = new System.Drawing.Point(586, 222);
-            this.cbBarang.Name = "cbBarang";
-            this.cbBarang.Size = new System.Drawing.Size(219, 21);
-            this.cbBarang.TabIndex = 33;
-            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.cbBarang_SelectedIndexChanged);
+            this.panHarga.BackColor = System.Drawing.Color.Gainsboro;
+            this.panHarga.Controls.Add(this.btnUbah);
+            this.panHarga.Controls.Add(this.tbAfter);
+            this.panHarga.Controls.Add(this.label12);
+            this.panHarga.Controls.Add(this.label11);
+            this.panHarga.Controls.Add(this.label10);
+            this.panHarga.Controls.Add(this.cbBarang);
+            this.panHarga.Controls.Add(this.tbBefore);
+            this.panHarga.Location = new System.Drawing.Point(385, 193);
+            this.panHarga.Name = "panHarga";
+            this.panHarga.Size = new System.Drawing.Size(827, 330);
+            this.panHarga.TabIndex = 24;
             // 
-            // label10
+            // btnUbah
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Gainsboro;
-            this.label10.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(421, 217);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 23);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Barang";
+            this.btnUbah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnUbah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUbah.Font = new System.Drawing.Font("News706 BT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUbah.Location = new System.Drawing.Point(520, 196);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(1);
+            this.btnUbah.Name = "btnUbah";
+            this.btnUbah.Size = new System.Drawing.Size(114, 35);
+            this.btnUbah.TabIndex = 45;
+            this.btnUbah.Text = "Ubah Harga";
+            this.btnUbah.UseVisualStyleBackColor = false;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
-            // label11
+            // tbAfter
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Gainsboro;
-            this.label11.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(421, 287);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(150, 23);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Harga Sebelum";
+            this.tbAfter.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbAfter.Location = new System.Drawing.Point(223, 128);
+            this.tbAfter.Name = "tbAfter";
+            this.tbAfter.Size = new System.Drawing.Size(219, 20);
+            this.tbAfter.TabIndex = 44;
+            this.tbAfter.TextChanged += new System.EventHandler(this.tbAfter_TextChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Gainsboro;
             this.label12.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(421, 330);
+            this.label12.Location = new System.Drawing.Point(58, 125);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 23);
-            this.label12.TabIndex = 36;
+            this.label12.TabIndex = 43;
             this.label12.Text = "Harga Sesudah";
             // 
-            // tbAfter
+            // label11
             // 
-            this.tbAfter.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.tbAfter.Location = new System.Drawing.Point(586, 333);
-            this.tbAfter.Name = "tbAfter";
-            this.tbAfter.Size = new System.Drawing.Size(219, 20);
-            this.tbAfter.TabIndex = 37;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Gainsboro;
+            this.label11.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(58, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(150, 23);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Harga Sebelum";
             // 
-            // button1
+            // label10
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("News706 BT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(883, 373);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 35);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Change";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Gainsboro;
+            this.label10.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(58, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 23);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Barang";
+            // 
+            // cbBarang
+            // 
+            this.cbBarang.FormattingEnabled = true;
+            this.cbBarang.Location = new System.Drawing.Point(223, 45);
+            this.cbBarang.Name = "cbBarang";
+            this.cbBarang.Size = new System.Drawing.Size(219, 21);
+            this.cbBarang.TabIndex = 40;
+            this.cbBarang.SelectedIndexChanged += new System.EventHandler(this.cbBarang_SelectedIndexChanged);
+            // 
+            // tbBefore
+            // 
+            this.tbBefore.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.tbBefore.Enabled = false;
+            this.tbBefore.Location = new System.Drawing.Point(223, 87);
+            this.tbBefore.Name = "tbBefore";
+            this.tbBefore.Size = new System.Drawing.Size(219, 20);
+            this.tbBefore.TabIndex = 39;
             // 
             // FormStockGanti
             // 
@@ -369,45 +279,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.tbAfter);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.cbBarang);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.tbBefore);
-            this.Controls.Add(this.bg);
+            this.Controls.Add(this.panHarga);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Name = "FormStockGanti";
             this.Text = "FormStockGanti";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStockGanti_FormClosed);
             this.Load += new System.EventHandler(this.FormStockGanti_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panHarga.ResumeLayout(false);
+            this.panHarga.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbBefore;
-        private System.Windows.Forms.Button bg;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -416,13 +305,14 @@
         private System.Windows.Forms.Button btnMaster;
         private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button btnReceivable;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cbBarang;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panHarga;
+        private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.TextBox tbAfter;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbBarang;
+        private System.Windows.Forms.TextBox tbBefore;
     }
 }

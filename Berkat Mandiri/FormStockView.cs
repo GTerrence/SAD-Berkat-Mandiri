@@ -14,52 +14,47 @@ namespace Berkat_Mandiri
 {
     public partial class FormStockView : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // height of ellipse
-            int nHeightEllipse // width of ellipse
-        );
+        public string query1;
+        public int tb = 0;
+        public DataTable dtData;
         public FormStockView()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void refreshDgv()
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-        }
-
-        private void bg_Click(object sender, EventArgs e)
-        {
-
+            query1 = "select item_name `Nama Item`, harga `Harga`, ukuran `Ukuran`, satuan `Satuan`, quantity `Kuantitas` from stock";
+            if(tb == 1)
+            {
+                query1 += " where item_name like '%" + tbSearch.Text + "%'";
+            }
+            DbConnect.exQuery(query1, ref dtData);
+            dgvData.DataSource = dtData;
         }
 
         private void FormStockView_Load(object sender, EventArgs e)
         {
-
+            tb = 0;
+            refreshDgv();
         }
 
         private void btnKonversi_Click(object sender, EventArgs e)
         {
             Form f1 = new FormStockKonversi();
             f1.Show();
+        }
+
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+            tb = 1;
+            refreshDgv();
+        }
+
+        private void btnGanti_Click(object sender, EventArgs e)
+        {
+            Form f2 = new FormStockGanti();
+            f2.Show();
         }
     }
 
