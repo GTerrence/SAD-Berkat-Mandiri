@@ -16,10 +16,14 @@ namespace Berkat_Mandiri
         {
             InitializeComponent();
         }
+        static string que;
 
         private void FormTransaksi_Load(object sender, EventArgs e)
         {
             PJ_TranPen_1.BringToFront();
+            comboboxsupplier();
+            combobarang(ref PB_CB_Barang);
+            combobarang(ref PJ_CB_Barang);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -52,6 +56,24 @@ namespace Berkat_Mandiri
         private void PJ_Btn_Insert_Click(object sender, EventArgs e)
         {
             PJ_TranPen_1.BringToFront();
+        }
+        private void comboboxsupplier()
+        {
+            que = "Select * from supplier where `delete` = 0";
+            DataTable dt_sup = new DataTable();
+            DbConnect.exQuery(que, ref dt_sup);
+            pb_supplier.DataSource = dt_sup;
+            pb_supplier.DisplayMember = "supplier_name";
+            pb_supplier.ValueMember = "supplier_id";
+        }
+        private void combobarang(ref ComboBox CB)
+        {
+            que = "select stock_id `stock_id`, supplier_id `supplier_id`, concat(item_name,' ', ukuran , ' ', satuan) `item`, quantity `qty` from stock where `delete` = 0";
+            DataTable dt_barang = new DataTable();
+            DbConnect.exQuery(que, ref dt_barang);
+            CB.DataSource = dt_barang;
+            CB.ValueMember = "stock_id";
+            CB.DisplayMember = "item";
         }
     }
 }
