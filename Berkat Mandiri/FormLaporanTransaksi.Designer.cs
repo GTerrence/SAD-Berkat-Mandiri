@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,7 +43,6 @@
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
-            this.PJ_Next = new System.Windows.Forms.Button();
             this.PJ_DGV = new System.Windows.Forms.DataGridView();
             this.PJ_PanCari = new System.Windows.Forms.Panel();
             this.PJ_TBP_Cari = new System.Windows.Forms.TableLayoutPanel();
@@ -66,20 +67,17 @@
             this.PJ_Tb_Total = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.PB_DGV = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pb_supplier = new System.Windows.Forms.ComboBox();
             this.pb_dtp2 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.pb_nota_id = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pb_dtp1 = new System.Windows.Forms.DateTimePicker();
-            this.pb_lunas = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -191,7 +189,6 @@
             // 
             // PJ_TranPen_1
             // 
-            this.PJ_TranPen_1.Controls.Add(this.PJ_Next);
             this.PJ_TranPen_1.Controls.Add(this.PJ_DGV);
             this.PJ_TranPen_1.Controls.Add(this.PJ_PanCari);
             this.PJ_TranPen_1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -200,40 +197,35 @@
             this.PJ_TranPen_1.Size = new System.Drawing.Size(860, 453);
             this.PJ_TranPen_1.TabIndex = 10;
             // 
-            // PJ_Next
-            // 
-            this.PJ_Next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
-            this.PJ_Next.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PJ_Next.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Next.Location = new System.Drawing.Point(755, 432);
-            this.PJ_Next.Name = "PJ_Next";
-            this.PJ_Next.Size = new System.Drawing.Size(105, 21);
-            this.PJ_Next.TabIndex = 16;
-            this.PJ_Next.Text = "Next";
-            this.PJ_Next.UseVisualStyleBackColor = false;
-            this.PJ_Next.Click += new System.EventHandler(this.PJ_Next_Click);
-            // 
             // PJ_DGV
             // 
             this.PJ_DGV.AllowUserToAddRows = false;
             this.PJ_DGV.AllowUserToDeleteRows = false;
             this.PJ_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PJ_DGV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.PJ_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PJ_DGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.PJ_DGV.Dock = System.Windows.Forms.DockStyle.Top;
             this.PJ_DGV.Location = new System.Drawing.Point(0, 189);
             this.PJ_DGV.Name = "PJ_DGV";
             this.PJ_DGV.ReadOnly = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.PJ_DGV.Size = new System.Drawing.Size(860, 243);
             this.PJ_DGV.TabIndex = 15;
             // 
@@ -288,6 +280,7 @@
             this.pj_dtp2.Name = "pj_dtp2";
             this.pj_dtp2.Size = new System.Drawing.Size(301, 36);
             this.pj_dtp2.TabIndex = 11;
+            this.pj_dtp2.ValueChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // label15
             // 
@@ -377,6 +370,7 @@
             this.pj_dtp1.Name = "pj_dtp1";
             this.pj_dtp1.Size = new System.Drawing.Size(240, 36);
             this.pj_dtp1.TabIndex = 7;
+            this.pj_dtp1.ValueChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // pj_lunas
             // 
@@ -392,6 +386,7 @@
             this.pj_lunas.Name = "pj_lunas";
             this.pj_lunas.Size = new System.Drawing.Size(303, 38);
             this.pj_lunas.TabIndex = 9;
+            this.pj_lunas.SelectedIndexChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // pictureBox1
             // 
@@ -512,7 +507,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.PB_DGV);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -521,39 +515,35 @@
             this.panel5.Size = new System.Drawing.Size(860, 453);
             this.panel5.TabIndex = 11;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(755, 432);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 21);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // PB_DGV
             // 
             this.PB_DGV.AllowUserToAddRows = false;
             this.PB_DGV.AllowUserToDeleteRows = false;
             this.PB_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PB_DGV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PB_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PB_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.PB_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PB_DGV.DefaultCellStyle = dataGridViewCellStyle5;
             this.PB_DGV.Dock = System.Windows.Forms.DockStyle.Top;
             this.PB_DGV.Location = new System.Drawing.Point(0, 189);
             this.PB_DGV.Name = "PB_DGV";
             this.PB_DGV.ReadOnly = true;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PB_DGV.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PB_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.PB_DGV.Size = new System.Drawing.Size(860, 243);
             this.PB_DGV.TabIndex = 15;
             // 
@@ -576,14 +566,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.95238F));
             this.tableLayoutPanel2.Controls.Add(this.pb_supplier, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.pb_dtp2, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.pb_nota_id, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pb_dtp1, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pb_lunas, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 2, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(10, 10);
@@ -607,6 +595,7 @@
             this.pb_supplier.Name = "pb_supplier";
             this.pb_supplier.Size = new System.Drawing.Size(242, 38);
             this.pb_supplier.TabIndex = 12;
+            this.pb_supplier.SelectedValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // pb_dtp2
             // 
@@ -620,18 +609,7 @@
             this.pb_dtp2.Name = "pb_dtp2";
             this.pb_dtp2.Size = new System.Drawing.Size(301, 36);
             this.pb_dtp2.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(455, 42);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.label4.Size = new System.Drawing.Size(79, 42);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Lunas";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pb_dtp2.ValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // pb_nota_id
             // 
@@ -642,6 +620,7 @@
             this.pb_nota_id.Name = "pb_nota_id";
             this.pb_nota_id.Size = new System.Drawing.Size(242, 39);
             this.pb_nota_id.TabIndex = 5;
+            this.pb_nota_id.TextChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // label10
             // 
@@ -697,17 +676,7 @@
             this.pb_dtp1.Name = "pb_dtp1";
             this.pb_dtp1.Size = new System.Drawing.Size(240, 36);
             this.pb_dtp1.TabIndex = 7;
-            // 
-            // pb_lunas
-            // 
-            this.pb_lunas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_lunas.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pb_lunas.FormattingEnabled = true;
-            this.pb_lunas.Location = new System.Drawing.Point(537, 42);
-            this.pb_lunas.Margin = new System.Windows.Forms.Padding(0);
-            this.pb_lunas.Name = "pb_lunas";
-            this.pb_lunas.Size = new System.Drawing.Size(303, 38);
-            this.pb_lunas.TabIndex = 9;
+            this.pb_dtp1.ValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // pictureBox2
             // 
@@ -780,7 +749,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox PJ_Tb_Total;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button PJ_Next;
         private System.Windows.Forms.DataGridView PJ_DGV;
         private System.Windows.Forms.Panel PJ_PanCari;
         private System.Windows.Forms.TableLayoutPanel PJ_TBP_Cari;
@@ -796,19 +764,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker pj_dtp2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView PB_DGV;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DateTimePicker pb_dtp2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox pb_nota_id;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker pb_dtp1;
-        private System.Windows.Forms.ComboBox pb_lunas;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox pb_supplier;
     }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Berkat_Mandiri
 {
@@ -25,17 +26,31 @@ namespace Berkat_Mandiri
             pb_dtp2.Value = DateTime.Now;
             pb_dtp1.Value = DateTime.Now.Subtract(TimeSpan.FromDays(7));
             comboboxlunas(ref pj_lunas);
-            comboboxlunas(ref pb_lunas);
             RefreshPenjualan();
             comboboxsupplier();
+            RefreshPembelian();
         }
         private void RefreshPenjualan()
-        {
-            que = "select t.nota_id `Nota`, p.pelanggan_name `Pelanggan`, t.tanggal_penjualan `Tanggal`, t.total_harga `Total Harga`, t.lunas `Status`";
-            que += " from transaksi t left join pelanggan p on t.pelanggan_id = p.pelanggan_id ";
-            que += " where t.nota_id like '%"+ pj_nota_id.Text + "%' and p.pelanggan_name like '%"+ pj_pelanggan.Text +"%' and t.tanggal_penjualan >= '"+ pj_dtp1.Value.ToString("yyyy-MM-dd") +"' and t.tanggal_penjualan <= '"+ pj_dtp2.Value.ToString("yyyy-MM-dd") + "' and t.lunas = if( '" + pj_lunas.SelectedIndex + "' = 2 , t.lunas, '" + pj_lunas.SelectedIndex +"') and t.`delete` = 0";
-            DataTable dt_transaksi = new DataTable();
-            DbConnect.exQuery(que, ref dt_transaksi);
+        {            
+            DataTable dt_transaksi = new DataTable();            
+            MySqlCommand cmd = new MySqlCommand("laporan_transaksi", DbConnect.connection)
+            {
+                CommandType = CommandType.StoredProcedure,                
+            };
+            MySqlParameter[] Pam = new MySqlParameter[5];
+            Pam[0] = new MySqlParameter("nnota", MySqlDbType.VarChar)
+            {Value = pj_nota_id.Text};
+            Pam[1] = new MySqlParameter("plnggn_name", MySqlDbType.VarChar)
+            { Value = pj_pelanggan.Text };
+            Pam[2] = new MySqlParameter("tgl_aw", MySqlDbType.VarChar)
+            { Value = pj_dtp1.Value.ToString("yyyy-MM-dd") };
+            Pam[3] = new MySqlParameter("tgl_ak", MySqlDbType.VarChar)
+            { Value = pj_dtp2.Value.ToString("yyyy-MM-dd") };
+            Pam[4] = new MySqlParameter("lun", MySqlDbType.VarChar)
+            { Value = pj_lunas.SelectedIndex.ToString() };
+            cmd.Parameters.AddRange(Pam); 
+            MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+            adap.Fill(dt_transaksi);
             PJ_DGV.DataSource = dt_transaksi;
             foreach (DataGridViewColumn col in PJ_DGV.Columns)
             {
@@ -46,6 +61,10 @@ namespace Berkat_Mandiri
         {
             RefreshPenjualan();
         }
+        private void PB_cari_textberubah(object sender, EventArgs e)
+        {
+            RefreshPembelian();
+        }
 
         private void PJ_Next_Click(object sender, EventArgs e)
         {
@@ -53,16 +72,45 @@ namespace Berkat_Mandiri
         }
         private void RefreshPembelian() 
         {
-            
+            DataTable dt_pembelian = new DataTable();
+            MySqlCommand cmd = new MySqlCommand("laporan_pembelian", DbConnect.connection)
+            {
+                CommandType = CommandType.StoredProcedure,
+            };
+            MySqlParameter[] Pam = new MySqlParameter[4];
+            Pam[0] = new MySqlParameter("beli_id", MySqlDbType.VarChar)
+            { Value = pb_nota_id.Text };
+            Pam[1] = new MySqlParameter("sup_id", MySqlDbType.VarChar)
+            { Value = pb_supplier.SelectedValue };
+            Pam[2] = new MySqlParameter("tgl_aw", MySqlDbType.VarChar)
+            { Value = pb_dtp1.Value.ToString("yyyy-MM-dd") };
+            Pam[3] = new MySqlParameter("tgl_ak", MySqlDbType.VarChar)
+            { Value = pb_dtp2.Value.ToString("yyyy-MM-dd") };
+            cmd.Parameters.AddRange(Pam);
+            MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+            adap.Fill(dt_pembelian);
+            PB_DGV.DataSource = dt_pembelian;
+            foreach (DataGridViewColumn col in PB_DGV.Columns)
+            {
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
         }
         private void comboboxsupplier()
         {
-            que = "Select * from supplier where `delete` = 0";
+            que = "Select supplier_id, supplier_name from supplier where `delete` = 0";
             DataTable dt_sup = new DataTable();
             DbConnect.exQuery(que, ref dt_sup);
+            pb_supplier.Items.Clear();
+            //pb_supplier.Items.Add();
+            DataRow rr = dt_sup.NewRow();
+            rr["supplier_id"] = "Semua";
+            rr["supplier_name"] = "Semua";
+            dt_sup.Rows.InsertAt(rr,0);
             pb_supplier.DataSource = dt_sup;
             pb_supplier.DisplayMember = "supplier_name";
             pb_supplier.ValueMember = "supplier_id";
+            pb_supplier.SelectedIndex = 0;
+
         }
         private void comboboxlunas(ref ComboBox CB)
         {
@@ -77,6 +125,5 @@ namespace Berkat_Mandiri
             CB.ValueMember = "status_index";
             CB.SelectedValue = 2;
         }
-
     }
 }
