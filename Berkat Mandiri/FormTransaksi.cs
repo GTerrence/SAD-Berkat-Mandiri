@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Berkat_Mandiri
 {
@@ -17,13 +18,21 @@ namespace Berkat_Mandiri
             InitializeComponent();
         }
         static string que;
-
+        static DataTable dt_barang_beli = new DataTable();
+        static DataTable dt_barang_jual = new DataTable();
+        static string barangjual = "";
+        static string barangbeli = "";
+        static int TotalJual = 0;
+        static int TotalBeli = 0;
         private void FormTransaksi_Load(object sender, EventArgs e)
         {
             PJ_TranPen_1.BringToFront();
+            PB_TranPem_1.BringToFront();
             comboboxsupplier();
-            combobarang(ref PB_CB_Barang);
-            combobarang(ref PJ_CB_Barang);
+            combobarang(ref PJ_CB_Barang, "semua", ref dt_barang_jual);
+            combobarang(ref PB_CB_Barang, pb_supplier.SelectedValue.ToString(), ref dt_barang_beli);
+            PJ_CB_HargaKhusus.Checked = false;
+            PB_CB_HargaKhusus.Checked = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -33,28 +42,107 @@ namespace Berkat_Mandiri
 
         private void PJ_Add_Click(object sender, EventArgs e)
         {
-            //Untuk Menambah Data Ke DataGridView
-            DataGridViewRow databaris = new DataGridViewRow();
-            foreach (DataGridViewCell dc in PJ_DGV.Columns)
-            {
-                databaris.Cells.Add(dc);
-            }
-            databaris.Cells["PJ_BarangID"].Value = PJ_CB_Barang.SelectedIndex;
-            databaris.Cells["PJ_Barang"].Value = PJ_CB_Barang.SelectedItem;
-            databaris.Cells["PJ_Quan"].Value = PJ_Num_Quan.Value;
-            databaris.Cells["PJ_Harga"].Value = "10000";
-            databaris.Cells["PJ_Total"].Value = PJ_Num_Quan.Value * Convert.ToInt32(databaris.Cells["PJ_Harga"].Value);
-            databaris.Cells["PJ_DeleteData"].Value = "Delete";
-            PJ_DGV.Rows.Add(databaris);
+            AddDataToGrid(ref PJ_DGV, dt_barang_jual, PJ_CB_Barang, PJ_Num_Quan, PJ_CB_HargaKhusus, PJ_TB_HargaKhusus);
         }
-
-        private void PJ_Next_Click(object sender, EventArgs e)
+        private void PB_Add_Click(object sender, EventArgs e)
         {
-            PJ_TranPen_2.BringToFront();            
+            AddDataToGrid(ref PB_DGV, dt_barang_beli, PB_CB_Barang, PB_Num_Quan, PB_CB_HargaKhusus, PB_TB_HargaKhusus);
+        }
+        private void AddDataToGrid(ref DataGridView DGV, DataTable DTT, ComboBox CBB,NumericUpDown NUD ,CheckBox CBox, TextBox Harsus)
+        {
+            Boolean SudahAda = false;
+
+            DataGridViewRow databaris = new DataGridViewRow();
+            databaris.CreateCells(DGV);
+            databaris.Cells[0].Value = CBB.SelectedValue;
+            databaris.Cells[1].Value = DTT.Rows[CBB.SelectedIndex]["Produk"];
+            databaris.Cells[2].Value = NUD.Value;
+            if (CBox.Checked == false)
+            {
+                databaris.Cells[3].Value = DTT.Rows[CBB.SelectedIndex]["Harga"];
+            }
+            else
+            {
+                databaris.Cells[3].Value = Harsus.Text;
+            }
+            databaris.Cells[4].Value = Convert.ToInt32(databaris.Cells[2].Value) * Convert.ToInt32(databaris.Cells[3].Value);
+            databaris.Cells[5].Value = "Delete";
+            foreach (DataGridViewRow Row in DGV.Rows)
+            {
+                if (Row.Cells[0].Value == databaris.Cells[0].Value)
+                {
+                    SudahAda = true;
+                    for (int ii = 1; ii < 5; ii++)
+                    {
+                        Row.Cells[ii].Value = databaris.Cells[ii].Value;
+                    }
+                    break;
+                };
+            };
+            if (SudahAda != true)
+            {
+                DGV.Rows.Add(databaris);
+            }
+        }
+        private void PB_Back_Click(object sender, EventArgs e)
+        {
+            PB_TranPem_1.BringToFront();
         }
 
+        private void PB_Next_Click(object sender, EventArgs e)
+        {
+            NextButton(ref barangbeli, ref TotalBeli, PB_DGV, ref PB_Tb_Total);
+            PB_TranPem_2.BringToFront();
+        }
+
+        private void PJ_Back_Click(object sender, EventArgs e)
+        {
+            PJ_TranPen_1.BringToFront();
+        }
         private void PJ_Btn_Insert_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DbConnect.connection.Open();
+                MySqlCommand Com = new MySqlCommand()
+                {
+                    CommandText = "tambah_penjualan",
+                    CommandType = CommandType.StoredProcedure,
+                    Connection = DbConnect.connection
+                };
+                MySqlParameter[] pam = new MySqlParameter[4];
+                pam[0] = new MySqlParameter("data_barang", MySqlDbType.VarChar) 
+                {Value = barangjual };
+                pam[1] = new MySqlParameter("ttanggal", MySqlDbType.Date)
+                { Value = DateTime.Now.ToString("yyyy-MM-dd") };
+                pam[2] = new MySqlParameter("pel_id", MySqlDbType.VarChar)
+                { Value = PJ_TB_Nama.Text };
+                pam[3] = new MySqlParameter("bay", MySqlDbType.Int32)
+                { Value = Convert.ToInt32(PJ_TB_Bayar.Text) };
+                Com.Parameters.AddRange(pam);
+                Com.ExecuteNonQuery();
+                DbConnect.connection.Close();
+                int TotalPenjualan = 0;
+                foreach (DataGridViewRow rrow in PJ_DGV.Rows)
+                {
+                    TotalPenjualan += Convert.ToInt32(rrow.Cells[4].Value);
+                }
+                string pesan = "Transaksi Penjualan Berhasil";
+                if (TotalPenjualan <= Convert.ToInt32(PJ_TB_Bayar.Text))
+                {
+                    pesan += ". Kembalian Rp" + Kembalian(Convert.ToInt32(PJ_TB_Bayar.Text), TotalPenjualan);
+                }
+                else
+                {
+                    pesan += ". Transaksi Piutang";
+                }
+                MessageBox.Show(pesan, "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                DbConnect.connection.Close();
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             PJ_TranPen_1.BringToFront();
         }
         private void comboboxsupplier()
@@ -65,15 +153,120 @@ namespace Berkat_Mandiri
             pb_supplier.DataSource = dt_sup;
             pb_supplier.DisplayMember = "supplier_name";
             pb_supplier.ValueMember = "supplier_id";
+            pb_supplier.SelectedIndex = 0;
         }
-        private void combobarang(ref ComboBox CB)
+        private void combobarang(ref ComboBox CB, string supplier_id, ref DataTable DT_Bar)
         {
-            que = "select stock_id `stock_id`, supplier_id `supplier_id`, concat(item_name,' ', ukuran , ' ', satuan) `item`, quantity `qty` from stock where `delete` = 0";
-            DataTable dt_barang = new DataTable();
-            DbConnect.exQuery(que, ref dt_barang);
-            CB.DataSource = dt_barang;
-            CB.ValueMember = "stock_id";
-            CB.DisplayMember = "item";
+            //que = "select stock_id `stock_id`, supplier_id `supplier_id`, concat(item_name,' ', ukuran , ' ', satuan) `item`, quantity `qty` from stock where `delete` = 0";
+            DT_Bar = new DataTable();
+            //DbConnect.exQuery(que, ref dt_barang);            
+            MySqlCommand com = new MySqlCommand()
+            {
+                CommandText = "barang_dari_supplier",
+                CommandType = CommandType.StoredProcedure,
+                Connection = DbConnect.connection
+            };
+            MySqlParameter pam = new MySqlParameter("sup_id", MySqlDbType.VarChar);
+            pam.Value = supplier_id;
+            com.Parameters.Add(pam);
+            MySqlDataAdapter adap = new MySqlDataAdapter(com);
+            adap.Fill(DT_Bar);
+            CB.DataSource = DT_Bar;
+            CB.ValueMember = "ID";
+            CB.DisplayMember = "Produk";            
+        }
+
+        private void pb_supplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            combobarang(ref PB_CB_Barang, pb_supplier.SelectedValue.ToString(), ref dt_barang_beli);
+            //PB_CB_Barang.SelectedIndex = 0;
+        }
+        private void textbox_harga_khusus(CheckBox cc, ref TextBox bb)
+        {
+            if (cc.Checked == true)
+            {
+                bb.Enabled = true;
+            }
+            else
+            {
+                bb.Enabled = false;
+            };   
+        }
+
+        private void PJ_CB_HargaKhusus_CheckedChanged(object sender, EventArgs e)
+        {
+            textbox_harga_khusus(PJ_CB_HargaKhusus, ref PJ_TB_HargaKhusus);
+        }
+
+        private void PB_CB_HargaKhusus_CheckedChanged(object sender, EventArgs e)
+        {
+            textbox_harga_khusus(PB_CB_HargaKhusus, ref PB_TB_HargaKhusus);
+        }
+        private void PJ_Next_Click(object sender, EventArgs e)
+        {
+            NextButton(ref barangjual, ref TotalJual, PJ_DGV, ref PJ_Tb_Total);
+            PJ_TranPen_2.BringToFront();
+        }
+        private void NextButton(ref string datadetailbarang,ref int Total, DataGridView DGV, ref TextBox TB_Total)
+        {
+            datadetailbarang = "";
+            Total = 0;
+            foreach (DataGridViewRow ro in DGV.Rows)
+            {
+                Total += Convert.ToInt32(ro.Cells[4].Value);
+                datadetailbarang += ro.Cells[0].Value.ToString() + "," + ro.Cells[2].Value.ToString() + "," + ro.Cells[3].Value.ToString();
+                if (ro != DGV.Rows[DGV.Rows.Count - 1])
+                {
+                    datadetailbarang += ";";
+                }
+            }
+            TB_Total.Text = Total.ToString();            
+        }
+        private void ExProcedureNonQuery(string Query, MySqlCommand Command)
+        {
+            
+        }
+        private int Kembalian(int bayar, int total)
+        {
+            return total - bayar;
+        }
+        private void PB_Btn_Insert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DbConnect.connection.Open();
+                MySqlParameter[] pam = new MySqlParameter[3];
+                pam[0] = new MySqlParameter("data_barang", MySqlDbType.VarChar)
+                { Value = barangbeli };
+                pam[1] = new MySqlParameter("ttanggal", MySqlDbType.Date)
+                { Value = DateTime.Now.ToString("yyyy-MM-dd") };
+                pam[2] = new MySqlParameter("sup_id", MySqlDbType.VarChar)
+                { Value = pb_supplier.SelectedValue.ToString() };
+                MySqlCommand com = new MySqlCommand()
+                {
+                    CommandText = "tambah_pembelian",
+                    CommandType = CommandType.StoredProcedure,
+                    Connection = DbConnect.connection
+                };
+                com.Parameters.AddRange(pam);
+                com.ExecuteNonQuery();
+                DbConnect.connection.Close();
+                MessageBox.Show("Transaksi Pembelian","Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PB_DGV.Rows.Clear();
+            }
+            catch (Exception ex)
+            {
+                DbConnect.connection.Close();
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
+        private void DGV_Delete_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView DG = (DataGridView)sender;
+            if (e.ColumnIndex == 5)
+            {
+                DG.Rows.RemoveAt(e.RowIndex);
+            }
         }
     }
 }
