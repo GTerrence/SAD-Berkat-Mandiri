@@ -98,6 +98,7 @@ namespace Berkat_Mandiri
                 {
                     query2 = "update stock set harga = '" + tbAfter.Text + "' where stock_id = '" + cbBarang.SelectedValue.ToString() + "'";
                     MessageBox.Show(query2);
+                    DbConnect.exnonQuery(query2);
                 }
             }
             catch (Exception x)

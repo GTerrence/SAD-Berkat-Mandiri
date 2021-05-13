@@ -32,17 +32,21 @@ namespace Berkat_Mandiri
         {
             try
             {
-                if(hasil != 0)
+                if(hasil != 0 || (hasil == 0 && sisa > 0))
                 {
                     query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]) - Convert.ToInt32(numQty.Value), dtCbBarang.Rows[cbBarang.SelectedIndex][0]);
                     MessageBox.Show(query1);
+                    DbConnect.exnonQuery(query1);
                     query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbSat.Rows[cbSatuan.SelectedIndex][4]) + hasil, dtCbSat.Rows[cbSatuan.SelectedIndex][0]);
                     MessageBox.Show(query1);
+                    DbConnect.exnonQuery(query1);
                     if (sisa > 0)
                     {
                         query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbSat.Rows[0][4]) + sisa, dtCbSat.Rows[0][0]);
                         MessageBox.Show(query1);
+                        DbConnect.exnonQuery(query1);
                     }
+                    form_clear();
                 } else if(TData == 0)
                 {
                     MessageBox.Show("Data yang dimasukan belum lengkap", "Error");
@@ -129,6 +133,10 @@ namespace Berkat_Mandiri
                         lbQty2.Text = hasil + " Karung + " + sisa + " kg";
                     }
                     TData = 1;
+                } else
+                {
+                    lbQty1.Text = numQty.Value.ToString() + " Karung";
+                    lbQty2.Text = "0 Karung";
                 }
             } catch(Exception x) {
                 MessageBox.Show(x.Message);
@@ -143,9 +151,10 @@ namespace Berkat_Mandiri
             TBarang = 0;
             cbBarang.SelectedIndex = -1;
             TBarang = 1;
+            TSatuan = 0;
             cbSatuan.DataSource = null;
-            lbQty1.Text = "";
-            lbQty2.Text = "";
+            lbQty1.Text = "0 Karung";
+            lbQty2.Text = "0 Karung";
             tbStID.Text = "";
         }
         private void cbBarang_SelectedIndexChanged(object sender, EventArgs e)
@@ -164,6 +173,7 @@ namespace Berkat_Mandiri
                     cbSatuan.SelectedIndex = -1;
                     TSatuan = 1;
                     lbBarang1.Text = cbBarang.GetItemText(cbBarang.SelectedItem);
+
                     cek_konversi();
                 }
             } catch (Exception x)
