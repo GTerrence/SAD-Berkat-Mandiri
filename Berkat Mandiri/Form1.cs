@@ -12,6 +12,8 @@ namespace Berkat_Mandiri
 {
     public partial class FormBase : Form
     {
+        private Button currentButton;
+        private Form activeForm;
         public FormBase()
         {
             InitializeComponent();
@@ -45,8 +47,34 @@ namespace Berkat_Mandiri
 
         private void btnStock_Click(object sender, EventArgs e)
         {
-            FormStockView form2 = new FormStockView();
-            form2.ShowDialog();
+            OpenChildForm(new FormStockView(), sender);
+        }
+
+        private void activate_button(Button btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currentButton != btnSender)
+                {
+
+                }
+            }
+        }
+
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panMain.Controls.Add(childForm);
+            //this.panMain.Controls.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

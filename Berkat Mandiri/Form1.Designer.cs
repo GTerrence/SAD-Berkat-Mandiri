@@ -36,6 +36,7 @@
             this.btnReceivable = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -166,12 +167,20 @@
             this.label3.Text = "BERKAT MANDIRI";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // panMain
+            // 
+            this.panMain.Location = new System.Drawing.Point(347, 159);
+            this.panMain.Name = "panMain";
+            this.panMain.Size = new System.Drawing.Size(928, 549);
+            this.panMain.TabIndex = 4;
+            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.panMain);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.panel1);
@@ -198,6 +207,7 @@
         private System.Windows.Forms.Button btnReceivable;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panMain;
     }
 }
 
