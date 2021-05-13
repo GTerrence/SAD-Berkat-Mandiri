@@ -86,6 +86,7 @@
             this.panReceivable.Name = "panReceivable";
             this.panReceivable.Size = new System.Drawing.Size(341, 72);
             this.panReceivable.TabIndex = 6;
+            this.panReceivable.Tag = "btnReceivable";
             // 
             // btnReHist
             // 
@@ -99,7 +100,8 @@
             this.btnReHist.Size = new System.Drawing.Size(339, 44);
             this.btnReHist.TabIndex = 4;
             this.btnReHist.Text = "History";
-            this.btnReHist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReHist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReHist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReHist.UseVisualStyleBackColor = true;
             // 
             // btnReOn
@@ -114,7 +116,8 @@
             this.btnReOn.Size = new System.Drawing.Size(339, 44);
             this.btnReOn.TabIndex = 3;
             this.btnReOn.Text = "Ongoing Receivable";
-            this.btnReOn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReOn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReOn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReOn.UseVisualStyleBackColor = true;
             // 
             // btnReceivable
@@ -150,6 +153,7 @@
             this.panTransaksi.Name = "panTransaksi";
             this.panTransaksi.Size = new System.Drawing.Size(341, 72);
             this.panTransaksi.TabIndex = 6;
+            this.panTransaksi.Tag = "btnTransaksi";
             // 
             // btnTrLaporan
             // 
@@ -163,7 +167,8 @@
             this.btnTrLaporan.Size = new System.Drawing.Size(339, 44);
             this.btnTrLaporan.TabIndex = 4;
             this.btnTrLaporan.Text = "Laporan";
-            this.btnTrLaporan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTrLaporan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrLaporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrLaporan.UseVisualStyleBackColor = true;
             // 
             // btnTrInput
@@ -178,7 +183,8 @@
             this.btnTrInput.Size = new System.Drawing.Size(339, 44);
             this.btnTrInput.TabIndex = 3;
             this.btnTrInput.Text = "Input Data";
-            this.btnTrInput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTrInput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrInput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrInput.UseVisualStyleBackColor = true;
             // 
             // btnTransaksi
@@ -215,6 +221,7 @@
             this.panStock.Name = "panStock";
             this.panStock.Size = new System.Drawing.Size(341, 72);
             this.panStock.TabIndex = 5;
+            this.panStock.Tag = "btnStock";
             // 
             // btnStKonversi
             // 
@@ -228,7 +235,8 @@
             this.btnStKonversi.Size = new System.Drawing.Size(339, 44);
             this.btnStKonversi.TabIndex = 5;
             this.btnStKonversi.Text = "Konversi Stock";
-            this.btnStKonversi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStKonversi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStKonversi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStKonversi.UseVisualStyleBackColor = true;
             this.btnStKonversi.Click += new System.EventHandler(this.btnStKonversi_Click);
             // 
@@ -244,7 +252,8 @@
             this.btnStGanti.Size = new System.Drawing.Size(339, 44);
             this.btnStGanti.TabIndex = 4;
             this.btnStGanti.Text = "Ganti Harga";
-            this.btnStGanti.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStGanti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStGanti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStGanti.UseVisualStyleBackColor = true;
             this.btnStGanti.Click += new System.EventHandler(this.btnStGanti_Click);
             // 
@@ -260,7 +269,8 @@
             this.btnStView.Size = new System.Drawing.Size(339, 44);
             this.btnStView.TabIndex = 3;
             this.btnStView.Text = "View Stock";
-            this.btnStView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStView.UseVisualStyleBackColor = true;
             this.btnStView.Click += new System.EventHandler(this.btnStView_Click);
             // 
@@ -298,6 +308,7 @@
             this.panMaster.Name = "panMaster";
             this.panMaster.Size = new System.Drawing.Size(341, 72);
             this.panMaster.TabIndex = 6;
+            this.panMaster.Tag = "btnMaster";
             // 
             // btnMaSupp
             // 
@@ -311,7 +322,8 @@
             this.btnMaSupp.Size = new System.Drawing.Size(339, 44);
             this.btnMaSupp.TabIndex = 5;
             this.btnMaSupp.Text = "Supplier";
-            this.btnMaSupp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaSupp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaSupp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaSupp.UseVisualStyleBackColor = true;
             // 
             // btnMaCust
@@ -326,7 +338,8 @@
             this.btnMaCust.Size = new System.Drawing.Size(339, 44);
             this.btnMaCust.TabIndex = 4;
             this.btnMaCust.Text = "Pelanggan";
-            this.btnMaCust.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaCust.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaCust.UseVisualStyleBackColor = true;
             // 
             // btnMaProd
@@ -341,7 +354,8 @@
             this.btnMaProd.Size = new System.Drawing.Size(339, 44);
             this.btnMaProd.TabIndex = 3;
             this.btnMaProd.Text = "Produk";
-            this.btnMaProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaProd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaProd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaProd.UseVisualStyleBackColor = true;
             // 
             // btnMaster

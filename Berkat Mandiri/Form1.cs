@@ -21,10 +21,21 @@ namespace Berkat_Mandiri
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnMaster.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
-            btnTransaksi.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
-            btnStock.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
-            btnReceivable.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            foreach (Panel pan in panMenu.Controls.OfType<Panel>())
+            {
+                foreach (Button btn in pan.Controls.OfType<Button>())
+                {
+                    if (btn.Name == pan.Tag.ToString())
+                    {
+                        btn.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+                    }
+                    else
+                    {
+                        btn.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_right, new Size(20, 24));
+                    }
+                    btn.ImageAlign = ContentAlignment.MiddleLeft;
+                }
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
