@@ -12,7 +12,7 @@ namespace Berkat_Mandiri
 {
     public partial class FormBase : Form
     {
-        private Button currentButton;
+        private Button prevButton;
         private Form activeForm;
         public FormBase()
         {
@@ -21,23 +21,19 @@ namespace Berkat_Mandiri
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnDashboard.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.home11, new Size(66, 62));
-            btnMaster.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.master, new Size(66, 62));
-            btnTransaksi.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.transaction, new Size(66, 62));
-            btnStock.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.stock, new Size(66, 62));
-            btnReceivable.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.receivable, new Size(66, 62));
+            btnMaster.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            btnTransaksi.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            btnStock.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            btnReceivable.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            var myForm = new FormDashboard();
-            myForm.Show();
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            FormTransaksi FormTransaksi = new FormTransaksi();
-            FormTransaksi.Show();
+            dropDown(sender);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -47,17 +43,13 @@ namespace Berkat_Mandiri
 
         private void btnStock_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormStockView(), sender);
+            dropDown(sender);
         }
 
         private void activate_button(Button btnSender)
         {
             if (btnSender != null)
             {
-                if (currentButton != btnSender)
-                {
-
-                }
             }
         }
 
@@ -72,9 +64,64 @@ namespace Berkat_Mandiri
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             this.panMain.Controls.Add(childForm);
-            //this.panMain.Controls.Tag = childForm;
+            this.panMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void btnMaster_Click(object sender, EventArgs e)
+        {
+            dropDown(sender);
+        }
+
+        private void dropDown (object sender)
+        {
+            if(prevButton != null && prevButton != ((Button)sender))
+            {
+                prevButton.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            }
+            prevButton = ((Button)sender);
+            foreach (Panel pan in panMenu.Controls.OfType<Panel>())
+            {
+                if(pan.Name == ((Button)sender).Tag.ToString())
+                {
+                    if (pan.Size == pan.MaximumSize)
+                    {
+                        ((Button)sender).Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+                        pan.Size = pan.MinimumSize;
+                    }
+                    else if (pan.Size == pan.MinimumSize)
+                    {
+                        ((Button)sender).Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_up, new Size(24, 20));
+                        pan.Size = pan.MaximumSize;
+                    }
+                } else
+                {
+                    if (pan.Size == pan.MaximumSize)
+                    {
+                        pan.Size = pan.MinimumSize;
+                    }
+                }
+            }
+        }
+        private void btnReceivable_Click(object sender, EventArgs e)
+        {
+            dropDown(sender);
+        }
+
+        private void btnStView_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormStockView(), sender);
+        }
+
+        private void btnStGanti_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormStockGanti(), sender);
+        }
+
+        private void btnStKonversi_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormStockKonversi(), sender);
         }
     }
 }

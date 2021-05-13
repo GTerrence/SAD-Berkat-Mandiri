@@ -190,5 +190,26 @@
   <ItemGroup>
     <None Include="Resources\Panah1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah up1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
