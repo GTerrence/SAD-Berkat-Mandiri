@@ -48,12 +48,13 @@ namespace Berkat_Mandiri
         {
             AddDataToGrid(ref PB_DGV, dt_barang_beli, PB_CB_Barang, PB_Num_Quan, PB_CB_HargaKhusus, PB_TB_HargaKhusus);
         }
+
         private void AddDataToGrid(ref DataGridView DGV, DataTable DTT, ComboBox CBB,NumericUpDown NUD ,CheckBox CBox, TextBox Harsus)
         {
             Boolean SudahAda = false;
 
             DataGridViewRow databaris = new DataGridViewRow();
-            databaris.CreateCells(DGV);
+            //databaris.CreateCells(DGV);
             databaris.Cells[0].Value = CBB.SelectedValue;
             databaris.Cells[1].Value = DTT.Rows[CBB.SelectedIndex]["Produk"];
             databaris.Cells[2].Value = NUD.Value;
@@ -67,6 +68,11 @@ namespace Berkat_Mandiri
             }
             databaris.Cells[4].Value = Convert.ToInt32(databaris.Cells[2].Value) * Convert.ToInt32(databaris.Cells[3].Value);
             databaris.Cells[5].Value = "Delete";
+            //databaris.Cells[5] = new DataGridViewButtonCell()
+            //{                
+                
+            //};
+            
             foreach (DataGridViewRow Row in DGV.Rows)
             {
                 if (Row.Cells[0].Value == databaris.Cells[0].Value)
@@ -266,6 +272,13 @@ namespace Berkat_Mandiri
             if (e.ColumnIndex == 5)
             {
                 DG.Rows.RemoveAt(e.RowIndex);
+            }
+        }
+        public class MyButtonCell : DataGridViewButtonCell
+        {
+            protected override void Paint(Graphics graphics, Rectangle clipBounds, Rectangle cellBounds, int rowIndex, DataGridViewElementStates elementState, object value, object formattedValue, string errorText, DataGridViewCellStyle cellStyle, DataGridViewAdvancedBorderStyle advancedBorderStyle, DataGridViewPaintParts paintParts)
+            {
+                ButtonRenderer.DrawButton(graphics, cellBounds, formattedValue.ToString(), new Font("Comic Sans MS", 9.0f, FontStyle.Bold), true, System.Windows.Forms.VisualStyles.PushButtonState.Default);
             }
         }
     }

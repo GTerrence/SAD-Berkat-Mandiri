@@ -39,15 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.PJ_TranPen_2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.PJ_Back = new System.Windows.Forms.Button();
-            this.PJ_Btn_Insert = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PJ_TB_Bayar = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.PJ_Tb_Total = new System.Windows.Forms.TextBox();
             this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
             this.PJ_Next = new System.Windows.Forms.Button();
             this.PJ_DGV = new System.Windows.Forms.DataGridView();
@@ -67,6 +58,15 @@
             this.PJ_CB_Barang = new System.Windows.Forms.ComboBox();
             this.PJ_Num_Quan = new System.Windows.Forms.NumericUpDown();
             this.PJ_Add = new System.Windows.Forms.Button();
+            this.PJ_TranPen_2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.PJ_Back = new System.Windows.Forms.Button();
+            this.PJ_Btn_Insert = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.PJ_TB_Bayar = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.PJ_Tb_Total = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.PB_TranPem_1 = new System.Windows.Forms.Panel();
             this.PB_Next = new System.Windows.Forms.Button();
@@ -101,13 +101,13 @@
             this.panel2.SuspendLayout();
             this.TC_Transaksi.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.PJ_TranPen_2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.PJ_TranPen_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_Num_Quan)).BeginInit();
+            this.PJ_TranPen_2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.PB_TranPem_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_DGV)).BeginInit();
@@ -196,117 +196,6 @@
             this.tabPage1.Size = new System.Drawing.Size(861, 469);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Penjualan";
-            // 
-            // PJ_TranPen_2
-            // 
-            this.PJ_TranPen_2.Controls.Add(this.panel4);
-            this.PJ_TranPen_2.Controls.Add(this.tableLayoutPanel1);
-            this.PJ_TranPen_2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PJ_TranPen_2.Location = new System.Drawing.Point(3, 3);
-            this.PJ_TranPen_2.Name = "PJ_TranPen_2";
-            this.PJ_TranPen_2.Padding = new System.Windows.Forms.Padding(150);
-            this.PJ_TranPen_2.Size = new System.Drawing.Size(855, 463);
-            this.PJ_TranPen_2.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.PJ_Back);
-            this.panel4.Controls.Add(this.PJ_Btn_Insert);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(150, 244);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(555, 48);
-            this.panel4.TabIndex = 4;
-            // 
-            // PJ_Back
-            // 
-            this.PJ_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PJ_Back.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PJ_Back.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Back.Location = new System.Drawing.Point(0, 0);
-            this.PJ_Back.Name = "PJ_Back";
-            this.PJ_Back.Size = new System.Drawing.Size(105, 48);
-            this.PJ_Back.TabIndex = 13;
-            this.PJ_Back.Text = "Back";
-            this.PJ_Back.UseVisualStyleBackColor = false;
-            this.PJ_Back.Click += new System.EventHandler(this.PJ_Back_Click);
-            // 
-            // PJ_Btn_Insert
-            // 
-            this.PJ_Btn_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
-            this.PJ_Btn_Insert.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PJ_Btn_Insert.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Btn_Insert.Location = new System.Drawing.Point(450, 0);
-            this.PJ_Btn_Insert.Name = "PJ_Btn_Insert";
-            this.PJ_Btn_Insert.Size = new System.Drawing.Size(105, 48);
-            this.PJ_Btn_Insert.TabIndex = 12;
-            this.PJ_Btn_Insert.Text = "Insert";
-            this.PJ_Btn_Insert.UseVisualStyleBackColor = false;
-            this.PJ_Btn_Insert.Click += new System.EventHandler(this.PJ_Btn_Insert_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.88372F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.02325F));
-            this.tableLayoutPanel1.Controls.Add(this.PJ_TB_Bayar, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PJ_Tb_Total, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(150, 150);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(555, 94);
-            this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // PJ_TB_Bayar
-            // 
-            this.PJ_TB_Bayar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PJ_TB_Bayar.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_TB_Bayar.Location = new System.Drawing.Point(215, 47);
-            this.PJ_TB_Bayar.Margin = new System.Windows.Forms.Padding(0);
-            this.PJ_TB_Bayar.Name = "PJ_TB_Bayar";
-            this.PJ_TB_Bayar.Size = new System.Drawing.Size(340, 39);
-            this.PJ_TB_Bayar.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 47);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Dibayarkan";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 47);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Total";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // PJ_Tb_Total
-            // 
-            this.PJ_Tb_Total.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PJ_Tb_Total.Enabled = false;
-            this.PJ_Tb_Total.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Tb_Total.Location = new System.Drawing.Point(215, 0);
-            this.PJ_Tb_Total.Margin = new System.Windows.Forms.Padding(0);
-            this.PJ_Tb_Total.Name = "PJ_Tb_Total";
-            this.PJ_Tb_Total.Size = new System.Drawing.Size(340, 39);
-            this.PJ_Tb_Total.TabIndex = 3;
             // 
             // PJ_TranPen_1
             // 
@@ -535,6 +424,117 @@
             this.PJ_Add.Text = "Add";
             this.PJ_Add.UseVisualStyleBackColor = false;
             this.PJ_Add.Click += new System.EventHandler(this.PJ_Add_Click);
+            // 
+            // PJ_TranPen_2
+            // 
+            this.PJ_TranPen_2.Controls.Add(this.panel4);
+            this.PJ_TranPen_2.Controls.Add(this.tableLayoutPanel1);
+            this.PJ_TranPen_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_TranPen_2.Location = new System.Drawing.Point(3, 3);
+            this.PJ_TranPen_2.Name = "PJ_TranPen_2";
+            this.PJ_TranPen_2.Padding = new System.Windows.Forms.Padding(150);
+            this.PJ_TranPen_2.Size = new System.Drawing.Size(855, 463);
+            this.PJ_TranPen_2.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.PJ_Back);
+            this.panel4.Controls.Add(this.PJ_Btn_Insert);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(150, 244);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(555, 48);
+            this.panel4.TabIndex = 4;
+            // 
+            // PJ_Back
+            // 
+            this.PJ_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.PJ_Back.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PJ_Back.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Back.Location = new System.Drawing.Point(0, 0);
+            this.PJ_Back.Name = "PJ_Back";
+            this.PJ_Back.Size = new System.Drawing.Size(105, 48);
+            this.PJ_Back.TabIndex = 13;
+            this.PJ_Back.Text = "Back";
+            this.PJ_Back.UseVisualStyleBackColor = false;
+            this.PJ_Back.Click += new System.EventHandler(this.PJ_Back_Click);
+            // 
+            // PJ_Btn_Insert
+            // 
+            this.PJ_Btn_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
+            this.PJ_Btn_Insert.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PJ_Btn_Insert.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Btn_Insert.Location = new System.Drawing.Point(450, 0);
+            this.PJ_Btn_Insert.Name = "PJ_Btn_Insert";
+            this.PJ_Btn_Insert.Size = new System.Drawing.Size(105, 48);
+            this.PJ_Btn_Insert.TabIndex = 12;
+            this.PJ_Btn_Insert.Text = "Insert";
+            this.PJ_Btn_Insert.UseVisualStyleBackColor = false;
+            this.PJ_Btn_Insert.Click += new System.EventHandler(this.PJ_Btn_Insert_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.88372F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.02325F));
+            this.tableLayoutPanel1.Controls.Add(this.PJ_TB_Bayar, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.PJ_Tb_Total, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(150, 150);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(555, 94);
+            this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // PJ_TB_Bayar
+            // 
+            this.PJ_TB_Bayar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_TB_Bayar.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_TB_Bayar.Location = new System.Drawing.Point(215, 47);
+            this.PJ_TB_Bayar.Margin = new System.Windows.Forms.Padding(0);
+            this.PJ_TB_Bayar.Name = "PJ_TB_Bayar";
+            this.PJ_TB_Bayar.Size = new System.Drawing.Size(340, 39);
+            this.PJ_TB_Bayar.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 47);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Dibayarkan";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 47);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Total";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PJ_Tb_Total
+            // 
+            this.PJ_Tb_Total.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_Tb_Total.Enabled = false;
+            this.PJ_Tb_Total.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Tb_Total.Location = new System.Drawing.Point(215, 0);
+            this.PJ_Tb_Total.Margin = new System.Windows.Forms.Padding(0);
+            this.PJ_Tb_Total.Name = "PJ_Tb_Total";
+            this.PJ_Tb_Total.Size = new System.Drawing.Size(340, 39);
+            this.PJ_Tb_Total.TabIndex = 3;
             // 
             // tabPage2
             // 
@@ -923,15 +923,15 @@
             this.panel2.PerformLayout();
             this.TC_Transaksi.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.PJ_TranPen_2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.PJ_TranPen_1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_Num_Quan)).EndInit();
+            this.PJ_TranPen_2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.PB_TranPem_1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_DGV)).EndInit();
@@ -959,12 +959,6 @@
         private System.Windows.Forms.Panel PJ_TranPen_1;
         private System.Windows.Forms.Button PJ_Next;
         private System.Windows.Forms.DataGridView PJ_DGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_BarangID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Barang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Quan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Harga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Total;
-        private System.Windows.Forms.DataGridViewButtonColumn PJ_DeleteData;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox PJ_TB_HargaKhusus;
         private System.Windows.Forms.Label label7;
@@ -1014,5 +1008,11 @@
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.Button PJ_Back;
         private System.Windows.Forms.Button PB_Back;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_BarangID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Barang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Quan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Harga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PJ_Total;
+        private System.Windows.Forms.DataGridViewButtonColumn PJ_DeleteData;
     }
 }
