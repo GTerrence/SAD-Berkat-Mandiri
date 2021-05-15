@@ -12,8 +12,9 @@ namespace Berkat_Mandiri
 {
     public partial class FormBase : Form
     {
-        private Button prevButton;
-        private Form activeForm;
+        private Button prevButton, activeButton;
+        public Form activeForm;
+        public static int TForm;
         public FormBase()
         {
             InitializeComponent();
@@ -36,10 +37,13 @@ namespace Berkat_Mandiri
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                 }
             }
+            OpenChildForm(new Form_Dashboard(), btnDashboard);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            closeDropdown(sender);
+            OpenChildForm(new Form_Dashboard(), sender);
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
@@ -59,23 +63,37 @@ namespace Berkat_Mandiri
 
         private void activate_button(Object btnSender)
         {
-            if (btnSender != null)
+            if (activeButton != null)
             {
-                if(prevButton != ((Button)btnSender))
+                if(activeButton != ((Button)btnSender))
                 {
-                    prevButton.BackColor = Color.FromArgb(19, 32, 51);
+                    activeButton.BackColor = Color.FromArgb(19, 32, 51);
                     ((Button)btnSender).BackColor = Color.FromArgb(196, 196, 196);
-                    prevButton = (Button)btnSender;
+                    activeButton = (Button)btnSender;
                 }
+            } else
+            {
+                ((Button)btnSender).BackColor = Color.FromArgb(196, 196, 196);
+                activeButton = (Button)btnSender;
             }
         }
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
+            if(childForm.Name == "Form_Dashboard")
+            {
+                childForm.FormClosed += callView;
+            }
+            if (TForm == 1)
+            {
+                activeForm = null;
+                dropDown(btnStock);
+            }
             if (activeForm != null)
             {
                 activeForm.Close();
             }
+            activate_button(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -94,7 +112,7 @@ namespace Berkat_Mandiri
 
         private void dropDown (object sender)
         {
-            if(prevButton != null && prevButton != ((Button)sender))
+            if(prevButton != null && prevButton != ((Button)sender) && prevButton.Name != "btnDashboard")
             {
                 prevButton.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
             }
@@ -122,6 +140,22 @@ namespace Berkat_Mandiri
                 }
             }
         }
+
+        private void closeDropdown(object sender)
+        {
+            if (prevButton != null && prevButton != ((Button)sender))
+            {
+                prevButton.Image = new Bitmap(Berkat_Mandiri.Properties.Resources.panah_down, new Size(24, 20));
+            }
+            prevButton = ((Button)sender);
+            foreach (Panel pan in panMenu.Controls.OfType<Panel>())
+            {
+                if (pan.Size == pan.MaximumSize)
+                {
+                    pan.Size = pan.MinimumSize;
+                }
+            }
+        }
         private void btnReceivable_Click(object sender, EventArgs e)
         {
             dropDown(sender);
@@ -129,20 +163,26 @@ namespace Berkat_Mandiri
 
         private void btnStView_Click(object sender, EventArgs e)
         {
-            activate_button(sender);
             OpenChildForm(new FormStockView(), sender);
         }
 
         private void btnStGanti_Click(object sender, EventArgs e)
         {
-            activate_button(sender);
             OpenChildForm(new FormStockGanti(), sender);
         }
 
         private void btnStKonversi_Click(object sender, EventArgs e)
         {
-            activate_button(sender);
             OpenChildForm(new FormStockKonversi(), sender);
+        }
+
+        private void callView(object sender, FormClosedEventArgs e)
+        {
+            if (TForm == 1)
+            {
+                OpenChildForm(new FormStockView(), btnStView);
+                TForm = 0;
+            }
         }
     }
 }

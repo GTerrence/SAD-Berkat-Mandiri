@@ -55,3 +55,4 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormSto
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormMasterData.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CopyComplete
+D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form_Dashboard.resources

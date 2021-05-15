@@ -288,7 +288,7 @@
             this.btnStock.Size = new System.Drawing.Size(339, 66);
             this.btnStock.TabIndex = 2;
             this.btnStock.Tag = "panStock";
-            this.btnStock.Text = " Stock";
+            this.btnStock.Text = "Stock";
             this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStock.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnStock.UseVisualStyleBackColor = true;
