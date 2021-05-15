@@ -57,10 +57,16 @@ namespace Berkat_Mandiri
             dropDown(sender);
         }
 
-        private void activate_button(Button btnSender)
+        private void activate_button(Object btnSender)
         {
             if (btnSender != null)
             {
+                if(prevButton != ((Button)btnSender))
+                {
+                    prevButton.BackColor = Color.FromArgb(19, 32, 51);
+                    ((Button)btnSender).BackColor = Color.FromArgb(196, 196, 196);
+                    prevButton = (Button)btnSender;
+                }
             }
         }
 
@@ -78,6 +84,7 @@ namespace Berkat_Mandiri
             this.panMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            lbTitle.Text = childForm.Text;
         }
 
         private void btnMaster_Click(object sender, EventArgs e)
@@ -122,16 +129,19 @@ namespace Berkat_Mandiri
 
         private void btnStView_Click(object sender, EventArgs e)
         {
+            activate_button(sender);
             OpenChildForm(new FormStockView(), sender);
         }
 
         private void btnStGanti_Click(object sender, EventArgs e)
         {
+            activate_button(sender);
             OpenChildForm(new FormStockGanti(), sender);
         }
 
         private void btnStKonversi_Click(object sender, EventArgs e)
         {
+            activate_button(sender);
             OpenChildForm(new FormStockKonversi(), sender);
         }
     }

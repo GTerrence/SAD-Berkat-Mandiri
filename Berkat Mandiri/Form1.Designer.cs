@@ -403,7 +403,7 @@
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.lbTitle.Location = new System.Drawing.Point(437, 32);
+            this.lbTitle.Location = new System.Drawing.Point(377, 37);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(161, 45);
             this.lbTitle.TabIndex = 1;
@@ -425,7 +425,7 @@
             // 
             this.panMain.Location = new System.Drawing.Point(347, 159);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(928, 549);
+            this.panMain.Size = new System.Drawing.Size(921, 549);
             this.panMain.TabIndex = 4;
             // 
             // FormBase

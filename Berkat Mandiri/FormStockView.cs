@@ -37,24 +37,16 @@ namespace Berkat_Mandiri
         {
             tb = 0;
             refreshDgv();
-        }
-
-        private void btnKonversi_Click(object sender, EventArgs e)
-        {
-            Form f1 = new FormStockKonversi();
-            f1.Show();
+            dgvData.Columns[0].Width = 300;
+            dgvData.Columns[1].Width = 100;
+            dgvData.Columns[2].Width = 100;
+            dgvData.Columns[3].Width = 100;
         }
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             tb = 1;
             refreshDgv();
-        }
-
-        private void btnGanti_Click(object sender, EventArgs e)
-        {
-            Form f2 = new FormStockGanti();
-            f2.Show();
         }
     }
 

@@ -30,18 +30,17 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.btnKonversi = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.btnGanti = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(52, 112);
+            this.label4.Location = new System.Drawing.Point(37, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 23);
             this.label4.TabIndex = 9;
@@ -50,53 +49,44 @@
             // tbSearch
             // 
             this.tbSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.tbSearch.Location = new System.Drawing.Point(273, 112);
+            this.tbSearch.Location = new System.Drawing.Point(233, 54);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(395, 20);
+            this.tbSearch.Size = new System.Drawing.Size(354, 20);
             this.tbSearch.TabIndex = 10;
             this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
-            // 
-            // btnKonversi
-            // 
-            this.btnKonversi.Location = new System.Drawing.Point(29, 41);
-            this.btnKonversi.Name = "btnKonversi";
-            this.btnKonversi.Size = new System.Drawing.Size(75, 23);
-            this.btnKonversi.TabIndex = 20;
-            this.btnKonversi.Text = "Konversi";
-            this.btnKonversi.UseVisualStyleBackColor = true;
-            this.btnKonversi.Click += new System.EventHandler(this.btnKonversi_Click);
             // 
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(49, 172);
+            this.dgvData.Location = new System.Drawing.Point(31, 100);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(863, 252);
+            this.dgvData.ReadOnly = true;
+            this.dgvData.Size = new System.Drawing.Size(700, 284);
             this.dgvData.TabIndex = 21;
             // 
-            // btnGanti
+            // label1
             // 
-            this.btnGanti.Location = new System.Drawing.Point(29, 12);
-            this.btnGanti.Name = "btnGanti";
-            this.btnGanti.Size = new System.Drawing.Size(75, 23);
-            this.btnGanti.TabIndex = 22;
-            this.btnGanti.Text = "Ganti";
-            this.btnGanti.UseVisualStyleBackColor = true;
-            this.btnGanti.Click += new System.EventHandler(this.btnGanti_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(323, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 23);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Cari Produk";
             // 
             // FormStockView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(972, 479);
-            this.Controls.Add(this.btnGanti);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.ClientSize = new System.Drawing.Size(797, 409);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvData);
-            this.Controls.Add(this.btnKonversi);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label4);
             this.Name = "FormStockView";
-            this.Text = "FormStockView";
+            this.Text = "Daftar Stock:";
             this.Load += new System.EventHandler(this.FormStockView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
@@ -107,8 +97,7 @@
         #endregion
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Button btnKonversi;
         private System.Windows.Forms.DataGridView dgvData;
-        private System.Windows.Forms.Button btnGanti;
+        private System.Windows.Forms.Label label1;
     }
 }

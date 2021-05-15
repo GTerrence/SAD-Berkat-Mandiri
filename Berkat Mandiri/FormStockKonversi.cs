@@ -99,13 +99,16 @@ namespace Berkat_Mandiri
         {
             try
             {
-                if(numQty.Value > Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]))
+                if (cbBarang.SelectedIndex >= 0)
                 {
-                    MessageBox.Show("Maaf jumlah barang tidak mencukupi", "Error");
-                } else
-                {
-                    lbQty1.Text = numQty.Value.ToString() + " Karung";
-                    cek_konversi();
+                    if(numQty.Value > Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]))
+                    {
+                        MessageBox.Show("Maaf jumlah barang tidak mencukupi", "Error");
+                    } else
+                    {
+                        lbQty1.Text = numQty.Value.ToString() + " Karung";
+                        cek_konversi();
+                    }
                 }
             }
             catch (Exception x)
@@ -156,6 +159,7 @@ namespace Berkat_Mandiri
             lbQty1.Text = "0 Karung";
             lbQty2.Text = "0 Karung";
             tbStID.Text = "";
+            numQty.Value = 0;
         }
         private void cbBarang_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -173,7 +177,6 @@ namespace Berkat_Mandiri
                     cbSatuan.SelectedIndex = -1;
                     TSatuan = 1;
                     lbBarang1.Text = cbBarang.GetItemText(cbBarang.SelectedItem);
-
                     cek_konversi();
                 }
             } catch (Exception x)
