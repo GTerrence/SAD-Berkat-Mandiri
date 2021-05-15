@@ -54,7 +54,7 @@ namespace Berkat_Mandiri
             Boolean SudahAda = false;
 
             DataGridViewRow databaris = new DataGridViewRow();
-            //databaris.CreateCells(DGV);
+            databaris.CreateCells(DGV);
             databaris.Cells[0].Value = CBB.SelectedValue;
             databaris.Cells[1].Value = DTT.Rows[CBB.SelectedIndex]["Produk"];
             databaris.Cells[2].Value = NUD.Value;
