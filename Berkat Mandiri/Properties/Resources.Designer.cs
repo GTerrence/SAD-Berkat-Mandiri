@@ -143,6 +143,16 @@ namespace Berkat_Mandiri.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap panah_right2 {
+            get {
+                object obj = ResourceManager.GetObject("panah right2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap panah_up {
             get {
                 object obj = ResourceManager.GetObject("panah up", resourceCulture);
@@ -166,6 +176,16 @@ namespace Berkat_Mandiri.Properties {
         internal static System.Drawing.Bitmap Person_Icon {
             get {
                 object obj = ResourceManager.GetObject("Person_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

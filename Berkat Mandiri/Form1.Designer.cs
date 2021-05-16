@@ -46,11 +46,11 @@
             this.btnMaSupp = new System.Windows.Forms.Button();
             this.btnMaCust = new System.Windows.Forms.Button();
             this.btnMaProd = new System.Windows.Forms.Button();
-            this.btnMaster = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
+            this.btnMaster = new System.Windows.Forms.Button();
             this.panMenu.SuspendLayout();
             this.panReceivable.SuspendLayout();
             this.panTransaksi.SuspendLayout();
@@ -358,26 +358,6 @@
             this.btnMaProd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaProd.UseVisualStyleBackColor = true;
             // 
-            // btnMaster
-            // 
-            this.btnMaster.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMaster.FlatAppearance.BorderSize = 0;
-            this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaster.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
-            this.btnMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMaster.Location = new System.Drawing.Point(0, 0);
-            this.btnMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnMaster.Name = "btnMaster";
-            this.btnMaster.Size = new System.Drawing.Size(339, 66);
-            this.btnMaster.TabIndex = 2;
-            this.btnMaster.Tag = "panMaster";
-            this.btnMaster.Text = "Master Data";
-            this.btnMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMaster.UseVisualStyleBackColor = true;
-            this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
-            // 
             // btnDashboard
             // 
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -427,6 +407,26 @@
             this.panMain.Name = "panMain";
             this.panMain.Size = new System.Drawing.Size(921, 549);
             this.panMain.TabIndex = 4;
+            // 
+            // btnMaster
+            // 
+            this.btnMaster.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMaster.FlatAppearance.BorderSize = 0;
+            this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaster.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
+            this.btnMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaster.Location = new System.Drawing.Point(0, 0);
+            this.btnMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMaster.Name = "btnMaster";
+            this.btnMaster.Size = new System.Drawing.Size(339, 66);
+            this.btnMaster.TabIndex = 2;
+            this.btnMaster.Tag = "panMaster";
+            this.btnMaster.Text = "Master Data";
+            this.btnMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMaster.UseVisualStyleBackColor = true;
+            this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
             // 
             // FormBase
             // 

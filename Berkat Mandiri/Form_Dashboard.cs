@@ -27,6 +27,8 @@ namespace Berkat_Mandiri
                 query1 = "select nota_id from transaksi where lunas = 0;";
                 DbConnect.exQuery(query1, ref dtPiutang);
                 lblJumlah.Text = dtPiutang.Rows.Count.ToString();
+                lbTanggal.Text = DateTime.Now.ToString("dd MMMM yyyy");
+                lbJam.Text = DateTime.Now.ToString("H:mm:ss");
             } catch(Exception x)
             {
                 MessageBox.Show(x.Message);
@@ -42,6 +44,12 @@ namespace Berkat_Mandiri
             {
                 MessageBox.Show(x.Message);
             }
+        }
+
+        private void timerDate_Tick(object sender, EventArgs e)
+        {
+            lbTanggal.Text = DateTime.Now.ToString("dd MMMM yyyy");
+            lbJam.Text = DateTime.Now.ToString("H:mm:ss");
         }
     }
 }

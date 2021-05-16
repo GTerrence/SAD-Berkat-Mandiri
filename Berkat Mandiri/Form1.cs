@@ -68,12 +68,27 @@ namespace Berkat_Mandiri
                 if(activeButton != ((Button)btnSender))
                 {
                     activeButton.BackColor = Color.FromArgb(19, 32, 51);
-                    ((Button)btnSender).BackColor = Color.FromArgb(196, 196, 196);
+                    activeButton.ForeColor = Color.FromArgb(42, 84, 191);
+                    if (activeButton.Name != "btnDashboard")
+                    {
+                        activeButton.Image = new Bitmap(Properties.Resources.panah_right, new Size(20, 24));
+                    }
+                    ((Button)btnSender).BackColor = Color.FromArgb(42, 84, 191);
+                    ((Button)btnSender).ForeColor = Color.FromArgb(19, 32, 51);
+                    if (((Button)btnSender).Name != "btnDashboard")
+                    {
+                        ((Button)btnSender).Image = new Bitmap(Properties.Resources.panah_right2, new Size(20, 24));
+                    }
                     activeButton = (Button)btnSender;
                 }
             } else
             {
-                ((Button)btnSender).BackColor = Color.FromArgb(196, 196, 196);
+                ((Button)btnSender).BackColor = Color.FromArgb(42, 84, 191);
+                ((Button)btnSender).ForeColor = Color.FromArgb(19, 32, 51);
+                if (((Button)btnSender).Name != "btnDashboard")
+                {
+                    ((Button)btnSender).Image = new Bitmap(Properties.Resources.panah_right2, new Size(20, 24));
+                }
                 activeButton = (Button)btnSender;
             }
         }
