@@ -104,21 +104,12 @@
     <Compile Include="FormMasterData.Designer.cs">
       <DependentUpon>FormMasterData.cs</DependentUpon>
     </Compile>
-<<<<<<< Updated upstream
-=======
     <Compile Include="Form_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Dashboard.Designer.cs">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Login.Designer.cs">
-      <DependentUpon>Form_Login.cs</DependentUpon>
-    </Compile>
->>>>>>> Stashed changes
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -147,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMasterData.resx">
       <DependentUpon>FormMasterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dashboard.resx">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -206,6 +200,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panah1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah down2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panah up1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
