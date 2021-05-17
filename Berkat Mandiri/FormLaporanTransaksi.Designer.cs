@@ -28,19 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
+            this.PJ_Next = new System.Windows.Forms.Button();
+            this.PJ_DGV = new System.Windows.Forms.DataGridView();
+            this.PJ_BarangID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_DeleteData = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.PJ_PanCari = new System.Windows.Forms.Panel();
+            this.PJ_TBP_Cari = new System.Windows.Forms.TableLayoutPanel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PJ_TranPen_2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.PJ_Btn_Insert = new System.Windows.Forms.Button();
@@ -50,27 +66,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.PJ_Tb_Total = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.PJ_PanCari = new System.Windows.Forms.Panel();
-            this.PJ_TBP_Cari = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.PJ_DGV = new System.Windows.Forms.DataGridView();
-            this.PJ_BarangID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PJ_Barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PJ_Quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PJ_Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PJ_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PJ_DeleteData = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PJ_Next = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -93,20 +88,18 @@
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.TC_Transaksi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PJ_TranPen_1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).BeginInit();
+            this.PJ_PanCari.SuspendLayout();
+            this.PJ_TBP_Cari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PJ_TranPen_2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.PJ_PanCari.SuspendLayout();
-            this.PJ_TBP_Cari.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel6.SuspendLayout();
@@ -114,68 +107,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(30, 111);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(874, 54);
-            this.panel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 45);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Laporan";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(30, 20);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 91);
-            this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 91);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "TRANSAKSI";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label3.Location = new System.Drawing.Point(418, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(456, 91);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "BERKAT MANDIRI";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.TC_Transaksi);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(30, 165);
+            this.panel3.Location = new System.Drawing.Point(30, 20);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(874, 517);
+            this.panel3.Size = new System.Drawing.Size(874, 662);
             this.panel3.TabIndex = 4;
             // 
             // TC_Transaksi
@@ -186,7 +125,7 @@
             this.TC_Transaksi.Location = new System.Drawing.Point(0, 0);
             this.TC_Transaksi.Name = "TC_Transaksi";
             this.TC_Transaksi.SelectedIndex = 0;
-            this.TC_Transaksi.Size = new System.Drawing.Size(874, 517);
+            this.TC_Transaksi.Size = new System.Drawing.Size(874, 662);
             this.TC_Transaksi.TabIndex = 0;
             // 
             // tabPage1
@@ -197,7 +136,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(866, 459);
+            this.tabPage1.Size = new System.Drawing.Size(866, 604);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Penjualan";
             // 
@@ -209,8 +148,254 @@
             this.PJ_TranPen_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TranPen_1.Location = new System.Drawing.Point(3, 3);
             this.PJ_TranPen_1.Name = "PJ_TranPen_1";
-            this.PJ_TranPen_1.Size = new System.Drawing.Size(860, 453);
+            this.PJ_TranPen_1.Size = new System.Drawing.Size(860, 598);
             this.PJ_TranPen_1.TabIndex = 10;
+            // 
+            // PJ_Next
+            // 
+            this.PJ_Next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
+            this.PJ_Next.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PJ_Next.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Next.Location = new System.Drawing.Point(755, 432);
+            this.PJ_Next.Name = "PJ_Next";
+            this.PJ_Next.Size = new System.Drawing.Size(105, 166);
+            this.PJ_Next.TabIndex = 16;
+            this.PJ_Next.Text = "Next";
+            this.PJ_Next.UseVisualStyleBackColor = false;
+            // 
+            // PJ_DGV
+            // 
+            this.PJ_DGV.AllowUserToAddRows = false;
+            this.PJ_DGV.AllowUserToDeleteRows = false;
+            this.PJ_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.PJ_DGV.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.PJ_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PJ_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PJ_BarangID,
+            this.PJ_Barang,
+            this.PJ_Quan,
+            this.PJ_Harga,
+            this.PJ_Total,
+            this.PJ_DeleteData});
+            this.PJ_DGV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PJ_DGV.Location = new System.Drawing.Point(0, 189);
+            this.PJ_DGV.Name = "PJ_DGV";
+            this.PJ_DGV.ReadOnly = true;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.PJ_DGV.Size = new System.Drawing.Size(860, 243);
+            this.PJ_DGV.TabIndex = 15;
+            // 
+            // PJ_BarangID
+            // 
+            this.PJ_BarangID.HeaderText = "PJ_BarangID";
+            this.PJ_BarangID.Name = "PJ_BarangID";
+            this.PJ_BarangID.ReadOnly = true;
+            this.PJ_BarangID.Visible = false;
+            this.PJ_BarangID.Width = 155;
+            // 
+            // PJ_Barang
+            // 
+            this.PJ_Barang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PJ_Barang.HeaderText = "Barang";
+            this.PJ_Barang.Name = "PJ_Barang";
+            this.PJ_Barang.ReadOnly = true;
+            // 
+            // PJ_Quan
+            // 
+            this.PJ_Quan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.PJ_Quan.HeaderText = "Quantity";
+            this.PJ_Quan.Name = "PJ_Quan";
+            this.PJ_Quan.ReadOnly = true;
+            // 
+            // PJ_Harga
+            // 
+            this.PJ_Harga.HeaderText = "Harga";
+            this.PJ_Harga.Name = "PJ_Harga";
+            this.PJ_Harga.ReadOnly = true;
+            this.PJ_Harga.Width = 150;
+            // 
+            // PJ_Total
+            // 
+            this.PJ_Total.HeaderText = "Total";
+            this.PJ_Total.Name = "PJ_Total";
+            this.PJ_Total.ReadOnly = true;
+            this.PJ_Total.Width = 175;
+            // 
+            // PJ_DeleteData
+            // 
+            this.PJ_DeleteData.HeaderText = "Delete";
+            this.PJ_DeleteData.Name = "PJ_DeleteData";
+            this.PJ_DeleteData.ReadOnly = true;
+            // 
+            // PJ_PanCari
+            // 
+            this.PJ_PanCari.Controls.Add(this.PJ_TBP_Cari);
+            this.PJ_PanCari.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PJ_PanCari.Location = new System.Drawing.Point(0, 0);
+            this.PJ_PanCari.Name = "PJ_PanCari";
+            this.PJ_PanCari.Padding = new System.Windows.Forms.Padding(10);
+            this.PJ_PanCari.Size = new System.Drawing.Size(860, 189);
+            this.PJ_PanCari.TabIndex = 14;
+            // 
+            // PJ_TBP_Cari
+            // 
+            this.PJ_TBP_Cari.ColumnCount = 4;
+            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.80952F));
+            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.11905F));
+            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.95238F));
+            this.PJ_TBP_Cari.Controls.Add(this.dateTimePicker2, 3, 3);
+            this.PJ_TBP_Cari.Controls.Add(this.label15, 2, 1);
+            this.PJ_TBP_Cari.Controls.Add(this.textBox6, 1, 2);
+            this.PJ_TBP_Cari.Controls.Add(this.textBox5, 1, 1);
+            this.PJ_TBP_Cari.Controls.Add(this.label14, 0, 3);
+            this.PJ_TBP_Cari.Controls.Add(this.label9, 0, 2);
+            this.PJ_TBP_Cari.Controls.Add(this.label8, 0, 1);
+            this.PJ_TBP_Cari.Controls.Add(this.label7, 0, 0);
+            this.PJ_TBP_Cari.Controls.Add(this.dateTimePicker1, 1, 3);
+            this.PJ_TBP_Cari.Controls.Add(this.comboBox2, 3, 1);
+            this.PJ_TBP_Cari.Controls.Add(this.pictureBox1, 2, 3);
+            this.PJ_TBP_Cari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_TBP_Cari.Location = new System.Drawing.Point(10, 10);
+            this.PJ_TBP_Cari.Name = "PJ_TBP_Cari";
+            this.PJ_TBP_Cari.RowCount = 4;
+            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.PJ_TBP_Cari.Size = new System.Drawing.Size(840, 169);
+            this.PJ_TBP_Cari.TabIndex = 12;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.CustomFormat = "dd MMMM yyyy";
+            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(538, 127);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(301, 36);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(455, 42);
+            this.label15.Name = "label15";
+            this.label15.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.label15.Size = new System.Drawing.Size(79, 42);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Lunas";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox6.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(210, 84);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(242, 39);
+            this.textBox6.TabIndex = 6;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(210, 42);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(242, 39);
+            this.textBox5.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 126);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(204, 43);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Tanggal";
+            // 
+            // label9
+            // 
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 84);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(204, 42);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Pelanggan";
+            // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(204, 42);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Nota ID";
+            // 
+            // label7
+            // 
+            this.PJ_TBP_Cari.SetColumnSpan(this.label7, 4);
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(834, 42);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Pencarian";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.CustomFormat = "dd MMMM yyyy";
+            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(211, 127);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(240, 36);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(537, 42);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(303, 38);
+            this.comboBox2.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Berkat_Mandiri.Properties.Resources.Panah1;
+            this.pictureBox1.Location = new System.Drawing.Point(455, 129);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // PJ_TranPen_2
             // 
@@ -220,7 +405,7 @@
             this.PJ_TranPen_2.Location = new System.Drawing.Point(3, 3);
             this.PJ_TranPen_2.Name = "PJ_TranPen_2";
             this.PJ_TranPen_2.Padding = new System.Windows.Forms.Padding(150);
-            this.PJ_TranPen_2.Size = new System.Drawing.Size(860, 453);
+            this.PJ_TranPen_2.Size = new System.Drawing.Size(860, 598);
             this.PJ_TranPen_2.TabIndex = 11;
             // 
             // panel4
@@ -318,252 +503,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pembelian";
             // 
-            // PJ_PanCari
-            // 
-            this.PJ_PanCari.Controls.Add(this.PJ_TBP_Cari);
-            this.PJ_PanCari.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PJ_PanCari.Location = new System.Drawing.Point(0, 0);
-            this.PJ_PanCari.Name = "PJ_PanCari";
-            this.PJ_PanCari.Padding = new System.Windows.Forms.Padding(10);
-            this.PJ_PanCari.Size = new System.Drawing.Size(860, 189);
-            this.PJ_PanCari.TabIndex = 14;
-            // 
-            // PJ_TBP_Cari
-            // 
-            this.PJ_TBP_Cari.ColumnCount = 4;
-            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.80952F));
-            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.11905F));
-            this.PJ_TBP_Cari.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.95238F));
-            this.PJ_TBP_Cari.Controls.Add(this.dateTimePicker2, 3, 3);
-            this.PJ_TBP_Cari.Controls.Add(this.label15, 2, 1);
-            this.PJ_TBP_Cari.Controls.Add(this.textBox6, 1, 2);
-            this.PJ_TBP_Cari.Controls.Add(this.textBox5, 1, 1);
-            this.PJ_TBP_Cari.Controls.Add(this.label14, 0, 3);
-            this.PJ_TBP_Cari.Controls.Add(this.label9, 0, 2);
-            this.PJ_TBP_Cari.Controls.Add(this.label8, 0, 1);
-            this.PJ_TBP_Cari.Controls.Add(this.label7, 0, 0);
-            this.PJ_TBP_Cari.Controls.Add(this.dateTimePicker1, 1, 3);
-            this.PJ_TBP_Cari.Controls.Add(this.comboBox2, 3, 1);
-            this.PJ_TBP_Cari.Controls.Add(this.pictureBox1, 2, 3);
-            this.PJ_TBP_Cari.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PJ_TBP_Cari.Location = new System.Drawing.Point(10, 10);
-            this.PJ_TBP_Cari.Name = "PJ_TBP_Cari";
-            this.PJ_TBP_Cari.RowCount = 4;
-            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.Size = new System.Drawing.Size(840, 169);
-            this.PJ_TBP_Cari.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.PJ_TBP_Cari.SetColumnSpan(this.label7, 4);
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(834, 42);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Pencarian";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PJ_DGV
-            // 
-            this.PJ_DGV.AllowUserToAddRows = false;
-            this.PJ_DGV.AllowUserToDeleteRows = false;
-            this.PJ_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.PJ_DGV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.PJ_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PJ_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PJ_BarangID,
-            this.PJ_Barang,
-            this.PJ_Quan,
-            this.PJ_Harga,
-            this.PJ_Total,
-            this.PJ_DeleteData});
-            this.PJ_DGV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PJ_DGV.Location = new System.Drawing.Point(0, 189);
-            this.PJ_DGV.Name = "PJ_DGV";
-            this.PJ_DGV.ReadOnly = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.PJ_DGV.Size = new System.Drawing.Size(860, 243);
-            this.PJ_DGV.TabIndex = 15;
-            // 
-            // PJ_BarangID
-            // 
-            this.PJ_BarangID.HeaderText = "PJ_BarangID";
-            this.PJ_BarangID.Name = "PJ_BarangID";
-            this.PJ_BarangID.ReadOnly = true;
-            this.PJ_BarangID.Visible = false;
-            this.PJ_BarangID.Width = 155;
-            // 
-            // PJ_Barang
-            // 
-            this.PJ_Barang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PJ_Barang.HeaderText = "Barang";
-            this.PJ_Barang.Name = "PJ_Barang";
-            this.PJ_Barang.ReadOnly = true;
-            // 
-            // PJ_Quan
-            // 
-            this.PJ_Quan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.PJ_Quan.HeaderText = "Quantity";
-            this.PJ_Quan.Name = "PJ_Quan";
-            this.PJ_Quan.ReadOnly = true;
-            // 
-            // PJ_Harga
-            // 
-            this.PJ_Harga.HeaderText = "Harga";
-            this.PJ_Harga.Name = "PJ_Harga";
-            this.PJ_Harga.ReadOnly = true;
-            this.PJ_Harga.Width = 150;
-            // 
-            // PJ_Total
-            // 
-            this.PJ_Total.HeaderText = "Total";
-            this.PJ_Total.Name = "PJ_Total";
-            this.PJ_Total.ReadOnly = true;
-            this.PJ_Total.Width = 175;
-            // 
-            // PJ_DeleteData
-            // 
-            this.PJ_DeleteData.HeaderText = "Delete";
-            this.PJ_DeleteData.Name = "PJ_DeleteData";
-            this.PJ_DeleteData.ReadOnly = true;
-            // 
-            // PJ_Next
-            // 
-            this.PJ_Next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
-            this.PJ_Next.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PJ_Next.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Next.Location = new System.Drawing.Point(755, 432);
-            this.PJ_Next.Name = "PJ_Next";
-            this.PJ_Next.Size = new System.Drawing.Size(105, 21);
-            this.PJ_Next.TabIndex = 16;
-            this.PJ_Next.Text = "Next";
-            this.PJ_Next.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 42);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(204, 42);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Nota ID";
-            // 
-            // label9
-            // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 84);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(204, 42);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Pelanggan";
-            // 
-            // label14
-            // 
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 126);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 43);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Tanggal";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(210, 42);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(242, 39);
-            this.textBox5.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(210, 84);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(242, 39);
-            this.textBox6.TabIndex = 6;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CustomFormat = "dd MMMM yyyy";
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(211, 127);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(240, 36);
-            this.dateTimePicker1.TabIndex = 7;
-            // 
-            // label15
-            // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(455, 42);
-            this.label15.Name = "label15";
-            this.label15.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.label15.Size = new System.Drawing.Size(79, 42);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Lunas";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(537, 42);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(303, 38);
-            this.comboBox2.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Berkat_Mandiri.Properties.Resources.Panah1;
-            this.pictureBox1.Location = new System.Drawing.Point(455, 129);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.CustomFormat = "dd MMMM yyyy";
-            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(538, 127);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(301, 36);
-            this.dateTimePicker2.TabIndex = 11;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.button1);
@@ -593,14 +532,14 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -613,8 +552,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 189);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Size = new System.Drawing.Size(860, 243);
             this.dataGridView1.TabIndex = 15;
             // 
@@ -828,28 +767,23 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(924, 682);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "FormLaporanTransaksi";
             this.Padding = new System.Windows.Forms.Padding(30, 20, 20, 0);
             this.Text = "FormLaporanTransaksi";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.TC_Transaksi.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.PJ_TranPen_1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).EndInit();
+            this.PJ_PanCari.ResumeLayout(false);
+            this.PJ_TBP_Cari.ResumeLayout(false);
+            this.PJ_TBP_Cari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PJ_TranPen_2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.PJ_PanCari.ResumeLayout(false);
-            this.PJ_TBP_Cari.ResumeLayout(false);
-            this.PJ_TBP_Cari.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel6.ResumeLayout(false);
@@ -861,12 +795,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabControl TC_Transaksi;
         private System.Windows.Forms.TabPage tabPage1;

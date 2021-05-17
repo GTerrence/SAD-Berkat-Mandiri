@@ -39,18 +39,17 @@
             this.btnTransaksi = new System.Windows.Forms.Button();
             this.panStock = new System.Windows.Forms.Panel();
             this.btnStKonversi = new System.Windows.Forms.Button();
-            this.btnStGanti = new System.Windows.Forms.Button();
             this.btnStView = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
             this.panMaster = new System.Windows.Forms.Panel();
             this.btnMaSupp = new System.Windows.Forms.Button();
             this.btnMaCust = new System.Windows.Forms.Button();
             this.btnMaProd = new System.Windows.Forms.Button();
+            this.btnMaster = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
-            this.btnMaster = new System.Windows.Forms.Button();
             this.panMenu.SuspendLayout();
             this.panReceivable.SuspendLayout();
             this.panTransaksi.SuspendLayout();
@@ -119,6 +118,7 @@
             this.btnReOn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReOn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReOn.UseVisualStyleBackColor = true;
+            this.btnReOn.Click += new System.EventHandler(this.btnReOn_Click);
             // 
             // btnReceivable
             // 
@@ -170,6 +170,7 @@
             this.btnTrLaporan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrLaporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrLaporan.UseVisualStyleBackColor = true;
+            this.btnTrLaporan.Click += new System.EventHandler(this.btnTrLaporan_Click);
             // 
             // btnTrInput
             // 
@@ -186,6 +187,7 @@
             this.btnTrInput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrInput.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrInput.UseVisualStyleBackColor = true;
+            this.btnTrInput.Click += new System.EventHandler(this.btnTrInput_Click);
             // 
             // btnTransaksi
             // 
@@ -211,12 +213,11 @@
             // 
             this.panStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panStock.Controls.Add(this.btnStKonversi);
-            this.panStock.Controls.Add(this.btnStGanti);
             this.panStock.Controls.Add(this.btnStView);
             this.panStock.Controls.Add(this.btnStock);
             this.panStock.Dock = System.Windows.Forms.DockStyle.Top;
             this.panStock.Location = new System.Drawing.Point(0, 138);
-            this.panStock.MaximumSize = new System.Drawing.Size(341, 205);
+            this.panStock.MaximumSize = new System.Drawing.Size(341, 172);
             this.panStock.MinimumSize = new System.Drawing.Size(341, 72);
             this.panStock.Name = "panStock";
             this.panStock.Size = new System.Drawing.Size(341, 72);
@@ -230,7 +231,7 @@
             this.btnStKonversi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStKonversi.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStKonversi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
-            this.btnStKonversi.Location = new System.Drawing.Point(0, 154);
+            this.btnStKonversi.Location = new System.Drawing.Point(0, 110);
             this.btnStKonversi.Name = "btnStKonversi";
             this.btnStKonversi.Size = new System.Drawing.Size(339, 44);
             this.btnStKonversi.TabIndex = 5;
@@ -239,23 +240,6 @@
             this.btnStKonversi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStKonversi.UseVisualStyleBackColor = true;
             this.btnStKonversi.Click += new System.EventHandler(this.btnStKonversi_Click);
-            // 
-            // btnStGanti
-            // 
-            this.btnStGanti.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStGanti.FlatAppearance.BorderSize = 0;
-            this.btnStGanti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStGanti.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStGanti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
-            this.btnStGanti.Location = new System.Drawing.Point(0, 110);
-            this.btnStGanti.Name = "btnStGanti";
-            this.btnStGanti.Size = new System.Drawing.Size(339, 44);
-            this.btnStGanti.TabIndex = 4;
-            this.btnStGanti.Text = "Ganti Harga";
-            this.btnStGanti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStGanti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStGanti.UseVisualStyleBackColor = true;
-            this.btnStGanti.Click += new System.EventHandler(this.btnStGanti_Click);
             // 
             // btnStView
             // 
@@ -358,6 +342,26 @@
             this.btnMaProd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaProd.UseVisualStyleBackColor = true;
             // 
+            // btnMaster
+            // 
+            this.btnMaster.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMaster.FlatAppearance.BorderSize = 0;
+            this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaster.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
+            this.btnMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaster.Location = new System.Drawing.Point(0, 0);
+            this.btnMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMaster.Name = "btnMaster";
+            this.btnMaster.Size = new System.Drawing.Size(339, 66);
+            this.btnMaster.TabIndex = 2;
+            this.btnMaster.Tag = "panMaster";
+            this.btnMaster.Text = "Master Data";
+            this.btnMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMaster.UseVisualStyleBackColor = true;
+            this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
+            // 
             // btnDashboard
             // 
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -408,26 +412,6 @@
             this.panMain.Size = new System.Drawing.Size(921, 549);
             this.panMain.TabIndex = 4;
             // 
-            // btnMaster
-            // 
-            this.btnMaster.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMaster.FlatAppearance.BorderSize = 0;
-            this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaster.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
-            this.btnMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMaster.Location = new System.Drawing.Point(0, 0);
-            this.btnMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnMaster.Name = "btnMaster";
-            this.btnMaster.Size = new System.Drawing.Size(339, 66);
-            this.btnMaster.TabIndex = 2;
-            this.btnMaster.Tag = "panMaster";
-            this.btnMaster.Text = "Master Data";
-            this.btnMaster.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMaster.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMaster.UseVisualStyleBackColor = true;
-            this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
-            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -465,7 +449,6 @@
         private System.Windows.Forms.Panel panMain;
         private System.Windows.Forms.Panel panStock;
         private System.Windows.Forms.Button btnStKonversi;
-        private System.Windows.Forms.Button btnStGanti;
         private System.Windows.Forms.Button btnStView;
         private System.Windows.Forms.Panel panMaster;
         private System.Windows.Forms.Button btnMaSupp;

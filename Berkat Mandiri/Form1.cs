@@ -191,6 +191,21 @@ namespace Berkat_Mandiri
             OpenChildForm(new FormStockKonversi(), sender);
         }
 
+        private void btnTrInput_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormTransaksi(), sender);
+        }
+
+        private void btnTrLaporan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormLaporanTransaksi(), sender);
+        }
+
+        private void btnReOn_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormPiutangcs(), sender);
+        }
+
         private void callView(object sender, FormClosedEventArgs e)
         {
             if (TForm == 1)
