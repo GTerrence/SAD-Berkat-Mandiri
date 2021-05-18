@@ -56,3 +56,29 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTra
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormMasterData.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CopyComplete
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form_Dashboard.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe.config
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.exe
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Berkat Mandiri.pdb
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Google.Protobuf.dll
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\BouncyCastle.Crypto.dll
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Ubiety.Dns.Core.dll
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Renci.SshNet.dll
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csprojAssemblyReference.cache
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBase.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormDashboard.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLaporanTransaksi.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangcs.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockGanti.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockKonversi.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockView.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormMasterData.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Properties.Resources.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.GenerateResource.cache
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CopyComplete
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormInsertMasterData.resources
