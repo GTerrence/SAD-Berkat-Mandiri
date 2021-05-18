@@ -16,5 +16,10 @@ namespace Berkat_Mandiri
         {
             InitializeComponent();
         }
+
+        private void FormPiutangcs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
