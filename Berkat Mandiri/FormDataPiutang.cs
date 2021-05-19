@@ -65,11 +65,10 @@ namespace Berkat_Mandiri
             {
                 try
                 {
-                    
                     if (Convert.ToInt32(tbBayar.Text) > Convert.ToInt32(dtDetail.Rows[0][6].ToString()))
                     {
                         query1 = "INSERT INTO `piutang` VALUES ('" + createID() + "','" + tbID.Text.ToString() + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + dtDetail.Rows[0][6].ToString() + "',0)";
-                        int kembalian = Convert.ToInt32(dtDetail.Rows[0][6].ToString()) - (Convert.ToInt32(tbBayar.Text));
+                        int kembalian = (Convert.ToInt32(tbBayar.Text)) - Convert.ToInt32(dtDetail.Rows[0][6].ToString());
                         MessageBox.Show("Anda memiliki kembalian : " + kembalian);
                     }
                     else
@@ -85,9 +84,7 @@ namespace Berkat_Mandiri
                     MessageBox.Show(x.Message);
                     DbConnect.connection.Close();
                 }
-                
             }
-            
         }
         
         private void CheckLunas()
