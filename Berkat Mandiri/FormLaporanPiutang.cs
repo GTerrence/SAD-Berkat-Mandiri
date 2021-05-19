@@ -45,7 +45,7 @@ namespace Berkat_Mandiri
                 {
                     query1 += " and pelanggan_name like '%" + tbPelanggan.Text + "%'";
                 }
-                query1 += " and tanggal_penjualan > str_to_date('"+ dtpMulai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') and tanggal_penjualan < str_to_date('" + dtpSelesai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') group by t.nota_id ";
+                query1 += " and tanggal_penjualan > str_to_date('"+ dtpMulai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') and tanggal_penjualan < str_to_date('" + dtpSelesai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') and t.`delete` = 0 and pi.`delete` = 0 group by t.nota_id ";
                 DbConnect.exQuery(query1, ref dtPiutang);
                 dgvPiutang.DataSource = dtPiutang;
             }

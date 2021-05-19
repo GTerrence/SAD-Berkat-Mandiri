@@ -104,6 +104,10 @@ namespace Berkat_Mandiri
             {
                 activeForm = null;
                 dropDown(btnStock);
+            } else if(TForm == 2)
+            {
+                activeForm = null;
+                dropDown(btnTransaksi);
             }
             if (activeForm != null)
             {
@@ -182,11 +186,6 @@ namespace Berkat_Mandiri
             OpenChildForm(new FormStockView(), sender);
         }
 
-        private void btnStGanti_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormStockGanti(), sender);
-        }
-
         private void btnStKonversi_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormStockKonversi(), sender);
@@ -217,6 +216,10 @@ namespace Berkat_Mandiri
             if (TForm == 1)
             {
                 OpenChildForm(new FormStockView(), btnStView);
+                TForm = 0;
+            } else if(TForm == 2)
+            {
+                OpenChildForm(new FormTransaksi(), btnTrInput);
                 TForm = 0;
             }
         }

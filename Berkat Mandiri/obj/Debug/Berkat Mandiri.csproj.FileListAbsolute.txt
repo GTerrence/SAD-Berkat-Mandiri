@@ -49,7 +49,6 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Ubiety.Dns.Core.dll
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\Renci.SshNet.dll
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\bin\Debug\MySql.Data.xml
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLaporanTransaksi.resources
-D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockGanti.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockKonversi.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormStockView.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormTransaksi.resources
@@ -57,4 +56,3 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormMas
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.csproj.CopyComplete
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form_Dashboard.resources
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLaporanPiutang.resources
-D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormBayarPiutang.resources

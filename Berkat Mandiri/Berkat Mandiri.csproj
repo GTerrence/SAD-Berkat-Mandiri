@@ -60,12 +60,6 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBayarPiutang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBayarPiutang.Designer.cs">
-      <DependentUpon>FormBayarPiutang.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLaporanPiutang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,12 +77,6 @@
     </Compile>
     <Compile Include="FormPiutangcs.Designer.cs">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormStockGanti.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormStockGanti.Designer.cs">
-      <DependentUpon>FormStockGanti.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStockKonversi.cs">
       <SubType>Form</SubType>
@@ -128,9 +116,6 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBayarPiutang.resx">
-      <DependentUpon>FormBayarPiutang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormLaporanPiutang.resx">
       <DependentUpon>FormLaporanPiutang.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,9 +124,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPiutangcs.resx">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormStockGanti.resx">
-      <DependentUpon>FormStockGanti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStockKonversi.resx">
       <DependentUpon>FormStockKonversi.cs</DependentUpon>
