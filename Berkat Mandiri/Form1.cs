@@ -234,5 +234,13 @@ namespace Berkat_Mandiri
                 TForm = 0;
             }
         }
+
+        private void closePanel()
+        {
+            foreach(Panel pan in panMenu.Controls.OfType<Panel>())
+            {
+                pan.Size = pan.MinimumSize;
+            }
+        }
     }
 }

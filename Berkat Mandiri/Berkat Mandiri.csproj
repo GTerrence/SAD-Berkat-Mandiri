@@ -81,7 +81,13 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDataPiutang.cs">
+    <Compile Include="FormBayarPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBayarPiutang.Designer.cs">
+      <DependentUpon>FormBayarPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanPiutang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDataPiutang.Designer.cs">
@@ -155,11 +161,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDataPiutang.resx">
-      <DependentUpon>FormDataPiutang.cs</DependentUpon>
+    <EmbeddedResource Include="FormBayarPiutang.resx">
+      <DependentUpon>FormBayarPiutang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInsertMasterData.resx">
-      <DependentUpon>FormInsertMasterData.cs</DependentUpon>
+    <EmbeddedResource Include="FormLaporanPiutang.resx">
+      <DependentUpon>FormLaporanPiutang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLaporanTransaksi.resx">
       <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>

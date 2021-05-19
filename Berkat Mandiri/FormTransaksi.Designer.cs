@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,11 +60,40 @@
             this.PJ_Back = new System.Windows.Forms.Button();
             this.PJ_Btn_Insert = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PJ_TB_Bayar = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.PJ_Tb_Total = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PJ_TB_Bayar = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.PJ_Btn_Insert = new System.Windows.Forms.Button();
+            this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.PJ_Add = new System.Windows.Forms.Button();
+            this.PJ_Num_Quan = new System.Windows.Forms.NumericUpDown();
+            this.PJ_CB_Barang = new System.Windows.Forms.ComboBox();
+            this.PJ_TB_Nama = new System.Windows.Forms.TextBox();
+            this.PJ_CB_HargaKhusus = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.PJ_TB_HargaKhusus = new System.Windows.Forms.TextBox();
+            this.PJ_DGV = new System.Windows.Forms.DataGridView();
+            this.PJ_DeleteData = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.PJ_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_BarangID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PJ_Next = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.PB_TranPem_2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.PB_TranPem_1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PB_Next = new System.Windows.Forms.Button();
@@ -95,16 +125,21 @@
             this.PB_Tb_Total = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TC_Transaksi.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.PJ_TranPen_2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.PJ_TranPen_1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_Num_Quan)).BeginInit();
-            this.PJ_TranPen_2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.PB_TranPem_2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.PB_TranPem_1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_DGV)).BeginInit();
@@ -127,6 +162,18 @@
             this.TC_Transaksi.SelectedIndex = 0;
             this.TC_Transaksi.Size = new System.Drawing.Size(797, 410);
             this.TC_Transaksi.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.tabPage2.Controls.Add(this.PB_TranPem_1);
+            this.tabPage2.Controls.Add(this.PB_TranPem_2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(866, 467);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Pembelian";
             // 
             // tabPage1
             // 
@@ -173,7 +220,24 @@
             this.PJ_Next.Text = "Next";
             this.PJ_Next.UseVisualStyleBackColor = false;
             // 
-            // PJ_DGV
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.88372F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.02325F));
+            this.tableLayoutPanel1.Controls.Add(this.PJ_TB_Bayar, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.PJ_Tb_Total, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(150, 150);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 94);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
             this.PJ_DGV.AllowUserToAddRows = false;
             this.PJ_DGV.AllowUserToDeleteRows = false;
@@ -205,47 +269,78 @@
             this.PJ_DGV.TabIndex = 3;
             this.PJ_DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Delete_Click);
             // 
-            // PJ_BarangID
+            this.PJ_Tb_Total.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_Tb_Total.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Tb_Total.Location = new System.Drawing.Point(217, 0);
+            this.PJ_Tb_Total.Margin = new System.Windows.Forms.Padding(0);
+            this.PJ_Tb_Total.Name = "PJ_Tb_Total";
+            this.PJ_Tb_Total.Size = new System.Drawing.Size(343, 39);
+            this.PJ_Tb_Total.TabIndex = 3;
             // 
-            this.PJ_BarangID.HeaderText = "PJ_BarangID";
-            this.PJ_BarangID.Name = "PJ_BarangID";
-            this.PJ_BarangID.ReadOnly = true;
-            this.PJ_BarangID.Visible = false;
-            this.PJ_BarangID.Width = 155;
+            // label6
             // 
-            // PJ_Barang
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(211, 47);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Total";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            this.PJ_Barang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PJ_Barang.HeaderText = "Barang";
-            this.PJ_Barang.Name = "PJ_Barang";
-            this.PJ_Barang.ReadOnly = true;
+            // label5
             // 
-            // PJ_Quan
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 47);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Dibayarkan";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            this.PJ_Quan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.PJ_Quan.HeaderText = "Quantity";
-            this.PJ_Quan.Name = "PJ_Quan";
-            this.PJ_Quan.ReadOnly = true;
+            // PJ_TB_Bayar
             // 
-            // PJ_Harga
+            this.PJ_TB_Bayar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_TB_Bayar.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_TB_Bayar.Location = new System.Drawing.Point(217, 47);
+            this.PJ_TB_Bayar.Margin = new System.Windows.Forms.Padding(0);
+            this.PJ_TB_Bayar.Name = "PJ_TB_Bayar";
+            this.PJ_TB_Bayar.Size = new System.Drawing.Size(343, 39);
+            this.PJ_TB_Bayar.TabIndex = 5;
             // 
-            this.PJ_Harga.HeaderText = "Harga";
-            this.PJ_Harga.Name = "PJ_Harga";
-            this.PJ_Harga.ReadOnly = true;
-            this.PJ_Harga.Width = 150;
+            // panel4
             // 
-            // PJ_Total
+            this.panel4.Controls.Add(this.PJ_Btn_Insert);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(150, 244);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(560, 48);
+            this.panel4.TabIndex = 4;
             // 
-            this.PJ_Total.HeaderText = "Total";
-            this.PJ_Total.Name = "PJ_Total";
-            this.PJ_Total.ReadOnly = true;
-            this.PJ_Total.Width = 175;
+            // PJ_Btn_Insert
             // 
-            // PJ_DeleteData
+            this.PJ_Btn_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
+            this.PJ_Btn_Insert.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PJ_Btn_Insert.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_Btn_Insert.Location = new System.Drawing.Point(455, 0);
+            this.PJ_Btn_Insert.Name = "PJ_Btn_Insert";
+            this.PJ_Btn_Insert.Size = new System.Drawing.Size(105, 48);
+            this.PJ_Btn_Insert.TabIndex = 12;
+            this.PJ_Btn_Insert.Text = "Insert";
+            this.PJ_Btn_Insert.UseVisualStyleBackColor = false;
+            this.PJ_Btn_Insert.Click += new System.EventHandler(this.PJ_Btn_Insert_Click);
             // 
-            this.PJ_DeleteData.HeaderText = "Delete";
-            this.PJ_DeleteData.Name = "PJ_DeleteData";
-            this.PJ_DeleteData.ReadOnly = true;
+            // PJ_TranPen_1
+            // 
+            this.PJ_TranPen_1.Controls.Add(this.PJ_Next);
+            this.PJ_TranPen_1.Controls.Add(this.PJ_DGV);
+            this.PJ_TranPen_1.Controls.Add(this.tableLayoutPanel2);
+            this.PJ_TranPen_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_TranPen_1.Location = new System.Drawing.Point(3, 3);
+            this.PJ_TranPen_1.Name = "PJ_TranPen_1";
+            this.PJ_TranPen_1.Size = new System.Drawing.Size(860, 461);
+            this.PJ_TranPen_1.TabIndex = 10;
             // 
             // tableLayoutPanel2
             // 
@@ -273,7 +368,7 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(783, 147);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // PJ_TB_HargaKhusus
+            // PJ_Add
             // 
             this.PJ_TB_HargaKhusus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TB_HargaKhusus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -283,7 +378,7 @@
             this.PJ_TB_HargaKhusus.Size = new System.Drawing.Size(272, 31);
             this.PJ_TB_HargaKhusus.TabIndex = 6;
             // 
-            // label7
+            // PJ_Num_Quan
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,7 +388,7 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Quantity";
             // 
-            // label8
+            // PJ_CB_Barang
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -303,7 +398,7 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Barang";
             // 
-            // label9
+            // PJ_TB_Nama
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -327,7 +422,7 @@
             this.PJ_CB_HargaKhusus.UseVisualStyleBackColor = true;
             this.PJ_CB_HargaKhusus.CheckedChanged += new System.EventHandler(this.PJ_CB_HargaKhusus_CheckedChanged);
             // 
-            // PJ_TB_Nama
+            // label9
             // 
             this.PJ_TB_Nama.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TB_Nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,7 +432,7 @@
             this.PJ_TB_Nama.Size = new System.Drawing.Size(272, 31);
             this.PJ_TB_Nama.TabIndex = 3;
             // 
-            // PJ_CB_Barang
+            // label8
             // 
             this.PJ_CB_Barang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_CB_Barang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,7 +443,7 @@
             this.PJ_CB_Barang.Size = new System.Drawing.Size(272, 33);
             this.PJ_CB_Barang.TabIndex = 4;
             // 
-            // PJ_Num_Quan
+            // label7
             // 
             this.PJ_Num_Quan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_Num_Quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,7 +458,7 @@
             0,
             0});
             // 
-            // PJ_Add
+            // PJ_TB_HargaKhusus
             // 
             this.PJ_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
             this.PJ_Add.Dock = System.Windows.Forms.DockStyle.Left;
@@ -376,7 +471,7 @@
             this.PJ_Add.UseVisualStyleBackColor = false;
             this.PJ_Add.Click += new System.EventHandler(this.PJ_Add_Click);
             // 
-            // PJ_TranPen_2
+            // PJ_DGV
             // 
             this.PJ_TranPen_2.Controls.Add(this.panel4);
             this.PJ_TranPen_2.Controls.Add(this.tableLayoutPanel1);
@@ -387,7 +482,7 @@
             this.PJ_TranPen_2.Size = new System.Drawing.Size(783, 361);
             this.PJ_TranPen_2.TabIndex = 11;
             // 
-            // panel4
+            // PJ_DeleteData
             // 
             this.panel4.Controls.Add(this.PJ_Back);
             this.panel4.Controls.Add(this.PJ_Btn_Insert);
@@ -423,7 +518,7 @@
             this.PJ_Btn_Insert.UseVisualStyleBackColor = false;
             this.PJ_Btn_Insert.Click += new System.EventHandler(this.PJ_Btn_Insert_Click);
             // 
-            // tableLayoutPanel1
+            // PJ_Harga
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
@@ -444,7 +539,7 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(483, 75);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // PJ_TB_Bayar
+            // tableLayoutPanel3
             // 
             this.PJ_TB_Bayar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TB_Bayar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -454,7 +549,7 @@
             this.PJ_TB_Bayar.Size = new System.Drawing.Size(296, 31);
             this.PJ_TB_Bayar.TabIndex = 5;
             // 
-            // label5
+            // textBox1
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -465,7 +560,7 @@
             this.label5.Text = "Dibayarkan";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // label4
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -476,7 +571,7 @@
             this.label6.Text = "Total";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // PJ_Tb_Total
+            // label10
             // 
             this.PJ_Tb_Total.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_Tb_Total.Enabled = false;
@@ -487,7 +582,7 @@
             this.PJ_Tb_Total.Size = new System.Drawing.Size(296, 31);
             this.PJ_Tb_Total.TabIndex = 3;
             // 
-            // tabPage2
+            // textBox2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
             this.tabPage2.Controls.Add(this.PB_TranPem_1);
@@ -875,18 +970,24 @@
             this.Text = "FormTransaksi";
             this.Load += new System.EventHandler(this.FormTransaksi_Load);
             this.TC_Transaksi.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.PJ_TranPen_2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.PJ_TranPen_1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PJ_Num_Quan)).EndInit();
-            this.PJ_TranPen_2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PJ_DGV)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.PB_TranPem_2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.PB_TranPem_1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_DGV)).EndInit();
