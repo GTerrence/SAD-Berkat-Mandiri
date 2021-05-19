@@ -37,6 +37,7 @@ namespace Berkat_Mandiri
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                 }
             }
+            closePanel();
             OpenChildForm(new Form_Dashboard(), btnDashboard);
         }
 
@@ -206,12 +207,25 @@ namespace Berkat_Mandiri
             OpenChildForm(new FormPiutangcs(), sender);
         }
 
+        private void btnReHist_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormLaporanPiutang(), sender);
+        }
+
         private void callView(object sender, FormClosedEventArgs e)
         {
             if (TForm == 1)
             {
                 OpenChildForm(new FormStockView(), btnStView);
                 TForm = 0;
+            }
+        }
+
+        private void closePanel()
+        {
+            foreach(Panel pan in panMenu.Controls.OfType<Panel>())
+            {
+                pan.Size = pan.MinimumSize;
             }
         }
     }

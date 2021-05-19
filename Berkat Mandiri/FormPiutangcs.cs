@@ -19,6 +19,7 @@ namespace Berkat_Mandiri
 
         public string query1;
         public DataTable dtPiutang;
+        public static List<string> data;
         private void FormPiutangcs_Load(object sender, EventArgs e)
         {
             try
@@ -91,6 +92,28 @@ namespace Berkat_Mandiri
         private void dtpPiutang_ValueChanged(object sender, EventArgs e)
         {
             refreshDgv();
+        }
+
+        private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    data = new List<string>();
+                    DataGridViewRow row = dgvPiutang.Rows[e.RowIndex];
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        data.Add(cell.Value.ToString());
+                    }
+                    FormBayarPiutang fbp = new FormBayarPiutang();
+                    fbp.Show();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
         }
     }
 }

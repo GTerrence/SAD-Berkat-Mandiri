@@ -1,6 +1,6 @@
 ﻿namespace Berkat_Mandiri
 {
-    partial class FormPiutangcs
+    partial class FormLaporanPiutang
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.panSearch = new System.Windows.Forms.Panel();
-            this.chTanggal = new System.Windows.Forms.CheckBox();
-            this.dtpPiutang = new System.Windows.Forms.DateTimePicker();
+            this.dtpMulai = new System.Windows.Forms.DateTimePicker();
             this.tbPelanggan = new System.Windows.Forms.TextBox();
             this.tbNota = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvPiutang = new System.Windows.Forms.DataGridView();
+            this.dtpSelesai = new System.Windows.Forms.DateTimePicker();
             this.panSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiutang)).BeginInit();
             this.SuspendLayout();
@@ -45,38 +45,28 @@
             // panSearch
             // 
             this.panSearch.BackColor = System.Drawing.Color.Transparent;
-            this.panSearch.Controls.Add(this.chTanggal);
-            this.panSearch.Controls.Add(this.dtpPiutang);
+            this.panSearch.Controls.Add(this.dtpSelesai);
+            this.panSearch.Controls.Add(this.dtpMulai);
             this.panSearch.Controls.Add(this.tbPelanggan);
             this.panSearch.Controls.Add(this.tbNota);
             this.panSearch.Controls.Add(this.label4);
             this.panSearch.Controls.Add(this.label3);
             this.panSearch.Controls.Add(this.label2);
             this.panSearch.Controls.Add(this.label1);
-            this.panSearch.Location = new System.Drawing.Point(22, 12);
+            this.panSearch.Location = new System.Drawing.Point(12, 12);
             this.panSearch.Name = "panSearch";
             this.panSearch.Size = new System.Drawing.Size(756, 150);
-            this.panSearch.TabIndex = 7;
+            this.panSearch.TabIndex = 8;
             // 
-            // chTanggal
+            // dtpMulai
             // 
-            this.chTanggal.AutoSize = true;
-            this.chTanggal.Location = new System.Drawing.Point(359, 112);
-            this.chTanggal.Name = "chTanggal";
-            this.chTanggal.Size = new System.Drawing.Size(112, 17);
-            this.chTanggal.TabIndex = 7;
-            this.chTanggal.Text = "Masukan Tanggal";
-            this.chTanggal.UseVisualStyleBackColor = true;
-            this.chTanggal.CheckedChanged += new System.EventHandler(this.chTanggal_CheckedChanged);
-            // 
-            // dtpPiutang
-            // 
-            this.dtpPiutang.Enabled = false;
-            this.dtpPiutang.Location = new System.Drawing.Point(157, 110);
-            this.dtpPiutang.Name = "dtpPiutang";
-            this.dtpPiutang.Size = new System.Drawing.Size(168, 20);
-            this.dtpPiutang.TabIndex = 6;
-            this.dtpPiutang.ValueChanged += new System.EventHandler(this.dtpPiutang_ValueChanged);
+            this.dtpMulai.Location = new System.Drawing.Point(157, 110);
+            this.dtpMulai.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtpMulai.Name = "dtpMulai";
+            this.dtpMulai.Size = new System.Drawing.Size(168, 20);
+            this.dtpMulai.TabIndex = 6;
+            this.dtpMulai.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtpMulai.ValueChanged += new System.EventHandler(this.dtpMulai_ValueChanged);
             // 
             // tbPelanggan
             // 
@@ -137,22 +127,29 @@
             // dgvPiutang
             // 
             this.dgvPiutang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPiutang.Location = new System.Drawing.Point(22, 168);
+            this.dgvPiutang.Location = new System.Drawing.Point(12, 179);
             this.dgvPiutang.Name = "dgvPiutang";
             this.dgvPiutang.Size = new System.Drawing.Size(756, 243);
-            this.dgvPiutang.TabIndex = 8;
-            this.dgvPiutang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPiutang_CellClick);
+            this.dgvPiutang.TabIndex = 9;
             // 
-            // FormPiutangcs
+            // dtpSelesai
+            // 
+            this.dtpSelesai.Location = new System.Drawing.Point(413, 110);
+            this.dtpSelesai.Name = "dtpSelesai";
+            this.dtpSelesai.Size = new System.Drawing.Size(200, 20);
+            this.dtpSelesai.TabIndex = 7;
+            this.dtpSelesai.ValueChanged += new System.EventHandler(this.dtpSelesai_ValueChanged);
+            // 
+            // FormLaporanPiutang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 449);
             this.Controls.Add(this.dgvPiutang);
             this.Controls.Add(this.panSearch);
-            this.Name = "FormPiutangcs";
-            this.Text = "FormPiutangcs";
-            this.Load += new System.EventHandler(this.FormPiutangcs_Load);
+            this.Name = "FormLaporanPiutang";
+            this.Text = "FormLaporanPiutang";
+            this.Load += new System.EventHandler(this.FormLaporanPiutang_Load);
             this.panSearch.ResumeLayout(false);
             this.panSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiutang)).EndInit();
@@ -161,7 +158,9 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Panel panSearch;
+        private System.Windows.Forms.DateTimePicker dtpMulai;
         private System.Windows.Forms.TextBox tbPelanggan;
         private System.Windows.Forms.TextBox tbNota;
         private System.Windows.Forms.Label label4;
@@ -169,7 +168,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvPiutang;
-        private System.Windows.Forms.DateTimePicker dtpPiutang;
-        private System.Windows.Forms.CheckBox chTanggal;
+        private System.Windows.Forms.DateTimePicker dtpSelesai;
     }
 }
