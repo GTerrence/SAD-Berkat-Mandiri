@@ -10,22 +10,21 @@ using System.Windows.Forms;
 
 namespace Berkat_Mandiri
 {
-    public partial class FormPiutangcs : Form
+    public partial class FormLaporanPiutang : Form
     {
-        public static string selectedid;
-        public FormPiutangcs()
+        public FormLaporanPiutang()
         {
             InitializeComponent();
         }
 
-        private void FormPiutangcs_Load(object sender, EventArgs e)
+        public string query1;
+        public DataTable dtPiutang;
+
+        private void FormLaporanPiutang_Load(object sender, EventArgs e)
         {
             try
             {
-                //query1 = "call call_piutang_av()";
                 refreshDgv();
-                DbConnect.exQuery(query1, ref dtPiutang);
-                dgvPiutang.DataSource = dtPiutang;
             }
             catch (Exception x)
             {
@@ -46,11 +45,7 @@ namespace Berkat_Mandiri
                 {
                     query1 += " and pelanggan_name like '%" + tbPelanggan.Text + "%'";
                 }
-                if (chTanggal.Checked == true)
-                {
-                    query1 += " and tanggal_penjualan = str_to_date('" + dtpPiutang.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d')";
-                }
-                query1 += " group by t.nota_id ";
+                query1 += " and tanggal_penjualan > str_to_date('"+ dtpMulai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') and tanggal_penjualan < str_to_date('" + dtpSelesai.Value.ToString("yyyy-MM-dd") + "', '%Y-%m-%d') and t.`delete` = 0 and pi.`delete` = 0 group by t.nota_id ";
                 DbConnect.exQuery(query1, ref dtPiutang);
                 dgvPiutang.DataSource = dtPiutang;
             }
@@ -60,52 +55,23 @@ namespace Berkat_Mandiri
             }
         }
 
-        private void chTanggal_CheckedChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if(((CheckBox)sender).Checked == true)
-                {
-                    dtpPiutang.Enabled = true;
-                } else if(((CheckBox)sender).Checked == false)
-                {
-                    dtpPiutang.Enabled = false;
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.Message);
-            }
-        }
-
         private void tbNota_TextChanged(object sender, EventArgs e)
         {
+            refreshDgv();
         }
 
         private void tbPelanggan_TextChanged(object sender, EventArgs e)
         {
+            refreshDgv();
         }
 
-        private void dtpPiutang_ValueChanged(object sender, EventArgs e)
+        private void dtpMulai_ValueChanged(object sender, EventArgs e)
         {
+            refreshDgv();
         }
 
-        private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtpSelesai_ValueChanged(object sender, EventArgs e)
         {
-            try
-            {
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.Message);
-            }
-        }
-
-        private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            selectedid = dtPiutang.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
-            FormDataPiutang dataPiutang = new FormDataPiutang();
-            dataPiutang.ShowDialog();
             refreshDgv();
         }
     }
