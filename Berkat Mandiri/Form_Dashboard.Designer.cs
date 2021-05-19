@@ -40,10 +40,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lbJam = new System.Windows.Forms.Label();
-            this.lbTanggal = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbTanggal = new System.Windows.Forms.Label();
+            this.lbJam = new System.Windows.Forms.Label();
             this.timerDate = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -123,7 +123,6 @@
             this.btnKasir.TabIndex = 1;
             this.btnKasir.Text = "Kasir";
             this.btnKasir.UseVisualStyleBackColor = true;
-            this.btnKasir.Click += new System.EventHandler(this.btnKasir_Click);
             // 
             // label4
             // 
@@ -168,27 +167,16 @@
             this.panel4.Size = new System.Drawing.Size(544, 157);
             this.panel4.TabIndex = 0;
             // 
-            // lbJam
+            // label2
             // 
-            this.lbJam.AutoSize = true;
-            this.lbJam.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbJam.ForeColor = System.Drawing.Color.White;
-            this.lbJam.Location = new System.Drawing.Point(142, 91);
-            this.lbJam.Name = "lbJam";
-            this.lbJam.Size = new System.Drawing.Size(69, 23);
-            this.lbJam.TabIndex = 3;
-            this.lbJam.Text = "label7";
-            // 
-            // lbTanggal
-            // 
-            this.lbTanggal.AutoSize = true;
-            this.lbTanggal.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTanggal.ForeColor = System.Drawing.Color.White;
-            this.lbTanggal.Location = new System.Drawing.Point(142, 53);
-            this.lbTanggal.Name = "lbTanggal";
-            this.lbTanggal.Size = new System.Drawing.Size(69, 23);
-            this.lbTanggal.TabIndex = 2;
-            this.lbTanggal.Text = "label6";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(58, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Date:";
             // 
             // label5
             // 
@@ -201,16 +189,27 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Time:";
             // 
-            // label2
+            // lbTanggal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(58, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Date:";
+            this.lbTanggal.AutoSize = true;
+            this.lbTanggal.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTanggal.ForeColor = System.Drawing.Color.White;
+            this.lbTanggal.Location = new System.Drawing.Point(142, 53);
+            this.lbTanggal.Name = "lbTanggal";
+            this.lbTanggal.Size = new System.Drawing.Size(69, 23);
+            this.lbTanggal.TabIndex = 2;
+            this.lbTanggal.Text = "label6";
+            // 
+            // lbJam
+            // 
+            this.lbJam.AutoSize = true;
+            this.lbJam.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJam.ForeColor = System.Drawing.Color.White;
+            this.lbJam.Location = new System.Drawing.Point(142, 91);
+            this.lbJam.Name = "lbJam";
+            this.lbJam.Size = new System.Drawing.Size(69, 23);
+            this.lbJam.TabIndex = 3;
+            this.lbJam.Text = "label7";
             // 
             // timerDate
             // 

@@ -32,11 +32,7 @@ namespace Berkat_Mandiri
         {
             try
             {
-                if (sisa > 0 && dtCbSat.Rows[0][2].ToString() != "1")
-                {
-                    MessageBox.Show("Data barang eceran tidak ditemukan!");
-                }
-                else if(hasil != 0 || (hasil == 0 && sisa > 0))
+                if(hasil != 0 || (hasil == 0 && sisa > 0))
                 {
                     query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]) - Convert.ToInt32(numQty.Value), dtCbBarang.Rows[cbBarang.SelectedIndex][0]);
                     MessageBox.Show(query1);

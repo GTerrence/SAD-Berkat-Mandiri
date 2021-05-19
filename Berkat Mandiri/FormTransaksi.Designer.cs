@@ -247,7 +247,7 @@
             this.PJ_DeleteData.Name = "PJ_DeleteData";
             this.PJ_DeleteData.ReadOnly = true;
             // 
-            // PJ_Next
+            // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));

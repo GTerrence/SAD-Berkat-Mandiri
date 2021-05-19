@@ -18,6 +18,8 @@ namespace Berkat_Mandiri
             InitializeComponent();
         }
 
+        public string query1;
+        public DataTable dtPiutang;
         private void FormPiutangcs_Load(object sender, EventArgs e)
         {
             try
@@ -80,25 +82,17 @@ namespace Berkat_Mandiri
 
         private void tbNota_TextChanged(object sender, EventArgs e)
         {
+            refreshDgv();
         }
 
         private void tbPelanggan_TextChanged(object sender, EventArgs e)
         {
+            refreshDgv();
         }
 
         private void dtpPiutang_ValueChanged(object sender, EventArgs e)
         {
-        }
-
-        private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.Message);
-            }
+            refreshDgv();
         }
 
         private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)

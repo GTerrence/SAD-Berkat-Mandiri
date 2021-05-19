@@ -148,13 +148,28 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 449);
+            this.Controls.Add(this.dgvPiutang);
+            this.Controls.Add(this.panSearch);
             this.Name = "FormPiutangcs";
             this.Text = "FormPiutangcs";
             this.Load += new System.EventHandler(this.FormPiutangcs_Load);
+            this.panSearch.ResumeLayout(false);
+            this.panSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPiutang)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.Panel panSearch;
+        private System.Windows.Forms.TextBox tbPelanggan;
+        private System.Windows.Forms.TextBox tbNota;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvPiutang;
+        private System.Windows.Forms.DateTimePicker dtpPiutang;
+        private System.Windows.Forms.CheckBox chTanggal;
     }
 }
