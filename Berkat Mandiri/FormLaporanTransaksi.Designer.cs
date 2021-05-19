@@ -32,11 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -77,8 +72,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pb_dtp1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.TC_Transaksi.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -98,68 +91,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(30, 111);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(874, 54);
-            this.panel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 45);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Laporan";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(30, 20);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(874, 91);
-            this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 91);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "TRANSAKSI";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
-            this.label3.Location = new System.Drawing.Point(418, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(456, 91);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "BERKAT MANDIRI";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.TC_Transaksi);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(30, 165);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(874, 517);
+            this.panel3.Size = new System.Drawing.Size(797, 410);
             this.panel3.TabIndex = 4;
             // 
             // TC_Transaksi
@@ -167,10 +106,11 @@
             this.TC_Transaksi.Controls.Add(this.tabPage1);
             this.TC_Transaksi.Controls.Add(this.tabPage2);
             this.TC_Transaksi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TC_Transaksi.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TC_Transaksi.Location = new System.Drawing.Point(0, 0);
             this.TC_Transaksi.Name = "TC_Transaksi";
             this.TC_Transaksi.SelectedIndex = 0;
-            this.TC_Transaksi.Size = new System.Drawing.Size(874, 517);
+            this.TC_Transaksi.Size = new System.Drawing.Size(797, 410);
             this.TC_Transaksi.TabIndex = 0;
             // 
             // tabPage1
@@ -178,10 +118,10 @@
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
             this.tabPage1.Controls.Add(this.PJ_TranPen_1);
             this.tabPage1.Controls.Add(this.PJ_TranPen_2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 54);
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(866, 459);
+            this.tabPage1.Size = new System.Drawing.Size(789, 367);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Penjualan";
             // 
@@ -192,7 +132,7 @@
             this.PJ_TranPen_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TranPen_1.Location = new System.Drawing.Point(3, 3);
             this.PJ_TranPen_1.Name = "PJ_TranPen_1";
-            this.PJ_TranPen_1.Size = new System.Drawing.Size(860, 453);
+            this.PJ_TranPen_1.Size = new System.Drawing.Size(783, 361);
             this.PJ_TranPen_1.TabIndex = 10;
             // 
             // PJ_DGV
@@ -203,20 +143,20 @@
             this.PJ_DGV.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.PJ_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PJ_DGV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PJ_DGV.Location = new System.Drawing.Point(0, 189);
+            this.PJ_DGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_DGV.Location = new System.Drawing.Point(0, 161);
             this.PJ_DGV.Name = "PJ_DGV";
             this.PJ_DGV.ReadOnly = true;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.PJ_DGV.Size = new System.Drawing.Size(860, 243);
+            this.PJ_DGV.Size = new System.Drawing.Size(783, 200);
             this.PJ_DGV.TabIndex = 15;
             // 
             // PJ_PanCari
@@ -226,7 +166,7 @@
             this.PJ_PanCari.Location = new System.Drawing.Point(0, 0);
             this.PJ_PanCari.Name = "PJ_PanCari";
             this.PJ_PanCari.Padding = new System.Windows.Forms.Padding(10);
-            this.PJ_PanCari.Size = new System.Drawing.Size(860, 189);
+            this.PJ_PanCari.Size = new System.Drawing.Size(783, 161);
             this.PJ_PanCari.TabIndex = 14;
             // 
             // PJ_TBP_Cari
@@ -255,7 +195,7 @@
             this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.PJ_TBP_Cari.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.PJ_TBP_Cari.Size = new System.Drawing.Size(840, 169);
+            this.PJ_TBP_Cari.Size = new System.Drawing.Size(763, 141);
             this.PJ_TBP_Cari.TabIndex = 12;
             // 
             // pj_dtp2
@@ -263,23 +203,23 @@
             this.pj_dtp2.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pj_dtp2.CustomFormat = "dd MMMM yyyy";
             this.pj_dtp2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pj_dtp2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pj_dtp2.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pj_dtp2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.pj_dtp2.Location = new System.Drawing.Point(538, 127);
+            this.pj_dtp2.Location = new System.Drawing.Point(488, 106);
             this.pj_dtp2.Margin = new System.Windows.Forms.Padding(1);
             this.pj_dtp2.Name = "pj_dtp2";
-            this.pj_dtp2.Size = new System.Drawing.Size(301, 36);
+            this.pj_dtp2.Size = new System.Drawing.Size(274, 32);
             this.pj_dtp2.TabIndex = 11;
             this.pj_dtp2.ValueChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // label15
             // 
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(455, 42);
+            this.label15.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(413, 35);
             this.label15.Name = "label15";
             this.label15.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.label15.Size = new System.Drawing.Size(79, 42);
+            this.label15.Size = new System.Drawing.Size(71, 35);
             this.label15.TabIndex = 8;
             this.label15.Text = "Lunas";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -287,63 +227,66 @@
             // pj_pelanggan
             // 
             this.pj_pelanggan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pj_pelanggan.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pj_pelanggan.Location = new System.Drawing.Point(210, 84);
+            this.pj_pelanggan.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pj_pelanggan.Location = new System.Drawing.Point(190, 70);
             this.pj_pelanggan.Margin = new System.Windows.Forms.Padding(0);
             this.pj_pelanggan.Name = "pj_pelanggan";
-            this.pj_pelanggan.Size = new System.Drawing.Size(242, 39);
+            this.pj_pelanggan.Size = new System.Drawing.Size(220, 33);
             this.pj_pelanggan.TabIndex = 6;
             this.pj_pelanggan.TextChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // pj_nota_id
             // 
             this.pj_nota_id.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pj_nota_id.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pj_nota_id.Location = new System.Drawing.Point(210, 42);
+            this.pj_nota_id.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pj_nota_id.Location = new System.Drawing.Point(190, 35);
             this.pj_nota_id.Margin = new System.Windows.Forms.Padding(0);
             this.pj_nota_id.Name = "pj_nota_id";
-            this.pj_nota_id.Size = new System.Drawing.Size(242, 39);
+            this.pj_nota_id.Size = new System.Drawing.Size(220, 33);
             this.pj_nota_id.TabIndex = 5;
             this.pj_nota_id.TextChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // label14
             // 
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 126);
+            this.label14.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 105);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 43);
+            this.label14.Size = new System.Drawing.Size(184, 36);
             this.label14.TabIndex = 4;
             this.label14.Text = "Tanggal";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label9
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 84);
+            this.label9.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 70);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(204, 42);
+            this.label9.Size = new System.Drawing.Size(184, 35);
             this.label9.TabIndex = 3;
             this.label9.Text = "Pelanggan";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 42);
+            this.label8.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 35);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(204, 42);
+            this.label8.Size = new System.Drawing.Size(184, 35);
             this.label8.TabIndex = 2;
             this.label8.Text = "Nota ID";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             this.PJ_TBP_Cari.SetColumnSpan(this.label7, 4);
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(834, 42);
+            this.label7.Size = new System.Drawing.Size(757, 35);
             this.label7.TabIndex = 1;
             this.label7.Text = "Pencarian";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -353,28 +296,28 @@
             this.pj_dtp1.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pj_dtp1.CustomFormat = "dd MMMM yyyy";
             this.pj_dtp1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pj_dtp1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pj_dtp1.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pj_dtp1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.pj_dtp1.Location = new System.Drawing.Point(211, 127);
+            this.pj_dtp1.Location = new System.Drawing.Point(191, 106);
             this.pj_dtp1.Margin = new System.Windows.Forms.Padding(1);
             this.pj_dtp1.Name = "pj_dtp1";
-            this.pj_dtp1.Size = new System.Drawing.Size(240, 36);
+            this.pj_dtp1.Size = new System.Drawing.Size(218, 32);
             this.pj_dtp1.TabIndex = 7;
             this.pj_dtp1.ValueChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
             // pj_lunas
             // 
             this.pj_lunas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pj_lunas.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pj_lunas.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pj_lunas.FormattingEnabled = true;
             this.pj_lunas.Items.AddRange(new object[] {
             "Belum Lunas",
             "Lunas",
             "Semua"});
-            this.pj_lunas.Location = new System.Drawing.Point(537, 42);
+            this.pj_lunas.Location = new System.Drawing.Point(487, 35);
             this.pj_lunas.Margin = new System.Windows.Forms.Padding(0);
             this.pj_lunas.Name = "pj_lunas";
-            this.pj_lunas.Size = new System.Drawing.Size(303, 38);
+            this.pj_lunas.Size = new System.Drawing.Size(276, 33);
             this.pj_lunas.TabIndex = 9;
             this.pj_lunas.SelectedIndexChanged += new System.EventHandler(this.PJ_cari_textberubah);
             // 
@@ -382,9 +325,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Berkat_Mandiri.Properties.Resources.Panah1;
-            this.pictureBox1.Location = new System.Drawing.Point(455, 129);
+            this.pictureBox1.Location = new System.Drawing.Point(413, 108);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -397,7 +340,7 @@
             this.PJ_TranPen_2.Location = new System.Drawing.Point(3, 3);
             this.PJ_TranPen_2.Name = "PJ_TranPen_2";
             this.PJ_TranPen_2.Padding = new System.Windows.Forms.Padding(150);
-            this.PJ_TranPen_2.Size = new System.Drawing.Size(860, 453);
+            this.PJ_TranPen_2.Size = new System.Drawing.Size(783, 361);
             this.PJ_TranPen_2.TabIndex = 11;
             // 
             // panel4
@@ -406,7 +349,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(150, 244);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(560, 48);
+            this.panel4.Size = new System.Drawing.Size(483, 48);
             this.panel4.TabIndex = 4;
             // 
             // PJ_Btn_Insert
@@ -414,7 +357,7 @@
             this.PJ_Btn_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(218)))), ((int)(((byte)(138)))));
             this.PJ_Btn_Insert.Dock = System.Windows.Forms.DockStyle.Right;
             this.PJ_Btn_Insert.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Btn_Insert.Location = new System.Drawing.Point(455, 0);
+            this.PJ_Btn_Insert.Location = new System.Drawing.Point(378, 0);
             this.PJ_Btn_Insert.Name = "PJ_Btn_Insert";
             this.PJ_Btn_Insert.Size = new System.Drawing.Size(105, 48);
             this.PJ_Btn_Insert.TabIndex = 12;
@@ -439,17 +382,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(560, 94);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(483, 94);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PJ_TB_Bayar
             // 
             this.PJ_TB_Bayar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_TB_Bayar.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_TB_Bayar.Location = new System.Drawing.Point(217, 47);
+            this.PJ_TB_Bayar.Location = new System.Drawing.Point(187, 47);
             this.PJ_TB_Bayar.Margin = new System.Windows.Forms.Padding(0);
             this.PJ_TB_Bayar.Name = "PJ_TB_Bayar";
-            this.PJ_TB_Bayar.Size = new System.Drawing.Size(343, 39);
+            this.PJ_TB_Bayar.Size = new System.Drawing.Size(296, 39);
             this.PJ_TB_Bayar.TabIndex = 5;
             // 
             // label5
@@ -458,7 +401,7 @@
             this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(211, 47);
+            this.label5.Size = new System.Drawing.Size(181, 47);
             this.label5.TabIndex = 1;
             this.label5.Text = "Dibayarkan";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -469,7 +412,7 @@
             this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 47);
+            this.label6.Size = new System.Drawing.Size(181, 47);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,20 +421,20 @@
             // 
             this.PJ_Tb_Total.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PJ_Tb_Total.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_Tb_Total.Location = new System.Drawing.Point(217, 0);
+            this.PJ_Tb_Total.Location = new System.Drawing.Point(187, 0);
             this.PJ_Tb_Total.Margin = new System.Windows.Forms.Padding(0);
             this.PJ_Tb_Total.Name = "PJ_Tb_Total";
-            this.PJ_Tb_Total.Size = new System.Drawing.Size(343, 39);
+            this.PJ_Tb_Total.Size = new System.Drawing.Size(296, 39);
             this.PJ_Tb_Total.TabIndex = 3;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
             this.tabPage2.Controls.Add(this.panel5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(866, 459);
+            this.tabPage2.Size = new System.Drawing.Size(789, 367);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pembelian";
             // 
@@ -502,7 +445,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(860, 453);
+            this.panel5.Size = new System.Drawing.Size(783, 361);
             this.panel5.TabIndex = 11;
             // 
             // PB_DGV
@@ -513,20 +456,20 @@
             this.PB_DGV.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.PB_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.PB_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PB_DGV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PB_DGV.Location = new System.Drawing.Point(0, 189);
+            this.PB_DGV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PB_DGV.Location = new System.Drawing.Point(0, 161);
             this.PB_DGV.Name = "PB_DGV";
             this.PB_DGV.ReadOnly = true;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PB_DGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.PB_DGV.Size = new System.Drawing.Size(860, 243);
+            this.PB_DGV.Size = new System.Drawing.Size(783, 200);
             this.PB_DGV.TabIndex = 15;
             // 
             // panel6
@@ -536,7 +479,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(10);
-            this.panel6.Size = new System.Drawing.Size(860, 189);
+            this.panel6.Size = new System.Drawing.Size(783, 161);
             this.panel6.TabIndex = 14;
             // 
             // tableLayoutPanel2
@@ -564,18 +507,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(840, 169);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(763, 141);
             this.tableLayoutPanel2.TabIndex = 12;
             // 
             // pb_supplier
             // 
             this.pb_supplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_supplier.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pb_supplier.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pb_supplier.FormattingEnabled = true;
-            this.pb_supplier.Location = new System.Drawing.Point(210, 84);
+            this.pb_supplier.Location = new System.Drawing.Point(190, 70);
             this.pb_supplier.Margin = new System.Windows.Forms.Padding(0);
             this.pb_supplier.Name = "pb_supplier";
-            this.pb_supplier.Size = new System.Drawing.Size(242, 38);
+            this.pb_supplier.Size = new System.Drawing.Size(220, 33);
             this.pb_supplier.TabIndex = 12;
             this.pb_supplier.SelectedValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
@@ -584,64 +527,67 @@
             this.pb_dtp2.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pb_dtp2.CustomFormat = "dd MMMM yyyy";
             this.pb_dtp2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_dtp2.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pb_dtp2.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pb_dtp2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.pb_dtp2.Location = new System.Drawing.Point(538, 127);
+            this.pb_dtp2.Location = new System.Drawing.Point(488, 106);
             this.pb_dtp2.Margin = new System.Windows.Forms.Padding(1);
             this.pb_dtp2.Name = "pb_dtp2";
-            this.pb_dtp2.Size = new System.Drawing.Size(301, 36);
+            this.pb_dtp2.Size = new System.Drawing.Size(274, 32);
             this.pb_dtp2.TabIndex = 11;
             this.pb_dtp2.ValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // pb_nota_id
             // 
             this.pb_nota_id.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_nota_id.Font = new System.Drawing.Font("Rockwell Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pb_nota_id.Location = new System.Drawing.Point(210, 42);
+            this.pb_nota_id.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pb_nota_id.Location = new System.Drawing.Point(190, 35);
             this.pb_nota_id.Margin = new System.Windows.Forms.Padding(0);
             this.pb_nota_id.Name = "pb_nota_id";
-            this.pb_nota_id.Size = new System.Drawing.Size(242, 39);
+            this.pb_nota_id.Size = new System.Drawing.Size(220, 33);
             this.pb_nota_id.TabIndex = 5;
             this.pb_nota_id.TextChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
             // label10
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 126);
+            this.label10.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 105);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(204, 43);
+            this.label10.Size = new System.Drawing.Size(184, 36);
             this.label10.TabIndex = 4;
             this.label10.Text = "Tanggal";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label11
             // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 84);
+            this.label11.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(3, 70);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(204, 42);
+            this.label11.Size = new System.Drawing.Size(184, 35);
             this.label11.TabIndex = 3;
             this.label11.Text = "Supplier";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label12
             // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 42);
+            this.label12.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 35);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(204, 42);
+            this.label12.Size = new System.Drawing.Size(184, 35);
             this.label12.TabIndex = 2;
             this.label12.Text = "Nota ID";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.label13, 4);
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Rockwell Condensed", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(834, 42);
+            this.label13.Size = new System.Drawing.Size(757, 35);
             this.label13.TabIndex = 1;
             this.label13.Text = "Pencarian";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -651,12 +597,12 @@
             this.pb_dtp1.CalendarFont = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pb_dtp1.CustomFormat = "dd MMMM yyyy";
             this.pb_dtp1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_dtp1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pb_dtp1.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pb_dtp1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.pb_dtp1.Location = new System.Drawing.Point(211, 127);
+            this.pb_dtp1.Location = new System.Drawing.Point(191, 106);
             this.pb_dtp1.Margin = new System.Windows.Forms.Padding(1);
             this.pb_dtp1.Name = "pb_dtp1";
-            this.pb_dtp1.Size = new System.Drawing.Size(240, 36);
+            this.pb_dtp1.Size = new System.Drawing.Size(218, 32);
             this.pb_dtp1.TabIndex = 7;
             this.pb_dtp1.ValueChanged += new System.EventHandler(this.PB_cari_textberubah);
             // 
@@ -664,9 +610,9 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::Berkat_Mandiri.Properties.Resources.Panah1;
-            this.pictureBox2.Location = new System.Drawing.Point(455, 129);
+            this.pictureBox2.Location = new System.Drawing.Point(413, 108);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 37);
+            this.pictureBox2.Size = new System.Drawing.Size(71, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -676,17 +622,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(924, 682);
+            this.ClientSize = new System.Drawing.Size(797, 410);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "FormLaporanTransaksi";
-            this.Padding = new System.Windows.Forms.Padding(30, 20, 20, 0);
             this.Text = "FormLaporanTransaksi";
             this.Load += new System.EventHandler(this.FormLaporanTransaksi_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.TC_Transaksi.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -712,12 +652,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabControl TC_Transaksi;
         private System.Windows.Forms.TabPage tabPage1;
