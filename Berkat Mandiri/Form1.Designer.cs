@@ -309,6 +309,7 @@
             this.btnMaSupp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMaSupp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaSupp.UseVisualStyleBackColor = true;
+            this.btnMaSupp.Click += new System.EventHandler(this.btnMaSupp_Click);
             // 
             // btnMaCust
             // 
@@ -325,6 +326,7 @@
             this.btnMaCust.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMaCust.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaCust.UseVisualStyleBackColor = true;
+            this.btnMaCust.Click += new System.EventHandler(this.btnMaCust_Click);
             // 
             // btnMaProd
             // 
@@ -341,6 +343,7 @@
             this.btnMaProd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMaProd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMaProd.UseVisualStyleBackColor = true;
+            this.btnMaProd.Click += new System.EventHandler(this.btnMaProd_Click);
             // 
             // btnMaster
             // 

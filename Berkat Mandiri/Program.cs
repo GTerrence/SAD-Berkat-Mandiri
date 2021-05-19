@@ -16,7 +16,7 @@ namespace Berkat_Mandiri
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMasterData());
+            Application.Run(new FormBase());
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Berkat_Mandiri
 {
     public partial class FormPiutangcs : Form
     {
+        public static string selectedid;
         public FormPiutangcs()
         {
             InitializeComponent();
@@ -23,7 +24,8 @@ namespace Berkat_Mandiri
         {
             try
             {
-                query1 = "call call_piutang_av()";
+                //query1 = "call call_piutang_av()";
+                refreshDgv();
                 DbConnect.exQuery(query1, ref dtPiutang);
                 dgvPiutang.DataSource = dtPiutang;
             }
@@ -67,7 +69,7 @@ namespace Berkat_Mandiri
                 if(((CheckBox)sender).Checked == true)
                 {
                     dtpPiutang.Enabled = true;
-                } else if(((CheckBox)sender).Checked == true)
+                } else if(((CheckBox)sender).Checked == false)
                 {
                     dtpPiutang.Enabled = false;
                 }
@@ -90,6 +92,14 @@ namespace Berkat_Mandiri
 
         private void dtpPiutang_ValueChanged(object sender, EventArgs e)
         {
+            refreshDgv();
+        }
+
+        private void dgvPiutang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedid = dtPiutang.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
+            FormDataPiutang dataPiutang = new FormDataPiutang();
+            dataPiutang.ShowDialog();
             refreshDgv();
         }
     }

@@ -14,7 +14,6 @@ namespace Berkat_Mandiri
 {
     public partial class FormMasterData : Form
     {
-        static public int is_clicked = 5;
         MySqlConnection sqlConnect;
         MySqlCommand sqlCommand;
         MySqlDataAdapter sqlAdapter;
@@ -39,10 +38,9 @@ namespace Berkat_Mandiri
 
         private void FormMasterData_Load(object sender, EventArgs e)
         {
-            btProduk_Click(sender,e);
             dgvMasterData.GridColor = Color.White;
-            dgvMasterData.Font = new Font("Nirmala UI", 12);
-
+            dgvMasterData.Font = new Font("Nirmala UI", 10);
+            DGVLoad(FormBase.is_clicked);
 
             
         }
@@ -52,16 +50,59 @@ namespace Berkat_Mandiri
 
         }
 
-        private void btProduk_Click(object sender, EventArgs e)
+        
+
+
+        private void tbSproduk_TextChanged(object sender, EventArgs e)
         {
-            if(is_clicked != 0)
+            string sqlSearch;
+            if(FormBase.is_clicked == 0)
+            {
+                sqlSearch = sqlQuery + " AND item_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
+            }
+            else if (FormBase.is_clicked == 1)
+            {
+                sqlSearch = sqlQuery + " AND pelanggan_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
+            }
+            else
+            {
+                sqlSearch = sqlQuery + " AND supplier_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
+            }
+            LoadData(sqlSearch, ref dtView);
+            dgvMasterData.Columns.Clear();
+            dgvMasterData.DataSource = null;
+            dgvMasterData.DataSource = dtView;
+            //BUTTON DEL/EDIT
+            btnDelete = new DataGridViewButtonColumn();
+            btnEdit = new DataGridViewButtonColumn();
+
+            btnEdit.HeaderText = "Edit";
+            btnEdit.Text = "Edit";
+            btnEdit.Name = "btnEdit";
+            btnEdit.UseColumnTextForButtonValue = true;
+
+            btnDelete.HeaderText = "Delete";
+            btnDelete.Text = "Delete";
+            btnDelete.Name = "btnDel";
+            btnDelete.UseColumnTextForButtonValue = true;
+
+            //ADD BUTTON
+            dgvMasterData.Columns.Add(btnEdit);
+
+            dgvMasterData.Columns.Add(btnDelete);
+        }
+
+
+
+
+
+        public void DGVLoad(int is_clicked)
+        {
+            if (is_clicked == 0)
             {
                 dgvMasterData.Columns.Clear();
                 is_clicked = 0;
                 table = "stock";
-                btProduk.BackColor = Color.Silver;
-                btPelanggan.BackColor = Color.DarkGray;
-                btSupplier.BackColor = Color.DarkGray;
                 lbNsearch.Text = "Nama Produk";
                 sqlQuery = "SELECT item_name `Nama Produk`, ukuran `Ukuran`, satuan `Satuan`, harga `Harga`, supplier_name `Supplier` FROM `stock` st, supplier su WHERE st.supplier_id = su.supplier_id AND st.`delete` = 0";
                 LoadData(sqlQuery, ref dtView);
@@ -89,18 +130,11 @@ namespace Berkat_Mandiri
 
                 dgvMasterData.Columns.Add(btnDelete);
             }
-        }
-
-        private void btPelanggan_Click(object sender, EventArgs e)
-        {
-            if (is_clicked != 1)
+            else if (is_clicked == 1)
             {
                 dgvMasterData.Columns.Clear();
                 is_clicked = 1;
                 table = "pelanggan";
-                btProduk.BackColor = Color.DarkGray;
-                btPelanggan.BackColor = Color.Silver;
-                btSupplier.BackColor = Color.DarkGray;
                 lbNsearch.Text = "Nama Pelanggan";
                 sqlQuery = "SELECT pelanggan_name `Nama`, pelanggan_alamat `Alamat`, pelanggan_nohp `No. HP` FROM `pelanggan` WHERE `delete` = 0";
                 LoadData(sqlQuery, ref dtView);
@@ -127,18 +161,11 @@ namespace Berkat_Mandiri
 
                 dgvMasterData.Columns.Add(btnDelete);
             }
-        }
-
-        private void btSupplier_Click(object sender, EventArgs e)
-        {
-            if (is_clicked != 2)
+            else if (is_clicked == 2)
             {
                 dgvMasterData.Columns.Clear();
                 is_clicked = 2;
                 table = "supplier";
-                btProduk.BackColor = Color.DarkGray;
-                btPelanggan.BackColor = Color.DarkGray;
-                btSupplier.BackColor = Color.Silver;
                 lbNsearch.Text = "Nama Supplier";
                 sqlQuery = "SELECT supplier_name `Nama Supplier`, supplier_nohp `No. HP` FROM `supplier` WHERE `delete` = 0";
                 LoadData(sqlQuery, ref dtView);
@@ -162,37 +189,10 @@ namespace Berkat_Mandiri
                 btnDelete.UseColumnTextForButtonValue = true;
 
                 dgvMasterData.Columns.Add(btnEdit);
-                
+
                 dgvMasterData.Columns.Add(btnDelete);
             }
         }
-
-
-        private void tbSproduk_TextChanged(object sender, EventArgs e)
-        {
-            string sqlSearch;
-            if(is_clicked == 0)
-            {
-                sqlSearch = sqlQuery + " AND item_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
-            }
-            else if (is_clicked == 1)
-            {
-                sqlSearch = sqlQuery + " WHERE pelanggan_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
-            }
-            else
-            {
-                sqlSearch = sqlQuery + " WHERE supplier_name LIKE '%" + tbSproduk.Text.ToString() + "%'";
-            }
-            LoadData(sqlSearch, ref dtView);
-            dgvMasterData.DataSource = null;
-            dgvMasterData.DataSource = dtView;
-        }
-
-
-
-
-
-
 
 
 
@@ -230,7 +230,6 @@ namespace Berkat_Mandiri
         private void btInsert_Click(object sender, EventArgs e)
         {
             rowsCount = dtAll.Rows.Count + 1;
-            MessageBox.Show(rowsCount.ToString());
             FormInsertMasterData formInsert = new FormInsertMasterData();
             formInsert.ShowDialog();
             FormMasterData_Load(sender, e);
@@ -238,48 +237,48 @@ namespace Berkat_Mandiri
 
         private void dgvMasterData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (is_clicked == 0)
+            if (FormBase.is_clicked == 0)
             {
-                if(e.ColumnIndex == 5)
+                if(e.ColumnIndex == 0)
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
                 }
-                else if(e.ColumnIndex == 6)
+                else if(e.ColumnIndex == 1)
                 {
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     sqlQuery = "UPDATE `stock` SET `delete` = 1 WHERE stock_id = '" + selectedid + "';";
                     DeleteData(sqlQuery);
                 }
             }
-            else if(is_clicked == 1)
+            else if(FormBase.is_clicked == 1)
             {
-                if (e.ColumnIndex == 3)
+                if (e.ColumnIndex == 0)
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
                 }
-                else if (e.ColumnIndex == 4)
+                else if (e.ColumnIndex == 1)
                 {
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     sqlQuery = "UPDATE `pelanggan` SET `delete` = 1 WHERE pelanggan_id = '" + selectedid + "';";
                     DeleteData(sqlQuery);
                 }
             }
-            else if(is_clicked == 2)
+            else if(FormBase.is_clicked == 2)
             {
-                if (e.ColumnIndex == 2)
+                if (e.ColumnIndex == 0)
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
                 }
-                else if (e.ColumnIndex == 3)
+                else if (e.ColumnIndex == 1)
                 {
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     sqlQuery = "UPDATE `supplier` SET `delete` = 1 WHERE supplier_id = '" + selectedid + "';";

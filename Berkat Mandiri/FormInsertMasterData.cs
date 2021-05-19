@@ -31,11 +31,11 @@ namespace Berkat_Mandiri
         {
             if(FormMasterData.is_edit == 1)
             {
-                if (FormMasterData.is_clicked == 0)
+                if (FormBase.is_clicked == 0)
                 {
                     sqlQuery = "UPDATE `stock` SET supplier_id = '" + cbInsertSupplier.SelectedValue.ToString() + "', item_name = '" + tbInsert1.Text.ToString() + "', harga = '" + tbInsert3.Text.ToString() + "', ukuran = '" + tbInsert2.Text.ToString() + "', satuan = '" + cbInsertSatuan.Text.ToString() + "' WHERE stock_id = '" + FormMasterData.selectedid.ToString() + "';";
                 }
-                else if (FormMasterData.is_clicked == 1)
+                else if (FormBase.is_clicked == 1)
                 {
                     sqlQuery = "UPDATE `pelanggan` SET pelanggan_name = '" + tbInsert1.Text.ToString() + "', pelanggan_alamat = '" + tbInsert2.Text.ToString() + "', pelanggan_nohp = '" + tbInsert3.Text.ToString() + "' WHERE pelanggan_id = '" + FormMasterData.selectedid.ToString() + "';";
                 }
@@ -48,11 +48,11 @@ namespace Berkat_Mandiri
             }
             else
             {
-                if(FormMasterData.is_clicked == 0)
+                if(FormBase.is_clicked == 0)
                 {
                     sqlQuery = "INSERT INTO `stock` VALUES ('" + createID() + "', '" + cbInsertSupplier.SelectedValue.ToString() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert3.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + cbInsertSatuan.Text.ToString() + "',0,0);";
                 }
-                else if(FormMasterData.is_clicked == 1)
+                else if(FormBase.is_clicked == 1)
                 {
                     sqlQuery = "INSERT INTO `pelanggan` VALUES ('" + createID() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + tbInsert3.Text.ToString() + "',0);";
                 }
@@ -102,7 +102,7 @@ namespace Berkat_Mandiri
             cbInsertSupplier.ValueMember = "supplier_id";
 
             //DIFFERENT TABS
-            if(FormMasterData.is_clicked == 0)
+            if(FormBase.is_clicked == 0)
             {
                 cbInsertSatuan.Visible = true;
                 cbInsertSupplier.Visible = true;
@@ -115,7 +115,7 @@ namespace Berkat_Mandiri
                 labelHar.Text = "Harga";
                 tbInsert3.Top = 248;
             }
-            else if(FormMasterData.is_clicked == 1)
+            else if(FormBase.is_clicked == 1)
             {
                 cbInsertSatuan.Visible = false;
                 cbInsertSupplier.Visible = false;
@@ -128,7 +128,7 @@ namespace Berkat_Mandiri
                 labelHar.Text = "No. HP";
                 tbInsert3.Top = 144;
             }
-            else if (FormMasterData.is_clicked == 2)
+            else if (FormBase.is_clicked == 2)
             {
                 cbInsertSatuan.Visible = false;
                 cbInsertSupplier.Visible = false;
@@ -145,8 +145,9 @@ namespace Berkat_Mandiri
             {
                 lbInsert.Text = "Edit Data";
                 btTambah.Text = "Edit Data";
-                if (FormMasterData.is_clicked == 0)
+                if (FormBase.is_clicked == 0)
                 {
+                    MessageBox.Show(FormMasterData.selectedid.ToString());
                     sqlQuery = "SELECT * FROM `stock` WHERE `delete` = 0 AND stock_id = '" + FormMasterData.selectedid + "'";
                     LoadData(sqlQuery, ref dtAll);
                     tbInsert1.Text = dtAll.Rows[0][2].ToString();
@@ -155,7 +156,7 @@ namespace Berkat_Mandiri
                     cbInsertSatuan.Text = dtAll.Rows[0][5].ToString();
                     cbInsertSupplier.SelectedValue = dtAll.Rows[0][1].ToString();
                 }
-                else if (FormMasterData.is_clicked == 1)
+                else if (FormBase.is_clicked == 1)
                 {
                     sqlQuery = "SELECT * FROM `pelanggan` WHERE `delete` = 0 AND pelanggan_id = '" + FormMasterData.selectedid + "'";
                     LoadData(sqlQuery, ref dtAll);
@@ -163,7 +164,7 @@ namespace Berkat_Mandiri
                     tbInsert2.Text = dtAll.Rows[0][2].ToString();
                     tbInsert3.Text = dtAll.Rows[0][3].ToString();
                 }
-                else if (FormMasterData.is_clicked == 2)
+                else if (FormBase.is_clicked == 2)
                 {
                     sqlQuery = "SELECT * FROM `supplier` WHERE `delete` = 0 AND supplier_id = '" + FormMasterData.selectedid + "'";
                     LoadData(sqlQuery, ref dtAll);
@@ -186,11 +187,11 @@ namespace Berkat_Mandiri
             {
                 nol += "0";
             }
-            if (FormMasterData.is_clicked == 0)
+            if (FormBase.is_clicked == 0)
             {
                 id = "ST" + nol + FormMasterData.rowsCount.ToString();
             }
-            else if (FormMasterData.is_clicked == 1)
+            else if (FormBase.is_clicked == 1)
             {
                 id = "CO" + nol + FormMasterData.rowsCount.ToString();
             }

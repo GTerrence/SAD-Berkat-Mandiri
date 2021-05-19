@@ -15,6 +15,8 @@ namespace Berkat_Mandiri
         private Button prevButton, activeButton;
         public Form activeForm;
         public static int TForm;
+        public static int is_clicked;
+
         public FormBase()
         {
             InitializeComponent();
@@ -204,6 +206,24 @@ namespace Berkat_Mandiri
         private void btnReOn_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormPiutangcs(), sender);
+        }
+
+        private void btnMaProd_Click(object sender, EventArgs e)
+        {
+            is_clicked = 0;
+            OpenChildForm(new FormMasterData(), sender);
+        }
+
+        private void btnMaCust_Click(object sender, EventArgs e)
+        {
+            is_clicked = 1;
+            OpenChildForm(new FormMasterData(), sender);
+        }
+
+        private void btnMaSupp_Click(object sender, EventArgs e)
+        {
+            is_clicked = 2;
+            OpenChildForm(new FormMasterData(), sender);
         }
 
         private void callView(object sender, FormClosedEventArgs e)

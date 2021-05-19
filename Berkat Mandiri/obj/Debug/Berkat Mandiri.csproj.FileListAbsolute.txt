@@ -82,3 +82,5 @@ C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.cspro
 C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.exe
 C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat Mandiri.pdb
 C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormInsertMasterData.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form_Dashboard.resources
+C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormDataPiutang.resources
