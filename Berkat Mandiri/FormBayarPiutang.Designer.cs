@@ -169,6 +169,7 @@
             // 
             // tbID
             // 
+            this.tbID.Enabled = false;
             this.tbID.Location = new System.Drawing.Point(159, 48);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(144, 20);
@@ -176,6 +177,7 @@
             // 
             // tbPelanggan
             // 
+            this.tbPelanggan.Enabled = false;
             this.tbPelanggan.Location = new System.Drawing.Point(159, 75);
             this.tbPelanggan.Name = "tbPelanggan";
             this.tbPelanggan.Size = new System.Drawing.Size(144, 20);
@@ -183,6 +185,7 @@
             // 
             // tbStatus
             // 
+            this.tbStatus.Enabled = false;
             this.tbStatus.Location = new System.Drawing.Point(159, 132);
             this.tbStatus.Name = "tbStatus";
             this.tbStatus.Size = new System.Drawing.Size(144, 20);
@@ -197,6 +200,7 @@
             // 
             // dtpTanggal
             // 
+            this.dtpTanggal.Enabled = false;
             this.dtpTanggal.Location = new System.Drawing.Point(159, 103);
             this.dtpTanggal.Name = "dtpTanggal";
             this.dtpTanggal.Size = new System.Drawing.Size(144, 20);
@@ -210,6 +214,7 @@
             this.btnBatal.TabIndex = 18;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnKonfirm
             // 
@@ -219,12 +224,13 @@
             this.btnKonfirm.TabIndex = 19;
             this.btnKonfirm.Text = "Konfirmasi";
             this.btnKonfirm.UseVisualStyleBackColor = true;
+            this.btnKonfirm.Click += new System.EventHandler(this.btnKonfirm_Click);
             // 
             // FormBayarPiutang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 450);
+            this.ClientSize = new System.Drawing.Size(472, 450);
             this.Controls.Add(this.btnKonfirm);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.dtpTanggal);
