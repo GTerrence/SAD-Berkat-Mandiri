@@ -50,6 +50,7 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
+            this.lbTitle2 = new System.Windows.Forms.Label();
             this.panMenu.SuspendLayout();
             this.panReceivable.SuspendLayout();
             this.panTransaksi.SuspendLayout();
@@ -415,12 +416,24 @@
             this.panMain.Size = new System.Drawing.Size(921, 549);
             this.panMain.TabIndex = 4;
             // 
+            // lbTitle2
+            // 
+            this.lbTitle2.AutoSize = true;
+            this.lbTitle2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
+            this.lbTitle2.Location = new System.Drawing.Point(380, 103);
+            this.lbTitle2.Name = "lbTitle2";
+            this.lbTitle2.Size = new System.Drawing.Size(105, 30);
+            this.lbTitle2.TabIndex = 5;
+            this.lbTitle2.Text = "PIUTANG";
+            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.lbTitle2);
             this.Controls.Add(this.panMain);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTitle);
@@ -466,6 +479,7 @@
         private System.Windows.Forms.Button btnTrLaporan;
         private System.Windows.Forms.Button btnTrInput;
         private System.Windows.Forms.Button btnTransaksi;
+        private System.Windows.Forms.Label lbTitle2;
     }
 }
 

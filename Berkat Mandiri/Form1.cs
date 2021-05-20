@@ -125,6 +125,12 @@ namespace Berkat_Mandiri
             childForm.BringToFront();
             childForm.Show();
             lbTitle.Text = childForm.Text;
+            if (childForm.Tag !=  null) {
+                lbTitle2.Text = childForm.Tag.ToString();
+            } else
+            {
+                lbTitle2.Text = "";
+            }
         }
 
         private void btnMaster_Click(object sender, EventArgs e)

@@ -229,7 +229,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form_Dashboard";
-            this.Text = "Dashboard";
+            this.Text = "DASHBOARD";
             this.Load += new System.EventHandler(this.Form_Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

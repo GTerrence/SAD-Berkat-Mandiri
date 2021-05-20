@@ -312,7 +312,8 @@
             this.ClientSize = new System.Drawing.Size(797, 449);
             this.Controls.Add(this.panStock);
             this.Name = "FormStockKonversi";
-            this.Text = "Konversi";
+            this.Tag = "Konversi";
+            this.Text = "STOCK";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStockKonversi_FormClosed);
             this.Load += new System.EventHandler(this.FormStockKonversi_Load);
             this.panStock.ResumeLayout(false);
