@@ -16,12 +16,8 @@ namespace Berkat_Mandiri
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new FormBase());
-=======
-            //Application.Run(new FormBase());
-            Application.Run(new FormLogin());
->>>>>>> branch-kristian
+            //Application.Run(new FormLogin());
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Berkat_Mandiri
 
         private void refreshDgv()
         {
-            query1 = "select item_name `Nama Item`, harga `Harga`, ukuran `Ukuran`, satuan `Satuan`, quantity `Kuantitas` from stock";
+            query1 = "select item_name `Nama Item`, harga `Harga`, ukuran `Ukuran`, satuan `Satuan`, quantity `Kuantitas` from stock where `delete` = 0";
             if(tb == 1)
             {
                 query1 += " where item_name like '%" + tbSearch.Text + "%'";

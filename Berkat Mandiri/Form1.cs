@@ -38,6 +38,7 @@ namespace Berkat_Mandiri
                     }
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                 }
+                closePanel(pan);
             }
             OpenChildForm(new Form_Dashboard(), btnDashboard);
         }
@@ -105,6 +106,10 @@ namespace Berkat_Mandiri
             {
                 activeForm = null;
                 dropDown(btnStock);
+            } else if (TForm == 2)
+            {
+                activeForm = null;
+                dropDown(btnTransaksi);
             }
             if (activeForm != null)
             {
@@ -232,6 +237,22 @@ namespace Berkat_Mandiri
             {
                 OpenChildForm(new FormStockView(), btnStView);
                 TForm = 0;
+            } else if (TForm == 2)
+            {
+                OpenChildForm(new FormTransaksi(), btnTrInput);
+                TForm = 0;
+            }
+        }
+
+        private void closePanel(Panel pan)
+        {
+            try
+            {
+                pan.Size = pan.MinimumSize;
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
             }
         }
     }

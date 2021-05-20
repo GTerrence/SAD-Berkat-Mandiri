@@ -51,5 +51,18 @@ namespace Berkat_Mandiri
             lbTanggal.Text = DateTime.Now.ToString("dd MMMM yyyy");
             lbJam.Text = DateTime.Now.ToString("H:mm:ss");
         }
+
+        private void btnKasir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormBase.TForm = 2;
+                this.Close();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
+        }
     }
 }

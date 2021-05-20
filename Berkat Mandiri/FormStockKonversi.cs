@@ -32,18 +32,20 @@ namespace Berkat_Mandiri
         {
             try
             {
-                if(hasil != 0 || (hasil == 0 && sisa > 0))
+                if (sisa > 0 && dtCbBarang.Rows[0][2].ToString() != "1")
+                {
+                    MessageBox.Show("Maaf barang ukuran 1kg tidak ada");
+                }
+                else if(hasil != 0 || (hasil == 0 && sisa > 0))
                 {
                     query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]) - Convert.ToInt32(numQty.Value), dtCbBarang.Rows[cbBarang.SelectedIndex][0]);
-                    MessageBox.Show(query1);
+                    
                     DbConnect.exnonQuery(query1);
                     query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbSat.Rows[cbSatuan.SelectedIndex][4]) + hasil, dtCbSat.Rows[cbSatuan.SelectedIndex][0]);
-                    MessageBox.Show(query1);
                     DbConnect.exnonQuery(query1);
                     if (sisa > 0)
                     {
                         query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbSat.Rows[0][4]) + sisa, dtCbSat.Rows[0][0]);
-                        MessageBox.Show(query1);
                         DbConnect.exnonQuery(query1);
                     }
                     form_clear();
