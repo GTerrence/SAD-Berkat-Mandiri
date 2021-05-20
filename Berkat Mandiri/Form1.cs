@@ -39,6 +39,13 @@ namespace Berkat_Mandiri
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                 }
                 closePanel(pan);
+                if(FormLogin.admin == 0)
+                {
+                    pan.Visible = false;
+                } else if (FormLogin.admin == 1)
+                {
+                    pan.Visible = true;
+                }
             }
             OpenChildForm(new Form_Dashboard(), btnDashboard);
         }
