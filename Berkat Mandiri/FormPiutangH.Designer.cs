@@ -30,6 +30,9 @@
         {
             this.dgvPiutang = new System.Windows.Forms.DataGridView();
             this.panSearch = new System.Windows.Forms.Panel();
+            this.chTanggal = new System.Windows.Forms.CheckBox();
+            this.dtpPiutang2 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.dtpPiutang = new System.Windows.Forms.DateTimePicker();
             this.tbPelanggan = new System.Windows.Forms.TextBox();
             this.tbNota = new System.Windows.Forms.TextBox();
@@ -37,9 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpPiutang2 = new System.Windows.Forms.DateTimePicker();
-            this.chTanggal = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiutang)).BeginInit();
             this.panSearch.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,36 @@
             this.panSearch.Size = new System.Drawing.Size(756, 150);
             this.panSearch.TabIndex = 9;
             // 
+            // chTanggal
+            // 
+            this.chTanggal.AutoSize = true;
+            this.chTanggal.Location = new System.Drawing.Point(630, 112);
+            this.chTanggal.Name = "chTanggal";
+            this.chTanggal.Size = new System.Drawing.Size(112, 17);
+            this.chTanggal.TabIndex = 9;
+            this.chTanggal.Text = "Masukan Tanggal";
+            this.chTanggal.UseVisualStyleBackColor = true;
+            this.chTanggal.CheckedChanged += new System.EventHandler(this.chTanggal_CheckedChanged);
+            // 
+            // dtpPiutang2
+            // 
+            this.dtpPiutang2.Enabled = false;
+            this.dtpPiutang2.Location = new System.Drawing.Point(447, 110);
+            this.dtpPiutang2.Name = "dtpPiutang2";
+            this.dtpPiutang2.Size = new System.Drawing.Size(168, 20);
+            this.dtpPiutang2.TabIndex = 8;
+            this.dtpPiutang2.ValueChanged += new System.EventHandler(this.dtpPiutang2_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(356, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Sampai";
+            // 
             // dtpPiutang
             // 
             this.dtpPiutang.Enabled = false;
@@ -77,6 +107,7 @@
             this.dtpPiutang.Name = "dtpPiutang";
             this.dtpPiutang.Size = new System.Drawing.Size(168, 20);
             this.dtpPiutang.TabIndex = 6;
+            this.dtpPiutang.ValueChanged += new System.EventHandler(this.dtpPiutang_ValueChanged);
             // 
             // tbPelanggan
             // 
@@ -131,34 +162,6 @@
             this.label1.Size = new System.Drawing.Size(104, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pencarian";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(356, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 17);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Sampai";
-            // 
-            // dtpPiutang2
-            // 
-            this.dtpPiutang2.Enabled = false;
-            this.dtpPiutang2.Location = new System.Drawing.Point(447, 110);
-            this.dtpPiutang2.Name = "dtpPiutang2";
-            this.dtpPiutang2.Size = new System.Drawing.Size(168, 20);
-            this.dtpPiutang2.TabIndex = 8;
-            // 
-            // chTanggal
-            // 
-            this.chTanggal.AutoSize = true;
-            this.chTanggal.Location = new System.Drawing.Point(630, 112);
-            this.chTanggal.Name = "chTanggal";
-            this.chTanggal.Size = new System.Drawing.Size(112, 17);
-            this.chTanggal.TabIndex = 9;
-            this.chTanggal.Text = "Masukan Tanggal";
-            this.chTanggal.UseVisualStyleBackColor = true;
             // 
             // FormPiutangH
             // 

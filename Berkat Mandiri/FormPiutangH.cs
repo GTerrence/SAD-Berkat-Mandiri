@@ -15,6 +15,7 @@ namespace Berkat_Mandiri
         public FormPiutangH()
         {
             InitializeComponent();
+
         }
         public string query1;
         DataTable dtPiutang = new DataTable();
@@ -58,6 +59,35 @@ namespace Berkat_Mandiri
             {
                 MessageBox.Show(x.Message);
             }
+        }
+
+        private void chTanggal_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (((CheckBox)sender).Checked == true)
+                {
+                    dtpPiutang.Enabled = true;
+                }
+                else if (((CheckBox)sender).Checked == false)
+                {
+                    dtpPiutang.Enabled = false;
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
+        }
+
+        private void dtpPiutang_ValueChanged(object sender, EventArgs e)
+        {
+            refreshDgv();
+        }
+
+        private void dtpPiutang2_ValueChanged(object sender, EventArgs e)
+        {
+            refreshDgv();
         }
     }
 }
