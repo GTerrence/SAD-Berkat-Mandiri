@@ -86,7 +86,8 @@
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label4);
             this.Name = "FormStockView";
-            this.Text = "Daftar Stock:";
+            this.Tag = "Daftar Stock :";
+            this.Text = "STOCK";
             this.Load += new System.EventHandler(this.FormStockView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);

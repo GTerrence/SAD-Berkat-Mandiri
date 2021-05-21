@@ -121,7 +121,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMasterData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMasterData";
+            this.Text = "Master Data";
             this.Load += new System.EventHandler(this.FormMasterData_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();

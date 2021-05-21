@@ -139,7 +139,7 @@
             this.dgvPiutang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPiutang.Location = new System.Drawing.Point(22, 168);
             this.dgvPiutang.Name = "dgvPiutang";
-            this.dgvPiutang.Size = new System.Drawing.Size(756, 269);
+            this.dgvPiutang.Size = new System.Drawing.Size(756, 244);
             this.dgvPiutang.TabIndex = 8;
             this.dgvPiutang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPiutang_CellClick);
             // 
@@ -147,11 +147,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 449);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(797, 429);
             this.Controls.Add(this.dgvPiutang);
             this.Controls.Add(this.panSearch);
             this.Name = "FormPiutangcs";
-            this.Text = "FormPiutangcs";
+            this.Text = "Piutang";
             this.Load += new System.EventHandler(this.FormPiutangcs_Load);
             this.panSearch.ResumeLayout(false);
             this.panSearch.PerformLayout();

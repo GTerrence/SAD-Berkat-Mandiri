@@ -50,6 +50,7 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
+            this.lbTitle2 = new System.Windows.Forms.Label();
             this.panMenu.SuspendLayout();
             this.panReceivable.SuspendLayout();
             this.panTransaksi.SuspendLayout();
@@ -79,11 +80,11 @@
             this.panReceivable.Controls.Add(this.btnReOn);
             this.panReceivable.Controls.Add(this.btnReceivable);
             this.panReceivable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panReceivable.Location = new System.Drawing.Point(0, 282);
+            this.panReceivable.Location = new System.Drawing.Point(0, 561);
             this.panReceivable.MaximumSize = new System.Drawing.Size(341, 172);
             this.panReceivable.MinimumSize = new System.Drawing.Size(341, 72);
             this.panReceivable.Name = "panReceivable";
-            this.panReceivable.Size = new System.Drawing.Size(341, 72);
+            this.panReceivable.Size = new System.Drawing.Size(341, 147);
             this.panReceivable.TabIndex = 6;
             this.panReceivable.Tag = "btnReceivable";
             // 
@@ -147,11 +148,11 @@
             this.panTransaksi.Controls.Add(this.btnTrInput);
             this.panTransaksi.Controls.Add(this.btnTransaksi);
             this.panTransaksi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panTransaksi.Location = new System.Drawing.Point(0, 210);
+            this.panTransaksi.Location = new System.Drawing.Point(0, 443);
             this.panTransaksi.MaximumSize = new System.Drawing.Size(341, 172);
             this.panTransaksi.MinimumSize = new System.Drawing.Size(341, 72);
             this.panTransaksi.Name = "panTransaksi";
-            this.panTransaksi.Size = new System.Drawing.Size(341, 72);
+            this.panTransaksi.Size = new System.Drawing.Size(341, 118);
             this.panTransaksi.TabIndex = 6;
             this.panTransaksi.Tag = "btnTransaksi";
             // 
@@ -216,11 +217,11 @@
             this.panStock.Controls.Add(this.btnStView);
             this.panStock.Controls.Add(this.btnStock);
             this.panStock.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panStock.Location = new System.Drawing.Point(0, 138);
+            this.panStock.Location = new System.Drawing.Point(0, 271);
             this.panStock.MaximumSize = new System.Drawing.Size(341, 172);
             this.panStock.MinimumSize = new System.Drawing.Size(341, 72);
             this.panStock.Name = "panStock";
-            this.panStock.Size = new System.Drawing.Size(341, 72);
+            this.panStock.Size = new System.Drawing.Size(341, 172);
             this.panStock.TabIndex = 5;
             this.panStock.Tag = "btnStock";
             // 
@@ -290,7 +291,7 @@
             this.panMaster.MaximumSize = new System.Drawing.Size(341, 205);
             this.panMaster.MinimumSize = new System.Drawing.Size(341, 72);
             this.panMaster.Name = "panMaster";
-            this.panMaster.Size = new System.Drawing.Size(341, 72);
+            this.panMaster.Size = new System.Drawing.Size(341, 205);
             this.panMaster.TabIndex = 6;
             this.panMaster.Tag = "btnMaster";
             // 
@@ -415,12 +416,24 @@
             this.panMain.Size = new System.Drawing.Size(921, 549);
             this.panMain.TabIndex = 4;
             // 
+            // lbTitle2
+            // 
+            this.lbTitle2.AutoSize = true;
+            this.lbTitle2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(161)))), ((int)(((byte)(172)))));
+            this.lbTitle2.Location = new System.Drawing.Point(380, 103);
+            this.lbTitle2.Name = "lbTitle2";
+            this.lbTitle2.Size = new System.Drawing.Size(105, 30);
+            this.lbTitle2.TabIndex = 5;
+            this.lbTitle2.Text = "PIUTANG";
+            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(53)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.lbTitle2);
             this.Controls.Add(this.panMain);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbTitle);
@@ -466,6 +479,7 @@
         private System.Windows.Forms.Button btnTrLaporan;
         private System.Windows.Forms.Button btnTrInput;
         private System.Windows.Forms.Button btnTransaksi;
+        private System.Windows.Forms.Label lbTitle2;
     }
 }
 

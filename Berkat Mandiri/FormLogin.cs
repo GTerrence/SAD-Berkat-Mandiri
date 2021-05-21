@@ -17,7 +17,7 @@ namespace Berkat_Mandiri
         {
             InitializeComponent();
         }
-
+        public static int admin = 0;
         private void Btn_LoginAdmin_Click(object sender, EventArgs e)
         {
             try
@@ -63,11 +63,28 @@ namespace Berkat_Mandiri
         {
             //Untuk Procedure / funtion masuk ke dashboard sebagai ADMIN
             MessageBox.Show("Masuk Sebagai Admin Berhasil", "Admin Login", MessageBoxButtons.OK, MessageBoxIcon.Information); // Ini Boleh Dihapus / dicomment
+            admin = 1;
+            closeForm();
         }
         private void Masuk_Sebagai_User_Biasa()
         {
             //Untuk Procedure / funtion masuk ke dashboard sebagai User biasa yang bisa melihat stok dan memasukan kasir penjualan
-            MessageBox.Show("Masuk Sebagai User Biasa Berhasil", "User Biasa Login", MessageBoxButtons.OK, MessageBoxIcon.Information); // Ini Boleh Dihapus / dicomment
+            MessageBox.Show("Masuk Sebagai User Biasa Berhasil", "User Biasa Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            admin = 0;
+            closeForm();
+        }
+
+        private void closeForm()
+        {
+            FormBase fb = new FormBase();
+            fb.FormClosed += thisClose;
+            fb.Show();
+            this.Hide();
+        }
+
+        private void thisClose(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -39,7 +39,7 @@ namespace Berkat_Mandiri
         {
             try
             {
-                query1 = "select t.nota_id `Nota`, pelanggan_name `Nama Pelanggan`, tanggal_penjualan `Tanggal Penjualan`, total_harga `Total Harga`, total_harga - sum(bayar) `Kurang Bayar`, if(lunas = 0, 'Belum Lunas', 'Lunas') `Status` from transaksi t, pelanggan pn, piutang pi where t.pelanggan_id = pn.pelanggan_id and t.nota_id = pi.nota_id and lunas = 0";
+                query1 = "select t.nota_id `Nota`, pelanggan_name `Nama Pelanggan`, tanggal_penjualan `Tanggal Penjualan`, total_harga `Total Harga`, total_harga - sum(bayar) `Kurang Bayar`, if(lunas = 0, 'Belum Lunas', 'Lunas') `Status` from transaksi t, pelanggan pn, piutang pi where t.pelanggan_id = pn.pelanggan_id and t.nota_id = pi.nota_id and lunas = 0 and t.`delete` = 0";
                 if (tbNota.Text != "")
                 {
                     query1 += " and t.nota_id like '%" + tbNota.Text + "%'";
