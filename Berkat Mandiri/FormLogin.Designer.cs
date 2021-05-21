@@ -216,6 +216,7 @@
             this.Name = "FormLogin";
             this.Padding = new System.Windows.Forms.Padding(15);
             this.Text = "FormLogin";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.Pnl_Bg.ResumeLayout(false);
             this.Pnl_LoginForm.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

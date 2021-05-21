@@ -257,6 +257,11 @@ namespace Berkat_Mandiri
             }
         }
 
+        private void btnReHist_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormPiutangH(), sender);
+        }
+
         private void closePanel(Panel pan)
         {
             try

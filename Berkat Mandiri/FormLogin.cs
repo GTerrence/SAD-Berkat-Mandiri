@@ -86,5 +86,10 @@ namespace Berkat_Mandiri
         {
             this.Close();
         }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

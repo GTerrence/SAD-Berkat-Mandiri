@@ -111,6 +111,12 @@
     <Compile Include="FormPiutangcs.Designer.cs">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPiutangH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPiutangH.Designer.cs">
+      <DependentUpon>FormPiutangH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStockGanti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPiutangcs.resx">
       <DependentUpon>FormPiutangcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPiutangH.resx">
+      <DependentUpon>FormPiutangH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStockGanti.resx">
       <DependentUpon>FormStockGanti.cs</DependentUpon>

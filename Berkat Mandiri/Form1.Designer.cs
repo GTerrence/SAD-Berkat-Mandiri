@@ -103,6 +103,7 @@
             this.btnReHist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReHist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReHist.UseVisualStyleBackColor = true;
+            this.btnReHist.Click += new System.EventHandler(this.btnReHist_Click);
             // 
             // btnReOn
             // 
