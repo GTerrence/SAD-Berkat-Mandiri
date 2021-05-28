@@ -37,6 +37,7 @@
             this.btnStockV = new System.Windows.Forms.Button();
             this.btnKasir = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -45,6 +46,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timerDate = new System.Windows.Forms.Timer(this.components);
+=======
+>>>>>>> branch-kristian
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +67,7 @@
             this.panel1.TabIndex = 0;
             // 
             // label3
+<<<<<<< HEAD
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Britannic Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,14 +89,16 @@
             this.lblJumlah.Text = "S";
             // 
             // label1
+=======
+>>>>>>> branch-kristian
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Piutang";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Britannic Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(84, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 32);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "!";
             // 
             // panel2
             // 
@@ -105,6 +111,7 @@
             this.panel2.Size = new System.Drawing.Size(238, 117);
             this.panel2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // btnStockV
             // 
             this.btnStockV.Location = new System.Drawing.Point(127, 52);
@@ -124,16 +131,38 @@
             this.btnKasir.Text = "Kasir";
             this.btnKasir.UseVisualStyleBackColor = true;
             this.btnKasir.Click += new System.EventHandler(this.btnKasir_Click);
+=======
+            // label1
             // 
-            // label4
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Piutang";
+>>>>>>> branch-kristian
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Quick Access";
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.panel2.Controls.Add(this.btnStockV);
+            this.panel2.Controls.Add(this.btnKasir);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Location = new System.Drawing.Point(490, 48);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(238, 117);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnStockV
+            // 
+            this.btnStockV.Location = new System.Drawing.Point(127, 52);
+            this.btnStockV.Name = "btnStockV";
+            this.btnStockV.Size = new System.Drawing.Size(75, 23);
+            this.btnStockV.TabIndex = 2;
+            this.btnStockV.Text = "Stok";
+            this.btnStockV.UseVisualStyleBackColor = true;
+            this.btnStockV.Click += new System.EventHandler(this.btnStockV_Click);
             // 
             // pictureBox1
             // 
@@ -146,6 +175,7 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
@@ -217,6 +247,17 @@
             this.timerDate.Enabled = true;
             this.timerDate.Interval = 1000;
             this.timerDate.Tick += new System.EventHandler(this.timerDate_Tick);
+=======
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Quick Access";
+>>>>>>> branch-kristian
             // 
             // Form_Dashboard
             // 
