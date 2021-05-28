@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransaksi));
             this.TC_Transaksi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PJ_TranPen_1 = new System.Windows.Forms.Panel();
@@ -45,12 +46,12 @@
             this.PJ_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PJ_DeleteData = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.PJ_CB_Pelanggan = new System.Windows.Forms.ComboBox();
             this.PJ_TB_HargaKhusus = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.PJ_CB_HargaKhusus = new System.Windows.Forms.CheckBox();
-            this.PJ_TB_Nama = new System.Windows.Forms.TextBox();
             this.PJ_CB_Barang = new System.Windows.Forms.ComboBox();
             this.PJ_Num_Quan = new System.Windows.Forms.NumericUpDown();
             this.PJ_Add = new System.Windows.Forms.Button();
@@ -94,6 +95,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.PB_Tb_Total = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.nota = new System.Drawing.Printing.PrintDocument();
             this.TC_Transaksi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PJ_TranPen_1.SuspendLayout();
@@ -172,6 +175,7 @@
             this.PJ_Next.TabIndex = 11;
             this.PJ_Next.Text = "Next";
             this.PJ_Next.UseVisualStyleBackColor = false;
+            this.PJ_Next.Click += new System.EventHandler(this.PJ_Next_Click);
             // 
             // PJ_DGV
             // 
@@ -179,14 +183,14 @@
             this.PJ_DGV.AllowUserToDeleteRows = false;
             this.PJ_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PJ_DGV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PJ_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.PJ_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PJ_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PJ_BarangID,
@@ -199,8 +203,8 @@
             this.PJ_DGV.Location = new System.Drawing.Point(0, 147);
             this.PJ_DGV.Name = "PJ_DGV";
             this.PJ_DGV.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.PJ_DGV.Size = new System.Drawing.Size(783, 214);
             this.PJ_DGV.TabIndex = 3;
             this.PJ_DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Delete_Click);
@@ -253,12 +257,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.2093F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.88372F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.02325F));
+            this.tableLayoutPanel2.Controls.Add(this.PJ_CB_Pelanggan, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.PJ_TB_HargaKhusus, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.PJ_CB_HargaKhusus, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.PJ_TB_Nama, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.PJ_CB_Barang, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.PJ_Num_Quan, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.PJ_Add, 2, 3);
@@ -270,8 +274,20 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(783, 147);
             this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // PJ_CB_Pelanggan
+            // 
+            this.PJ_CB_Pelanggan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PJ_CB_Pelanggan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PJ_CB_Pelanggan.FormattingEnabled = true;
+            this.PJ_CB_Pelanggan.Location = new System.Drawing.Point(173, 0);
+            this.PJ_CB_Pelanggan.Margin = new System.Windows.Forms.Padding(0);
+            this.PJ_CB_Pelanggan.Name = "PJ_CB_Pelanggan";
+            this.PJ_CB_Pelanggan.Size = new System.Drawing.Size(272, 33);
+            this.PJ_CB_Pelanggan.TabIndex = 9;
             // 
             // PJ_TB_HargaKhusus
             // 
@@ -326,16 +342,6 @@
             this.PJ_CB_HargaKhusus.Text = "Harga Khusus";
             this.PJ_CB_HargaKhusus.UseVisualStyleBackColor = true;
             this.PJ_CB_HargaKhusus.CheckedChanged += new System.EventHandler(this.PJ_CB_HargaKhusus_CheckedChanged);
-            // 
-            // PJ_TB_Nama
-            // 
-            this.PJ_TB_Nama.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PJ_TB_Nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PJ_TB_Nama.Location = new System.Drawing.Point(173, 0);
-            this.PJ_TB_Nama.Margin = new System.Windows.Forms.Padding(0);
-            this.PJ_TB_Nama.Name = "PJ_TB_Nama";
-            this.PJ_TB_Nama.Size = new System.Drawing.Size(272, 31);
-            this.PJ_TB_Nama.TabIndex = 3;
             // 
             // PJ_CB_Barang
             // 
@@ -531,6 +537,7 @@
             this.PB_Next.TabIndex = 11;
             this.PB_Next.Text = "Next";
             this.PB_Next.UseVisualStyleBackColor = false;
+            this.PB_Next.Click += new System.EventHandler(this.PB_Next_Click);
             // 
             // PB_DGV
             // 
@@ -538,14 +545,14 @@
             this.PB_DGV.AllowUserToDeleteRows = false;
             this.PB_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PB_DGV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PB_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PB_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.PB_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PB_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -558,8 +565,8 @@
             this.PB_DGV.Location = new System.Drawing.Point(0, 147);
             this.PB_DGV.Name = "PB_DGV";
             this.PB_DGV.ReadOnly = true;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PB_DGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PB_DGV.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.PB_DGV.Size = new System.Drawing.Size(783, 214);
             this.PB_DGV.TabIndex = 3;
             this.PB_DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Delete_Click);
@@ -864,6 +871,22 @@
             this.panel3.Size = new System.Drawing.Size(797, 410);
             this.panel3.TabIndex = 2;
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.nota;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Click += new System.EventHandler(this.PJ_Next_Click);
+            // 
+            // nota
+            // 
+            this.nota.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.nota_PrintPage);
+            // 
             // FormTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -913,7 +936,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox PJ_CB_HargaKhusus;
-        private System.Windows.Forms.TextBox PJ_TB_Nama;
         private System.Windows.Forms.ComboBox PJ_CB_Barang;
         private System.Windows.Forms.NumericUpDown PJ_Num_Quan;
         private System.Windows.Forms.Button PJ_Add;
@@ -965,5 +987,8 @@
         private System.Windows.Forms.Button PJ_Next;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button PB_Next;
+        private System.Windows.Forms.ComboBox PJ_CB_Pelanggan;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument nota;
     }
 }
