@@ -24,6 +24,8 @@ namespace Berkat_Mandiri
         {
             try
             {
+                btnKasir.Image = new Bitmap(Properties.Resources.cashier, new Size(24, 20));
+                btnStockV.Image = new Bitmap(Properties.Resources.stock1, new Size(24, 20));
                 query1 = "select nota_id from transaksi where lunas = 0;";
                 DbConnect.exQuery(query1, ref dtPiutang);
                 lblJumlah.Text = dtPiutang.Rows.Count.ToString();

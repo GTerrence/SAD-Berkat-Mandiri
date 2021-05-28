@@ -107,21 +107,25 @@
             // 
             // btnStockV
             // 
+            this.btnStockV.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockV.Location = new System.Drawing.Point(127, 52);
             this.btnStockV.Name = "btnStockV";
-            this.btnStockV.Size = new System.Drawing.Size(75, 23);
+            this.btnStockV.Size = new System.Drawing.Size(83, 32);
             this.btnStockV.TabIndex = 2;
-            this.btnStockV.Text = "Stok";
+            this.btnStockV.Text = " Stok";
+            this.btnStockV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStockV.UseVisualStyleBackColor = true;
             this.btnStockV.Click += new System.EventHandler(this.btnStockV_Click);
             // 
             // btnKasir
             // 
+            this.btnKasir.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKasir.Location = new System.Drawing.Point(18, 52);
             this.btnKasir.Name = "btnKasir";
-            this.btnKasir.Size = new System.Drawing.Size(75, 23);
+            this.btnKasir.Size = new System.Drawing.Size(89, 32);
             this.btnKasir.TabIndex = 1;
-            this.btnKasir.Text = "Kasir";
+            this.btnKasir.Text = " Kasir";
+            this.btnKasir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKasir.UseVisualStyleBackColor = true;
             this.btnKasir.Click += new System.EventHandler(this.btnKasir_Click);
             // 
