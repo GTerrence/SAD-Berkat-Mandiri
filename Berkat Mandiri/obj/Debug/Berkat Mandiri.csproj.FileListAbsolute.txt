@@ -107,7 +107,6 @@ C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project 
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLogin.resources
 C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.Form_Dashboard.resources
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLogin.resources
 =======
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormDataPiutang.resources
@@ -115,6 +114,3 @@ D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormIns
 D:\Program\C#\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormLogin.resources
 >>>>>>> Terrence2
 C:\xampp\htdocs\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.FormPiutangH.resources
-=======
-C:\Users\Kristian\Documents\Kuliah\Semester 4\System Analyze and Design\Project Berkat Mandiri\SAD-Berkat-Mandiri\Berkat Mandiri\obj\Debug\Berkat_Mandiri.DokumenNotaPenjualan.resources
->>>>>>> branch-kristian
