@@ -48,14 +48,15 @@ namespace Berkat_Mandiri
                         query1 = string.Format("call convert_barang({0}, '{1}')", Convert.ToInt32(dtCbSat.Rows[0][4]) + sisa, dtCbSat.Rows[0][0]);
                         DbConnect.exnonQuery(query1);
                     }
+                    MessageBox.Show("Konversi barang berhasil!", "Sukses");
                     form_clear();
                 } else if(TData == 0)
                 {
-                    MessageBox.Show("Data yang dimasukan belum lengkap", "Error");
+                    MessageBox.Show("Data yang dimasukan belum lengkap", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Jumlah barang belum dimasukan", "Error");
+                    MessageBox.Show("Jumlah barang belum dimasukan", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception x)
@@ -105,7 +106,7 @@ namespace Berkat_Mandiri
                 {
                     if(numQty.Value > Convert.ToInt32(dtCbBarang.Rows[cbBarang.SelectedIndex][5]))
                     {
-                        MessageBox.Show("Maaf jumlah barang tidak mencukupi", "Error");
+                        MessageBox.Show("Maaf jumlah barang tidak mencukupi", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     } else
                     {
                         lbQty1.Text = numQty.Value.ToString() + " Karung";
