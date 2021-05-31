@@ -80,11 +80,11 @@
             this.panReceivable.Controls.Add(this.btnReOn);
             this.panReceivable.Controls.Add(this.btnReceivable);
             this.panReceivable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panReceivable.Location = new System.Drawing.Point(0, 561);
+            this.panReceivable.Location = new System.Drawing.Point(0, 461);
             this.panReceivable.MaximumSize = new System.Drawing.Size(341, 172);
             this.panReceivable.MinimumSize = new System.Drawing.Size(341, 72);
             this.panReceivable.Name = "panReceivable";
-            this.panReceivable.Size = new System.Drawing.Size(341, 147);
+            this.panReceivable.Size = new System.Drawing.Size(341, 72);
             this.panReceivable.TabIndex = 6;
             this.panReceivable.Tag = "btnReceivable";
             // 
@@ -149,7 +149,7 @@
             this.panTransaksi.Controls.Add(this.btnTrInput);
             this.panTransaksi.Controls.Add(this.btnTransaksi);
             this.panTransaksi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panTransaksi.Location = new System.Drawing.Point(0, 443);
+            this.panTransaksi.Location = new System.Drawing.Point(0, 343);
             this.panTransaksi.MaximumSize = new System.Drawing.Size(341, 172);
             this.panTransaksi.MinimumSize = new System.Drawing.Size(341, 72);
             this.panTransaksi.Name = "panTransaksi";
@@ -222,7 +222,7 @@
             this.panStock.MaximumSize = new System.Drawing.Size(341, 172);
             this.panStock.MinimumSize = new System.Drawing.Size(341, 72);
             this.panStock.Name = "panStock";
-            this.panStock.Size = new System.Drawing.Size(341, 172);
+            this.panStock.Size = new System.Drawing.Size(341, 72);
             this.panStock.TabIndex = 5;
             this.panStock.Tag = "btnStock";
             // 

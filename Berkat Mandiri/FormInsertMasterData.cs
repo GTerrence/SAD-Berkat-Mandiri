@@ -29,41 +29,50 @@ namespace Berkat_Mandiri
 
         private void btTambah_Click(object sender, EventArgs e)
         {
-            if(FormMasterData.is_edit == 1)
+            DialogResult dialogResult = MessageBox.Show("Apakah anda yakin?", "", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                if (FormBase.is_clicked == 0)
+                if (FormMasterData.is_edit == 1)
                 {
-                    sqlQuery = "UPDATE `stock` SET supplier_id = '" + cbInsertSupplier.SelectedValue.ToString() + "', item_name = '" + tbInsert1.Text.ToString() + "', harga = '" + tbInsert3.Text.ToString() + "', ukuran = '" + tbInsert2.Text.ToString() + "', satuan = '" + cbInsertSatuan.Text.ToString() + "' WHERE stock_id = '" + FormMasterData.selectedid.ToString() + "';";
-                }
-                else if (FormBase.is_clicked == 1)
-                {
-                    sqlQuery = "UPDATE `pelanggan` SET pelanggan_name = '" + tbInsert1.Text.ToString() + "', pelanggan_alamat = '" + tbInsert2.Text.ToString() + "', pelanggan_nohp = '" + tbInsert3.Text.ToString() + "' WHERE pelanggan_id = '" + FormMasterData.selectedid.ToString() + "';";
+                    if (FormBase.is_clicked == 0)
+                    {
+                        sqlQuery = "UPDATE `stock` SET supplier_id = '" + cbInsertSupplier.SelectedValue.ToString() + "', item_name = '" + tbInsert1.Text.ToString() + "', harga = '" + tbInsert3.Text.ToString() + "', ukuran = '" + tbInsert2.Text.ToString() + "', satuan = '" + cbInsertSatuan.Text.ToString() + "' WHERE stock_id = '" + FormMasterData.selectedid.ToString() + "';";
+                    }
+                    else if (FormBase.is_clicked == 1)
+                    {
+                        sqlQuery = "UPDATE `pelanggan` SET pelanggan_name = '" + tbInsert1.Text.ToString() + "', pelanggan_alamat = '" + tbInsert2.Text.ToString() + "', pelanggan_nohp = '" + tbInsert3.Text.ToString() + "' WHERE pelanggan_id = '" + FormMasterData.selectedid.ToString() + "';";
+                    }
+                    else
+                    {
+                        sqlQuery = "UPDATE `supplier` SET supplier_name = '" + tbInsert1.Text.ToString() + "', supplier_nohp = '" + tbInsert2.Text.ToString() + "' WHERE supplier_id = '" + FormMasterData.selectedid.ToString() + "';";
+                    }
+                    InsertData(sqlQuery);
+                    FormMasterData.is_edit = 0;
                 }
                 else
                 {
-                    sqlQuery = "UPDATE `supplier` SET supplier_name = '" + tbInsert1.Text.ToString() + "', supplier_nohp = '" + tbInsert2.Text.ToString() + "' WHERE supplier_id = '" + FormMasterData.selectedid.ToString() + "';";
+                    if (FormBase.is_clicked == 0)
+                    {
+                        sqlQuery = "INSERT INTO `stock` VALUES ('" + createID() + "', '" + cbInsertSupplier.SelectedValue.ToString() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert3.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + cbInsertSatuan.Text.ToString() + "',0,0);";
+                    }
+                    else if (FormBase.is_clicked == 1)
+                    {
+                        sqlQuery = "INSERT INTO `pelanggan` VALUES ('" + createID() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + tbInsert3.Text.ToString() + "',0);";
+                    }
+                    else
+                    {
+                        sqlQuery = "INSERT INTO `supplier` VALUES ('" + createID() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert2.Text.ToString() + "',0);";
+                    }
+                    InsertData(sqlQuery);
                 }
-                InsertData(sqlQuery);
-                FormMasterData.is_edit = 0;
+                this.Close();
             }
-            else
+            else if (dialogResult == DialogResult.No)
             {
-                if(FormBase.is_clicked == 0)
-                {
-                    sqlQuery = "INSERT INTO `stock` VALUES ('" + createID() + "', '" + cbInsertSupplier.SelectedValue.ToString() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert3.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + cbInsertSatuan.Text.ToString() + "',0,0);";
-                }
-                else if(FormBase.is_clicked == 1)
-                {
-                    sqlQuery = "INSERT INTO `pelanggan` VALUES ('" + createID() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert2.Text.ToString() + "','" + tbInsert3.Text.ToString() + "',0);";
-                }
-                else
-                {
-                    sqlQuery = "INSERT INTO `supplier` VALUES ('" + createID() + "', '" + tbInsert1.Text.ToString() + "','" + tbInsert2.Text.ToString() + "',0);";
-                }
-                InsertData(sqlQuery);
-            }
 
-            this.Close();
+            }
+            
+
 
         }
 
@@ -147,7 +156,7 @@ namespace Berkat_Mandiri
                 btTambah.Text = "Edit Data";
                 if (FormBase.is_clicked == 0)
                 {
-                    MessageBox.Show(FormMasterData.selectedid.ToString());
+                    //MessageBox.Show(FormMasterData.selectedid.ToString());
                     sqlQuery = "SELECT * FROM `stock` WHERE `delete` = 0 AND stock_id = '" + FormMasterData.selectedid + "'";
                     LoadData(sqlQuery, ref dtAll);
                     tbInsert1.Text = dtAll.Rows[0][2].ToString();
@@ -216,6 +225,7 @@ namespace Berkat_Mandiri
 
         private void btBatal_Click(object sender, EventArgs e)
         {
+            FormMasterData.is_edit = 0;
             this.Close();
         }
     }

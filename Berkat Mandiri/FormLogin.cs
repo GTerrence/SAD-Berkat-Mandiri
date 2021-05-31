@@ -18,6 +18,7 @@ namespace Berkat_Mandiri
             InitializeComponent();
         }
         public static int admin = 0;
+        public static string user = "";
         private void Btn_LoginAdmin_Click(object sender, EventArgs e)
         {
             try
@@ -40,6 +41,7 @@ namespace Berkat_Mandiri
                 if (HasilNilai == 1)
                 {
                     //Untuk Procedure / funtion masuk ke dashboard sebagai ADMIN
+                    user = Tb_User.Text.ToString();
                     Masuk_Sebagai_Admin();
                 }
                 else
