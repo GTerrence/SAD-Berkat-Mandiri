@@ -42,7 +42,7 @@ namespace Berkat_Mandiri
             dgvMasterData.Font = new Font("Nirmala UI", 10);
             DGVLoad(FormBase.is_clicked);
 
-            
+
         }
         
         private void btnMaster_Click(object sender, EventArgs e)
@@ -72,24 +72,24 @@ namespace Berkat_Mandiri
             dgvMasterData.Columns.Clear();
             dgvMasterData.DataSource = null;
             dgvMasterData.DataSource = dtView;
-            //BUTTON DEL/EDIT
-            btnDelete = new DataGridViewButtonColumn();
-            btnEdit = new DataGridViewButtonColumn();
+            ////BUTTON DEL/EDIT
+            //btnDelete = new DataGridViewButtonColumn();
+            //btnEdit = new DataGridViewButtonColumn();
 
-            btnEdit.HeaderText = "Edit";
-            btnEdit.Text = "Edit";
-            btnEdit.Name = "btnEdit";
-            btnEdit.UseColumnTextForButtonValue = true;
+            //btnEdit.HeaderText = "Edit";
+            //btnEdit.Text = "Edit";
+            //btnEdit.Name = "btnEdit";
+            //btnEdit.UseColumnTextForButtonValue = true;
 
-            btnDelete.HeaderText = "Delete";
-            btnDelete.Text = "Delete";
-            btnDelete.Name = "btnDel";
-            btnDelete.UseColumnTextForButtonValue = true;
+            //btnDelete.HeaderText = "Delete";
+            //btnDelete.Text = "Delete";
+            //btnDelete.Name = "btnDel";
+            //btnDelete.UseColumnTextForButtonValue = true;
 
-            //ADD BUTTON
-            dgvMasterData.Columns.Add(btnEdit);
+            ////ADD BUTTON
+            //dgvMasterData.Columns.Add(btnEdit);
 
-            dgvMasterData.Columns.Add(btnDelete);
+            //dgvMasterData.Columns.Add(btnDelete);
         }
 
 
@@ -112,8 +112,8 @@ namespace Berkat_Mandiri
                 LoadData(sqlQuery, ref dtAll);
 
                 //BUTTON DEL/EDIT
-                btnDelete = new DataGridViewButtonColumn();
-                btnEdit = new DataGridViewButtonColumn();
+                //btnDelete = new DataGridViewButtonColumn();
+                //btnEdit = new DataGridViewButtonColumn();
 
                 btnEdit.HeaderText = "Edit";
                 btnEdit.Text = "Edit";
@@ -144,8 +144,8 @@ namespace Berkat_Mandiri
                 LoadData(sqlQuery, ref dtAll);
 
                 //BUTTON DEL/EDIT
-                btnDelete = new DataGridViewButtonColumn();
-                btnEdit = new DataGridViewButtonColumn();
+                //btnDelete = new DataGridViewButtonColumn();
+                //btnEdit = new DataGridViewButtonColumn();
 
                 btnEdit.HeaderText = "Edit";
                 btnEdit.Text = "Edit";
@@ -175,8 +175,8 @@ namespace Berkat_Mandiri
                 LoadData(sqlQuery, ref dtAll);
 
                 //BUTTON DEL/EDIT
-                btnDelete = new DataGridViewButtonColumn();
-                btnEdit = new DataGridViewButtonColumn();
+                //btnDelete = new DataGridViewButtonColumn();
+                //btnEdit = new DataGridViewButtonColumn();
 
                 btnEdit.HeaderText = "Edit";
                 btnEdit.Text = "Edit";
@@ -237,54 +237,92 @@ namespace Berkat_Mandiri
 
         private void dgvMasterData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //MessageBox.Show(e.ColumnIndex.ToString());
             if (FormBase.is_clicked == 0)
             {
-                if(e.ColumnIndex == 0)
+                if(dgvMasterData.CurrentCell.OwningColumn.Name == "btnEdit")
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
+                    FormMasterData_Load(sender, e);
+
                 }
-                else if(e.ColumnIndex == 1)
+                else if(dgvMasterData.CurrentCell.OwningColumn.Name == "btnDel")
                 {
-                    selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
-                    sqlQuery = "UPDATE `stock` SET `delete` = 1 WHERE stock_id = '" + selectedid + "';";
-                    DeleteData(sqlQuery);
+                    DialogResult dialogResult = MessageBox.Show("Apakah anda yakin?", "Delete", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
+                        sqlQuery = "UPDATE `stock` SET `delete` = 1 WHERE stock_id = '" + selectedid + "';";
+                        DeleteData(sqlQuery);
+                        FormMasterData_Load(sender, e);
+
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        //do something else
+                    }
                 }
             }
             else if(FormBase.is_clicked == 1)
             {
-                if (e.ColumnIndex == 0)
+                if (dgvMasterData.CurrentCell.OwningColumn.Name == "btnEdit")
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
+                    FormMasterData_Load(sender, e);
+
                 }
-                else if (e.ColumnIndex == 1)
+                else if (dgvMasterData.CurrentCell.OwningColumn.Name == "btnDel")
                 {
-                    selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
-                    sqlQuery = "UPDATE `pelanggan` SET `delete` = 1 WHERE pelanggan_id = '" + selectedid + "';";
-                    DeleteData(sqlQuery);
+                    DialogResult dialogResult = MessageBox.Show("Apakah anda yakin?", "Delete", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
+                        sqlQuery = "UPDATE `pelanggan` SET `delete` = 1 WHERE pelanggan_id = '" + selectedid + "';";
+                        DeleteData(sqlQuery);    
+                       FormMasterData_Load(sender, e);
+
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        //do something else
+                    }
                 }
             }
             else if(FormBase.is_clicked == 2)
             {
-                if (e.ColumnIndex == 0)
+                if (dgvMasterData.CurrentCell.OwningColumn.Name == "btnEdit")
                 {
                     is_edit = 1;
                     selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
                     FormInsertMasterData formInsert = new FormInsertMasterData();
                     formInsert.ShowDialog();
+                    FormMasterData_Load(sender, e);
+
                 }
-                else if (e.ColumnIndex == 1)
+                else if (dgvMasterData.CurrentCell.OwningColumn.Name == "btnDel")
                 {
-                    selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
-                    sqlQuery = "UPDATE `supplier` SET `delete` = 1 WHERE supplier_id = '" + selectedid + "';";
-                    DeleteData(sqlQuery);
+                    DialogResult dialogResult = MessageBox.Show("Apakah anda yakin?", "Delete", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        selectedid = dtAll.Rows[Convert.ToInt32(e.RowIndex.ToString())][0].ToString();
+                        sqlQuery = "UPDATE `supplier` SET `delete` = 1 WHERE supplier_id = '" + selectedid + "';";
+                        DeleteData(sqlQuery);
+                        FormMasterData_Load(sender, e);
+
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        //do something else
+                    }
                 }
             }
+
         }
     }
 }

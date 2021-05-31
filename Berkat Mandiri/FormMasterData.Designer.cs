@@ -60,7 +60,7 @@
             this.btInsert.Font = new System.Drawing.Font("Nirmala UI", 14F);
             this.btInsert.ForeColor = System.Drawing.Color.Black;
             this.btInsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btInsert.Location = new System.Drawing.Point(640, 342);
+            this.btInsert.Location = new System.Drawing.Point(637, 342);
             this.btInsert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btInsert.Name = "btInsert";
             this.btInsert.Size = new System.Drawing.Size(133, 39);
