@@ -51,6 +51,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panMain = new System.Windows.Forms.Panel();
             this.lbTitle2 = new System.Windows.Forms.Label();
+            this.btSetting = new System.Windows.Forms.Button();
             this.panMenu.SuspendLayout();
             this.panReceivable.SuspendLayout();
             this.panTransaksi.SuspendLayout();
@@ -61,6 +62,7 @@
             // panMenu
             // 
             this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(32)))), ((int)(((byte)(51)))));
+            this.panMenu.Controls.Add(this.btSetting);
             this.panMenu.Controls.Add(this.panReceivable);
             this.panMenu.Controls.Add(this.panTransaksi);
             this.panMenu.Controls.Add(this.panStock);
@@ -428,6 +430,26 @@
             this.lbTitle2.TabIndex = 5;
             this.lbTitle2.Text = "PIUTANG";
             // 
+            // btSetting
+            // 
+            this.btSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btSetting.FlatAppearance.BorderSize = 0;
+            this.btSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSetting.Font = new System.Drawing.Font("Nirmala UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(84)))), ((int)(((byte)(191)))));
+            this.btSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSetting.Location = new System.Drawing.Point(0, 533);
+            this.btSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btSetting.Name = "btSetting";
+            this.btSetting.Size = new System.Drawing.Size(341, 56);
+            this.btSetting.TabIndex = 8;
+            this.btSetting.Tag = "panReceivable";
+            this.btSetting.Text = "Setting";
+            this.btSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btSetting.UseVisualStyleBackColor = true;
+            this.btSetting.Click += new System.EventHandler(this.btSetting_Click);
+            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -481,6 +503,7 @@
         private System.Windows.Forms.Button btnTrInput;
         private System.Windows.Forms.Button btnTransaksi;
         private System.Windows.Forms.Label lbTitle2;
+        private System.Windows.Forms.Button btSetting;
     }
 }
 

@@ -66,7 +66,7 @@
             // tbNew
             // 
             this.tbNew.Font = new System.Drawing.Font("Nirmala UI", 14F);
-            this.tbNew.Location = new System.Drawing.Point(187, 46);
+            this.tbNew.Location = new System.Drawing.Point(187, 102);
             this.tbNew.Name = "tbNew";
             this.tbNew.Size = new System.Drawing.Size(245, 32);
             this.tbNew.TabIndex = 25;
@@ -84,7 +84,7 @@
             // tbOld
             // 
             this.tbOld.Font = new System.Drawing.Font("Nirmala UI", 14F);
-            this.tbOld.Location = new System.Drawing.Point(187, 102);
+            this.tbOld.Location = new System.Drawing.Point(187, 46);
             this.tbOld.Name = "tbOld";
             this.tbOld.Size = new System.Drawing.Size(245, 32);
             this.tbOld.TabIndex = 27;
